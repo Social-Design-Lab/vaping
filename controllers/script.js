@@ -483,6 +483,39 @@ exports.getScriptPost = (req, res) => {
 */
 exports.getScriptFeed = (req, res, next) => {
 
+  let participantID = Math.floor(Math.random() * 5000000);; // don't know where to get this input from
+  
+  const user = new User({
+    email: participantID + '@gmail.com',
+   password: 'password',
+   mturkID: '1111',
+    username: participantID,
+    group: 'var4',
+    active: true,
+    lastNotifyVisit : (Date.now()),
+    createdAt: (Date.now())
+  });
+  
+  User.findOne({ email: participantID + '@gmail.com'}, (err, existingUser) => {
+    if (err) { return next(err); }
+    if (existingUser) {
+      req.flash('errors', { msg: 'Account for that participant ID already exists' });
+      return res.redirect('/signup'); // make sure pids are unique or this will be weird
+    }
+    user.save((err) => {
+      if (err) { return next(err); }
+      req.logIn(user, (err) => { 
+        if (err) {
+          return next(err);
+        }
+      });
+    });
+  });
+
+  User.find({}, (err, users) => {
+    console.log(users);
+  })
+
 
   console.log("$#$#$#$#$#$#$START GET FEED$#$#$$#$#$#$#$#$#$#$#$#$#");
   //console.log("time_diff  is now "+time_diff);
