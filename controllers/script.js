@@ -490,13 +490,13 @@ exports.getScriptFeed = (req, res, next) => {
    password: 'password',
    mturkID: '1111',
     username: participantID,
-    group: 'var4',
+    group: 'var4', ////need to capture what condistion they are in
     active: true,
     lastNotifyVisit : (Date.now()),
     createdAt: (Date.now())
   });
   
-  User.findOne({ email: participantID + '@gmail.com'}, (err, existingUser) => {
+  /*User.findOne({ email: participantID + '@gmail.com'}, (err, existingUser) => {
     if (err) { return next(err); }
     if (existingUser) {
       req.flash('errors', { msg: 'Account for that participant ID already exists' });
@@ -510,21 +510,23 @@ exports.getScriptFeed = (req, res, next) => {
         }
       });
     });
-  });
+  });*//*
 
   User.find({}, (err, users) => {
     console.log(users);
-  })
+  })*/
+
+  user.save((err) => {
 
 
-  console.log("$#$#$#$#$#$#$START GET FEED$#$#$$#$#$#$#$#$#$#$#$#$#");
-  //console.log("time_diff  is now "+time_diff);
-  //console.log("time_limit  is now "+time_limit);
-  //study2_n0_p0
-  console.log("$#$#$#$#$#$#$START GET FEED$#$#$$#$#$#$#$#$#$#$#$#$#");
-  var scriptFilter = "";
-  // console.log('@@@@@@ what can we get from request here: ', req);
-  console.log('@@@@@@ what the param has: ', req.params.caseId)
+    console.log("$#$#$#$#$#$#$START GET FEED$#$#$$#$#$#$#$#$#$#$#$#$#");
+    //console.log("time_diff  is now "+time_diff);
+    //console.log("time_limit  is now "+time_limit);
+    //study2_n0_p0
+    console.log("$#$#$#$#$#$#$START GET FEED$#$#$$#$#$#$#$#$#$#$#$#$#");
+    var scriptFilter = "";
+    // console.log('@@@@@@ what can we get from request here: ', req);
+    console.log('@@@@@@ what the param has: ', req.params.caseId)
 
   
 
@@ -630,7 +632,7 @@ exports.getScriptFeed = (req, res, next) => {
       // res.render('pilot-study1-test', { script: finalfeed, comment_type: comment_type, script_type: scriptFilter});
       // res.render('feed_pilot', { script: finalfeed, script_type: scriptFilter});
       });//end of Script.find()
-
+  })
 };//end of .getScript
 /*
 ##############
