@@ -31,14 +31,16 @@ mongoose.set('useCreateIndex', true);
 const multer = require('multer');
 //Math.random().toString(36)+'00000000000000000').slice(2, 10) + Date.now()
 
-var m_options = multer.diskStorage({ destination : path.join(__dirname, 'uploads') ,
+var m_options = multer.diskStorage({
+  destination: path.join(__dirname, 'uploads'),
   filename: function (req, file, cb) {
     var prefix = req.user.id + Math.random().toString(36).slice(2, 10);
     cb(null, prefix + file.originalname.replace(/[^A-Z0-9]+/ig, "_"));
   }
 });
 
-var userpost_options = multer.diskStorage({ destination : path.join(__dirname, 'uploads/user_post') ,
+var userpost_options = multer.diskStorage({
+  destination: path.join(__dirname, 'uploads/user_post'),
   filename: function (req, file, cb) {
     var lastsix = req.user.id.substr(req.user.id.length - 6);
     var prefix = lastsix + Math.random().toString(36).slice(2, 10);
@@ -46,7 +48,8 @@ var userpost_options = multer.diskStorage({ destination : path.join(__dirname, '
   }
 });
 
-var useravatar_options = multer.diskStorage({ destination : path.join(__dirname, 'uploads/user_post') ,
+var useravatar_options = multer.diskStorage({
+  destination: path.join(__dirname, 'uploads/user_post'),
   filename: function (req, file, cb) {
     var prefix = req.user.id + Math.random().toString(36).slice(2, 10);
     cb(null, prefix + file.originalname.replace(/[^A-Z0-9]+/ig, "_"));
@@ -54,9 +57,9 @@ var useravatar_options = multer.diskStorage({ destination : path.join(__dirname,
 });
 
 //const upload = multer({ dest: path.join(__dirname, 'uploads') });
-const upload= multer({ storage: m_options });
-const userpostupload= multer({ storage: userpost_options });
-const useravatarupload= multer({ storage: useravatar_options });
+const upload = multer({ storage: m_options });
+const userpostupload = multer({ storage: userpost_options });
+const useravatarupload = multer({ storage: useravatar_options });
 
 
 /**
@@ -112,42 +115,42 @@ mongoose.connection.on('error', (err) => {
 var rule = new schedule.RecurrenceRule();
 rule.hour = 2;
 rule.minute = 55;
- 
-var j = schedule.scheduleJob(rule, function(){
+
+var j = schedule.scheduleJob(rule, function () {
   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
   console.log('@@@@@@######@@@@@@@@Sending Mail to All ACTIVE USERS!!!!!');
   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
   userController.mailAllActiveUsers();
-}); 
+});
 
 
 var rule1 = new schedule.RecurrenceRule();
 rule1.hour = 4;
 rule1.minute = 55;
- 
-var j1 = schedule.scheduleJob(rule1, function(){
+
+var j1 = schedule.scheduleJob(rule1, function () {
   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
   console.log('@@@@@@######@@@@@@@@Sending Mail to All ACTIVE USERS!!!!!');
   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
   userController.mailAllActiveUsers();
-}); 
+});
 
 var rule2 = new schedule.RecurrenceRule();
 rule2.hour = 10;
 rule2.minute = 55;
- 
-var j2 = schedule.scheduleJob(rule2, function(){
+
+var j2 = schedule.scheduleJob(rule2, function () {
   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
   console.log('@@@@@@######@@@@@@@@Sending Mail to All ACTIVE USERS!!!!!');
   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
   userController.mailAllActiveUsers();
-}); 
+});
 
 
 // var rule3 = new schedule.RecurrenceRule();
 // rule3.hour = 8;
 // rule3.minute = 55;
- 
+
 // var j3 = schedule.scheduleJob(rule3, function(){
 //   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
 //   console.log('@@@@@@######@@@@@@@@Sending Mail to All ACTIVE USERS!!!!!');
@@ -158,7 +161,7 @@ var j2 = schedule.scheduleJob(rule2, function(){
 // var rule4 = new schedule.RecurrenceRule();
 // rule4.hour = 10;
 // rule4.minute = 55;
- 
+
 // var j4 = schedule.scheduleJob(rule4, function(){
 //   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
 //   console.log('@@@@@@######@@@@@@@@Sending Mail to All ACTIVE USERS!!!!!');
@@ -170,13 +173,13 @@ var j2 = schedule.scheduleJob(rule2, function(){
 var rule5 = new schedule.RecurrenceRule();
 rule5.hour = 12;
 rule5.minute = 55;
- 
-var j5 = schedule.scheduleJob(rule5, function(){
+
+var j5 = schedule.scheduleJob(rule5, function () {
   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
   console.log('@@@@@@######@@@@@@@@Sending Mail to All ACTIVE USERS!!!!!');
   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
   userController.mailAllActiveUsers();
-}); 
+});
 
 
 
@@ -187,13 +190,13 @@ var j5 = schedule.scheduleJob(rule5, function(){
 var rule0 = new schedule.RecurrenceRule();
 rule0.hour = 2;
 rule0.minute = 30;
- 
-var j0 = schedule.scheduleJob(rule0, function(){
+
+var j0 = schedule.scheduleJob(rule0, function () {
   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
   console.log('@@@@@@######@@@@@@@@Checking if Users are active!!!!!');
   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
   userController.stillActive();
-}); 
+});
 
 
 /****
@@ -203,13 +206,13 @@ var j0 = schedule.scheduleJob(rule0, function(){
 var rule1 = new schedule.RecurrenceRule();
 rule1.hour = 4;
 rule1.minute = 30;
- 
-var j = schedule.scheduleJob(rule1, function(){
+
+var j = schedule.scheduleJob(rule1, function () {
   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
   console.log('@@@@@@######@@@@@@@@Checking if Users are active!!!!!');
   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
   userController.stillActive();
-}); 
+});
 
 
 /****
@@ -219,27 +222,27 @@ var j = schedule.scheduleJob(rule1, function(){
 var rule2 = new schedule.RecurrenceRule();
 rule2.hour = 6;
 rule2.minute = 30;
- 
+
 
 // 
-var j2 = schedule.scheduleJob(rule2, function(){
+var j2 = schedule.scheduleJob(rule2, function () {
   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
   console.log('@@@@@@######@@@@@@@@3333 Checking if Users are active 3333!!!!!');
   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
   userController.stillActive();
-}); 
+});
 
 
 var rule3 = new schedule.RecurrenceRule();
 rule3.hour = 8;
 rule3.minute = 30;
- 
-var j3 = schedule.scheduleJob(rule3, function(){
+
+var j3 = schedule.scheduleJob(rule3, function () {
   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
   console.log('@@@@@@######@@@@@@@@Checking if Users are active!!!!!');
   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
   userController.stillActive();
-}); 
+});
 
 /****
 **CRON JOBS 
@@ -248,24 +251,24 @@ var j3 = schedule.scheduleJob(rule3, function(){
 var rule4 = new schedule.RecurrenceRule();
 rule4.hour = 10;
 rule4.minute = 30;
- 
-var j4= schedule.scheduleJob(rule4, function(){
+
+var j4 = schedule.scheduleJob(rule4, function () {
   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
   console.log('@@@@@@######@@@@@@@@2222 Checking if Users are active 2222!!!!!');
   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
   userController.stillActive();
-}); 
+});
 
 var rule5 = new schedule.RecurrenceRule();
 rule5.hour = 12;
 rule5.minute = 30;
- 
-var j5 = schedule.scheduleJob(rule5, function(){
+
+var j5 = schedule.scheduleJob(rule5, function () {
   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
   console.log('@@@@@@######@@@@@@@@2222 Checking if Users are active 2222!!!!!');
   console.log('@@@@@@######@@@@@@@@#########@@@@@@@@@@@@########');
   userController.stillActive();
-}); 
+});
 
 /**
  * Express configuration.
@@ -331,16 +334,16 @@ app.use((req, res, next) => {
 app.use((req, res, next) => {
   // After successful login, redirect back to the intended page
   if (!req.user &&
-      req.path !== '/login' &&
-      req.path !== '/signup' &&
-      req.path !== '/bell' &&
-      !req.path.match(/^\/auth/) &&
-      !req.path.match(/\./)) {
+    req.path !== '/login' &&
+    req.path !== '/signup' &&
+    req.path !== '/bell' &&
+    !req.path.match(/^\/auth/) &&
+    !req.path.match(/\./)) {
     console.log("@@@@@path is now");
     console.log(req.path);
     req.session.returnTo = req.path;
   } else if (req.user &&
-      req.path == '/account') {
+    req.path == '/account') {
     console.log("!!!!!!!path is now");
     console.log(req.path);
     req.session.returnTo = req.path;
@@ -351,17 +354,17 @@ app.use((req, res, next) => {
 // var csrf = lusca({ csrf: true });
 
 function check(req, res, next) {
-    console.log("@@@@@@@@@@@@Body is now ");
-    console.log(req.body);
-    next();
+  console.log("@@@@@@@@@@@@Body is now ");
+  console.log(req.body);
+  next();
 }
 
 
-app.use('/public',express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }));
-app.use('/semantic',express.static(path.join(__dirname, 'semantic'), { maxAge: 31557600000 }));
+app.use('/public', express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }));
+app.use('/semantic', express.static(path.join(__dirname, 'semantic'), { maxAge: 31557600000 }));
 app.use(express.static(path.join(__dirname, 'uploads'), { maxAge: 31557600000 }));
 app.use('/post_pictures', express.static(path.join(__dirname, 'post_pictures'), { maxAge: 31557600000 }));
-app.use('/profile_pictures',express.static(path.join(__dirname, 'profile_pictures'), { maxAge: 31557600000 }));
+app.use('/profile_pictures', express.static(path.join(__dirname, 'profile_pictures'), { maxAge: 31557600000 }));
 
 /**
  * Primary app routes.
@@ -486,14 +489,14 @@ app.post('/userPost_feed', passportConfig.isAuthenticated, scriptController.post
 app.use(errorHandler());
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
