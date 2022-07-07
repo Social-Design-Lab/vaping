@@ -483,17 +483,22 @@ exports.getScriptPost = (req, res) => {
 */
 exports.getScriptFeed = (req, res, next) => {
 
-  let participantID = Math.floor(Math.random() * 5000000);; // don't know where to get this input from
+  let participantID = Math.floor(Math.random() * 5000000); // replace this with the next line once we have participantID in URL
+  // let participantID = req.query.pID;
+
+  let scriptZA = req.query.ZA;
+  let scriptAL = req.query.AL;
+  let scriptRV = req.query.RV;
+  let scriptSN = req.query.SN;
   
   const user = new User({
     email: participantID + '@gmail.com',
-   password: 'password',
-   mturkID: '1111',
+    password: 'password',
     username: participantID,
-    group: 'var4', ////need to capture what condistion they are in
-    active: true,
-    lastNotifyVisit : (Date.now()),
-    createdAt: (Date.now())
+    ZA: scriptZA,
+    AL: scriptAL,
+    RV: scriptRV,
+    SN: scriptSN
   });
   
   /*User.findOne({ email: participantID + '@gmail.com'}, (err, existingUser) => {
@@ -510,129 +515,136 @@ exports.getScriptFeed = (req, res, next) => {
         }
       });
     });
-  });*//*
+  });*/
 
-  User.find({}, (err, users) => {
-    console.log(users);
-  })*/
 
   user.save((err) => {
 
 
-    console.log("$#$#$#$#$#$#$START GET FEED$#$#$$#$#$#$#$#$#$#$#$#$#");
-    //console.log("time_diff  is now "+time_diff);
-    //console.log("time_limit  is now "+time_limit);
-    //study2_n0_p0
-    console.log("$#$#$#$#$#$#$START GET FEED$#$#$$#$#$#$#$#$#$#$#$#$#");
-    var scriptFilter = "";
-    // console.log('@@@@@@ what can we get from request here: ', req);
-    console.log('@@@@@@ what the param has: ', req.params.caseId)
+    if (err){
+      console.log(err);
+    }
 
-  
-
-  // var profileFilter = req.params.caseId;
-  //study3_n20, study3_n80
-
-
-
-  console.log('what is this req.params.caseId: ', (req.params.caseId));
-  // scriptFilter = req.params.caseId;
-
-  //req.params.modId
-  console.log("#############SCRIPT FILTER IS NOW " + scriptFilter);
-  var time_now = Date.now();
-  // var time_diff = time_now - req.user.createdAt;
-  var time_diff = 0;
-  //var today = moment();
-  //var tomorrow = moment(today).add(1, 'days');
-  var one_days = 86400000 * 1; //one day in milliseconds
-  // var time_limit = time_diff - one_days; 
-  
-  //{
-  var scriptAL = "";
-  var scriptRV = "";
-  var scriptSN = "";
-  var scriptZA = "";
-
-  scriptAL = req.query.AL;
-  scriptRV = req.query.RV;
-  scriptSN = req.query.SN;
-  scriptZA = req.query.ZA;
-
-  // console.log('PARAMETERS: ', req.params.AL, req.params.RV, req.params.SN, req.params.ZA);
-  console.log('CHECK THIS NOW what: ', req.query.AL, req.query.ZA);
-   console.log('Condition is : ', typeof(req.query.ZA));
-    Script.find(
-    {$or:[
-      {"AL":scriptAL},
-      {"RV":scriptRV},
-      {"SN":scriptSN},
-      {"ZA":scriptZA}
-      ]
-
+    User.find({}, (err, users) => {
+      console.log(users);
     })
-      //change this if you want to test other parts
-      // .where(scriptFilter).equals("yes")
-      // .where(scriptFilter).equals(1)
-      // .where('time').lte(time_diff).gte(time_limit)
-      .sort('-time')
-      .populate('actor')
-      .populate({ 
-       path: 'comments.actor',
-       populate: {
-         path: 'actor',
-         model: 'Actor'
-       } 
+
+    req.logIn(user, (err) => { 
+      console.log("$#$#$#$#$#$#$START GET FEED$#$#$$#$#$#$#$#$#$#$#$#$#");
+      //console.log("time_diff  is now "+time_diff);
+      //console.log("time_limit  is now "+time_limit);
+      //study2_n0_p0
+      console.log("$#$#$#$#$#$#$START GET FEED$#$#$$#$#$#$#$#$#$#$#$#$#");
+      var scriptFilter = "";
+      // console.log('@@@@@@ what can we get from request here: ', req);
+      console.log('@@@@@@ what the param has: ', req.params.caseId)
+
+    
+
+    // var profileFilter = req.params.caseId;
+    //study3_n20, study3_n80
+
+
+
+    console.log('what is this req.params.caseId: ', (req.params.caseId));
+    // scriptFilter = req.params.caseId;
+
+    //req.params.modId
+    console.log("#############SCRIPT FILTER IS NOW " + scriptFilter);
+    var time_now = Date.now();
+    // var time_diff = time_now - req.user.createdAt;
+    var time_diff = 0;
+    //var today = moment();
+    //var tomorrow = moment(today).add(1, 'days');
+    var one_days = 86400000 * 1; //one day in milliseconds
+    // var time_limit = time_diff - one_days; 
+    
+    //{
+    // var scriptAL = "";
+    // var scriptRV = "";
+    // var scriptSN = "";
+    // var scriptZA = "";
+
+    // scriptAL = req.query.AL;
+    // scriptRV = req.query.RV;
+    // scriptSN = req.query.SN;
+    // scriptZA = req.query.ZA;
+
+    // console.log('PARAMETERS: ', req.params.AL, req.params.RV, req.params.SN, req.params.ZA);
+    console.log('CHECK THIS NOW what: ', req.query.AL, req.query.ZA);
+    console.log('Condition is : ', typeof(req.query.ZA));
+      Script.find(
+      {$or:[
+        {"AL":scriptAL},
+        {"RV":scriptRV},
+        {"SN":scriptSN},
+        {"ZA":scriptZA}
+        ]
+
+      })
+        //change this if you want to test other parts
+        // .where(scriptFilter).equals("yes")
+        // .where(scriptFilter).equals(1)
+        // .where('time').lte(time_diff).gte(time_limit)
+        .sort('-time')
+        .populate('actor')
+        .populate({ 
+        path: 'comments.actor',
+        populate: {
+          path: 'actor',
+          model: 'Actor'
+        } 
+      })
+        .exec(function (err, script_feed) {
+          if (err) { return next(err); }
+          //Successful, so render
+
+          //update script feed to see if reading and posts has already happened
+          var finalfeed = [];
+          finalfeed = script_feed;
+          // console.log('what is inside this feed???', finalfeed);
+
+        
+        //shuffle up the list
+        //finalfeed = shuffle(finalfeed);
+
+        console.log("Script Size is now: "+finalfeed.length)
+        res.render('profilePic', { script: finalfeed, script_type: scriptFilter});
+        
+        //this is last column in matrix - the conditins will be renamed to des_5_noRules_noCommunityComment , des_30_noRules_noCommunityComment  , des_60_noRules_noCommunityComment  
+        // if(scriptFilter =='r5'|| scriptFilter =='r30' ||scriptFilter =='r60')
+        // {
+        //   // noRules_noCommunityComment (no provacine comments) 
+        //   res.render('noRules_noCommunityComment', { script: finalfeed, script_type: scriptFilter});
+        // }
+        // // this is the third column in the matrix
+        // else if(scriptFilter =='r5_rules_noCommunity'|| scriptFilter =='r30_rules_noCommunity' ||scriptFilter =='r60_rules_noCommunity')
+        // { 
+        //   res.render('rules_noCommunityComment', { script: finalfeed, script_type: scriptFilter});
+        // }
+        // //this is the second column in the matrxi
+        // else if(scriptFilter =="des_5_community_injunctive" || scriptFilter =="des_30_community_injunctive" || scriptFilter =="des_60_community_injunctive")
+        // {
+        //   // descriptive-community injunctive  (provaccine comments)
+        //   res.render('noRules_CommunityComment', { script: finalfeed, script_type: scriptFilter});
+        // }
+        // //this is the first column in the matrix rules_CommunityComment
+        // else if(scriptFilter =='des_5_injunctive_platform'|| scriptFilter=='des_30_injunctive_platform' || scriptFilter =='des_60_injunctive_platform')
+        // {
+        //   res.render('rules_CommunityComment', { script: finalfeed, script_type: scriptFilter});
+        // }
+        // 5, 30, 60 % + rules + community
+        // else if(scriptFilter =='des_20_injunctive_platform_community'|| scriptFilter =='des_80_injunctive_platform_community ' || scriptFilter=='des_60_injunctive_platform_community')
+        // {
+        //   // NEED TO ADD THE RULES..SCTICKER..
+        //   // descriptive-platform injunctive
+        // res.render('study1-injunctive', { script: finalfeed, script_type: scriptFilter});
+        // }       
+        // res.render('pilot-study1-test', { script: finalfeed, comment_type: comment_type, script_type: scriptFilter});
+        // res.render('feed_pilot', { script: finalfeed, script_type: scriptFilter});
+        });//end of Script.find()
     })
-      .exec(function (err, script_feed) {
-        if (err) { return next(err); }
-        //Successful, so render
-
-        //update script feed to see if reading and posts has already happened
-        var finalfeed = [];
-        finalfeed = script_feed;
-        // console.log('what is inside this feed???', finalfeed);
-
-      
-      //shuffle up the list
-      //finalfeed = shuffle(finalfeed);
-
-      console.log("Script Size is now: "+finalfeed.length)
-      res.render('profilePic', { script: finalfeed, script_type: scriptFilter});
-      
-      //this is last column in matrix - the conditins will be renamed to des_5_noRules_noCommunityComment , des_30_noRules_noCommunityComment  , des_60_noRules_noCommunityComment  
-      // if(scriptFilter =='r5'|| scriptFilter =='r30' ||scriptFilter =='r60')
-      // {
-      //   // noRules_noCommunityComment (no provacine comments) 
-      //   res.render('noRules_noCommunityComment', { script: finalfeed, script_type: scriptFilter});
-      // }
-      // // this is the third column in the matrix
-      // else if(scriptFilter =='r5_rules_noCommunity'|| scriptFilter =='r30_rules_noCommunity' ||scriptFilter =='r60_rules_noCommunity')
-      // { 
-      //   res.render('rules_noCommunityComment', { script: finalfeed, script_type: scriptFilter});
-      // }
-      // //this is the second column in the matrxi
-      // else if(scriptFilter =="des_5_community_injunctive" || scriptFilter =="des_30_community_injunctive" || scriptFilter =="des_60_community_injunctive")
-      // {
-      //   // descriptive-community injunctive  (provaccine comments)
-      //   res.render('noRules_CommunityComment', { script: finalfeed, script_type: scriptFilter});
-      // }
-      // //this is the first column in the matrix rules_CommunityComment
-      // else if(scriptFilter =='des_5_injunctive_platform'|| scriptFilter=='des_30_injunctive_platform' || scriptFilter =='des_60_injunctive_platform')
-      // {
-      //   res.render('rules_CommunityComment', { script: finalfeed, script_type: scriptFilter});
-      // }
-      // 5, 30, 60 % + rules + community
-      // else if(scriptFilter =='des_20_injunctive_platform_community'|| scriptFilter =='des_80_injunctive_platform_community ' || scriptFilter=='des_60_injunctive_platform_community')
-      // {
-      //   // NEED TO ADD THE RULES..SCTICKER..
-      //   // descriptive-platform injunctive
-      // res.render('study1-injunctive', { script: finalfeed, script_type: scriptFilter});
-      // }       
-      // res.render('pilot-study1-test', { script: finalfeed, comment_type: comment_type, script_type: scriptFilter});
-      // res.render('feed_pilot', { script: finalfeed, script_type: scriptFilter});
-      });//end of Script.find()
-  })
+  })  
 };//end of .getScript
 /*
 ##############

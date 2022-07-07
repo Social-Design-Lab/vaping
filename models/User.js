@@ -42,9 +42,15 @@ const userSchema = new mongoose.Schema({
   reported: [String],
 
   study_days: {
-      type: [Number],
-      default: [0, 0, 0]
-    },
+    type: [Number],
+    default: [0, 0, 0]
+  },
+
+  ZA: Number,
+  AL: Number,
+  RV: Number,
+  SN: Number,
+
 
   posts: [new Schema({
     type: String, //post, reply, actorReply
