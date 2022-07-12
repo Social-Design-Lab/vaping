@@ -1,32 +1,28 @@
 .computer.only.tablet.only.row 
-  .ui.borderless.fixed.menu
+  .ui.borderless.fixed.menu(style='background-color: #dbdfd9;')
     .ui.container
-      a.item(href='/')
-        img.ui.tiny.image(src='/public/logo.png', id='logo')
+      .left.menu
+        a.item
+          img.ui.tiny.image(src='/public/Asset 15.png', id='logo')
+      .middle.menu 
+        a.item
+          .ui.fluid.category.search
+              .ui.icon.input
+                input.prompt(type='text' placeholder='Search' style='background-color: #dbdfd9;')
+                i.search.icon
       |  
       .right.menu
-        if !user
-          a.item(href='/login') Login
-          a.item(href='/signup') Create Account
-        else
-          a.item.newpost
-            i.big.write.square.icon
-          a.item(href='/notifications') 
-            i.big.alarm.icon
-          .ui.simple.dropdown.item
-            if user.profile.picture
-              img.ui.mini.spaced.circular.image(src='/user_post/'+user.profile.picture)
-            else
-              img.ui.mini.spaced.circular.image(src=user.gravatar(60))
-            |
-            span= user.profile.name || user.username || user.id
-            i.dropdown.icon
-            .menu
-              a.item(href='/account') My Account
-              .divider
-              a.item(href='/me') My Profile
-              .divider
-              a.item(href='/logout') Logout
+        a.item
+          .ui.grid
+            .three.wide.column
+              i.big.home.icon
+            .three.wide.column
+              i.big.paper.plane.outline.icon 
+            .three.wide.column
+              i.big.compass.outline.icon
+            .three.wide.column
+              i.big.heart.outline.icon
+          
 .mobile.only.row
   .ui.fluid.top.fixed.four.item.menu
     a.item(href='/')
