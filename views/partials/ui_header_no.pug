@@ -1,18 +1,29 @@
 .computer.only.tablet.only.row 
-  .ui.borderless.fixed.menu
+  .ui.borderless.fixed.menu(style='background-color: #dbdfd9;')
     .ui.container
-      a.item(href='/')
-        img.ui.tiny.image(src='/public/logo.png', id='logo')
-      |  
+      .left.menu
+        a.item(href='/')
+          img.ui.tiny.image(src='/public/Asset 15.png', id='logo')
+      |
+      .middle.menu 
+        a.item
+          .ui.fluid.category.search
+              .ui.icon.input
+                input.prompt(type='text' placeholder='Search' style='background-color: #dbdfd9;')
+                i.search.icon
       .right.menu
         if !user
           a.item(href='/login') Login
           a.item(href='/signup') Create Account
         else
-          a.item.newpost
-            i.big.write.square.icon
-          a.item(href='/notifications') 
-            i.big.alarm.icon
+          .a.item
+            i.big.home.icon
+          .a.item
+            i.big.paper.plane.outline.icon 
+          .a.item
+            i.big.compass.outline.icon
+          .a.item
+            i.big.heart.outline.icon
           .ui.simple.dropdown.item
             if user.profile.picture
               img.ui.mini.spaced.circular.image(src='/user_post/'+user.profile.picture)
