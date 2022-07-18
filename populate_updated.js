@@ -18,20 +18,20 @@ TODO:
 Use CSV files instead of json files
 use a CSV file reader and use that as input
 ********/
-var actors_list 
-var posts_list 
+var actors_list
+var posts_list
 var comment_list
-var notification_list 
-var notification_reply_list 
+var notification_list
+var notification_reply_list
 async function readData() {
-    try {        
+    try {
         //synchronously read all csv files and convert them to JSON
         await console.log("Start reading data from .csv files")
-         actors_list = await CSVToJSON().fromFile('./input/actors.csv');
-         posts_list = await CSVToJSON().fromFile('./input/posts.csv');
-         comment_list = await CSVToJSON().fromFile('./input/replies.csv');
-         notification_list = await CSVToJSON().fromFile('./input/notifications.csv');
-         notification_reply_list = await CSVToJSON().fromFile('./input/actor_replies.csv');
+        actors_list = await CSVToJSON().fromFile('./input/actors.csv');
+        posts_list = await CSVToJSON().fromFile('./input/posts.csv');
+        comment_list = await CSVToJSON().fromFile('./input/replies.csv');
+        notification_list = await CSVToJSON().fromFile('./input/notifications.csv');
+        notification_reply_list = await CSVToJSON().fromFile('./input/actor_replies.csv');
 
         //synchronously write all converted JSON output to .json files incase for future use
         // fs.writeFileSync("./input/bots.json", JSON.stringify(actors_list));
@@ -67,14 +67,14 @@ to make sure we dont overwrite the data
 incase we run the script twice or more
 */
 function dropCollections() {
-    db.collections['actors'].drop(function (err) {
-        console.log('Actors Collection Dropped');
+    Actor.collection.drop().then(() => {
+        console.log("actors dropped");
     });
-    db.collections['scripts'].drop(function (err) {
-        console.log('Scripts Collection Dropped');
+    Script.collection.drop(() => {
+        console.log("posts dropped");
     });
-    db.collections['notifications'].drop(function (err) {
-        console.log('Notifications Collection Dropped');
+    Notification.collection.drop(() => {
+        console.log("notifications dropped")
     });
 }
 
@@ -96,6 +96,14 @@ function insert_order(element, array) {
 //Transforms a time like -12:32 (minus 12 minutes and 32 seconds)
 //into a time in milliseconds
 function timeStringToNum(v) {
+
+    /* Some of the time components of comments are undefined so I'm making a workaround
+    This will mess up the way the comments are ordered
+    */
+
+    if (v === ''){
+        return 0;
+    }
     var timeParts = v.split(":");
     if (timeParts[0] == "-0")
         return -1 * parseInt(((timeParts[0] * (60000 * 60)) + (timeParts[1] * 60000)), 10);
@@ -108,7 +116,7 @@ function timeStringToNum(v) {
 //create a radom number (for likes) with a weighted distrubution
 //this is for posts
 function getLikes() {
-    var notRandomNumbers = [1, 1, 1, 2, 2, 2,3, 3, 3, 4, 4, 5,5,5, 6,6,6,6,6,6, 7,7,7,7,7,7,7, 8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9, 9, 10, 10,10, 10,10, 10,10, 10,10, 10,11,11,11,11,11,11,11,11,11,11,11,11,12,12,12,12,12,12,12,12,12,12,12,12,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15, 16, 16, 16, 16, 16, 16, 17, 17, 17, 17, 17, 17, 17, 17];
+    var notRandomNumbers = [1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 5, 5, 5, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 16, 16, 16, 16, 16, 16, 17, 17, 17, 17, 17, 17, 17, 17];
     var idx = Math.floor(Math.random() * notRandomNumbers.length);
     return notRandomNumbers[idx];
 }
@@ -137,7 +145,7 @@ createActorInstances:
 Creates all the Actors in the simulation
 Must be done first!
 *************************/
-function createActorInstances() {           
+function createActorInstances() {
     async.each(actors_list, function (actor_raw, callback) {
         actordetail = {};
         actordetail.profile = {};
@@ -179,10 +187,10 @@ function createPostInstances() {
         Actor.findOne({ username: new_post.actor }, (err, act) => {
             if (err) { console.log("createPostInstances error"); console.log(err); return; }
             // console.log("start post for: "+new_post.id);
-            if (act) {  
+            if (act) {
                 var postdetail = new Object();
-                
-                postdetail.likes =  getLikes();
+
+                postdetail.likes = getLikes();
 
                 postdetail.experiment_group = new_post.experiment_group
                 postdetail.post_id = new_post.id;
@@ -193,7 +201,7 @@ function createPostInstances() {
                 postdetail.highread = getReads(145, 203);
                 postdetail.actor = act;
                 postdetail.time = timeStringToNum(new_post.time);
-                postdetail.post_class = new_post.posts_class;
+                postdetail.post_class = new_post.post_class;
 
                 // postdetail.condition1 = new_post.condition1;
                 // postdetail.condition2 = new_post.condition2;
@@ -217,7 +225,7 @@ function createPostInstances() {
                 // postdetail.r5_rules_noComments=new_post.r5_rules_noComments;
                 // postdetail.r30_rules_noComments=new_post.r30_rules_noComments;
                 // postdetail.r60_rules_noComments=new_post.r60_rules_noComments;
-                
+
 
 
                 var script = new Script(postdetail);
@@ -242,7 +250,7 @@ function createPostInstances() {
     },
         function (err) {
             if (err) {
-                console.log("END IS WRONG!!!" , new_post.id);
+                console.log("END IS WRONG!!!", new_post.id);
                 // console.log(err);
                 callback(err);
             }
@@ -264,7 +272,7 @@ function actorNotifyInstances() {
         Actor.findOne({ username: new_notify.actor }, (err, act) => {
             if (err) { console.log("actorNotifyInstances error"); console.log(err); return; }
             // console.log("start post for: "+new_post.id);
-            if (act) {  
+            if (act) {
                 //console.log('Looking up Actor ID is : ' + act._id); 
                 var notifydetail = new Object();
                 notifydetail.userPost = new_notify.userPostId;
@@ -315,7 +323,7 @@ function actorNotifyInstances_likes() {
         Actor.findOne({ username: new_notify.actor }, (err, act) => {
             if (err) { console.log("actorNotifyInstances error"); console.log(err); return; }
             // console.log("start post for: "+new_post.id);
-            if (act) {  
+            if (act) {
                 //console.log('Looking up Actor ID is : ' + act._id); 
                 var notifydetail = new Object();
                 notifydetail.userPost = new_notify.userPostId;
@@ -367,26 +375,23 @@ function createNotificationInstances() {
         Actor.findOne({ username: new_notify.actor }, (err, act) => {
             if (err) { console.log("createNotificationInstances error"); console.log(err); return; }
             // console.log("start post for: "+new_notify.id);
-            if (act) {  
-                
+            if (act) {
+
                 var notifydetail = new Object();
 
-                if (new_notify.userPost >= 0 && !(new_notify.userPost === ""))
-                {
-                  notifydetail.userPost = new_notify.userPost;
-                  //console.log('User Post is : ' + notifydetail.userPost);
+                if (new_notify.userPost >= 0 && !(new_notify.userPost === "")) {
+                    notifydetail.userPost = new_notify.userPost;
+                    //console.log('User Post is : ' + notifydetail.userPost);
                 }
 
-                else if (new_notify.userReply >= 0 && !(new_notify.userReply === ""))
-                {
-                  notifydetail.userReply = new_notify.userReply;
-                  //console.log('User Reply is : ' + notifydetail.userReply);
+                else if (new_notify.userReply >= 0 && !(new_notify.userReply === "")) {
+                    notifydetail.userReply = new_notify.userReply;
+                    //console.log('User Reply is : ' + notifydetail.userReply);
                 }
 
-                else if (new_notify.actorReply >= 0 && !(new_notify.actorReply === ""))
-                {
-                  notifydetail.actorReply = new_notify.actorReply;
-                  //console.log('Actor Reply is : ' + notifydetail.actorReply);
+                else if (new_notify.actorReply >= 0 && !(new_notify.actorReply === "")) {
+                    notifydetail.actorReply = new_notify.actorReply;
+                    //console.log('Actor Reply is : ' + notifydetail.actorReply);
                 }
 
                 notifydetail.actor = act;
@@ -407,7 +412,7 @@ function createNotificationInstances() {
 
             else {
                 //Else no ACTOR Found
-                console.log("No Actor Found!!!: ", );
+                console.log("No Actor Found!!!: ",);
                 callback();
             }
             // console.log("BOTTOM OF SAVE");
@@ -431,7 +436,7 @@ function createNotificationInstances() {
 createPostRepliesInstances:
 Creates inline comments for each post
 Looks up actors and posts to insert the correct comment
-Does this in series to insure comments are put in, in correct order
+Does this in series to ensure comments are put in in correct order
 Takes a while because of this
 *************************/
 function createPostRepliesInstances() {
@@ -456,6 +461,12 @@ function createPostRepliesInstances() {
                         comment_detail.time = timeStringToNum(new_replies.time);
                         comment_detail.actor = act;
                         comment_detail.category = new_replies.category;
+
+
+                        if (new_replies.id === 684){
+                            console.log('comment_detail time',comment_detail.time);
+                            console.log('new_reply time',new_replies.time);
+                        }
 
                         // comment_detail.des_5 = new_replies.des_5;
                         // comment_detail.des_30 = new_replies.des_30;
@@ -496,9 +507,9 @@ function createPostRepliesInstances() {
                         });
                     }// if PR
                     else {
-                        //Else no ACTOR Found
+                        //Else no POST Found
                         console.log("############Error IN: " + new_replies.id);
-                        console.log("No POST Found!!!"+ new_replies.reply);
+                        console.log("No POST Found!!!" + new_replies.reply);
                         callback();
                     }
                 });//Script.findOne
@@ -551,16 +562,16 @@ Once all done, stop the program (Be sure to close the mongoose connection)
 async function loadDatabase() {
     try {
         await readData(); //read data from csv files and convert it to json for loading
-        // await promisify(dropCollections); //drop existing collecions before loading data
-        // await promisify(createActorInstances);
-        // await promisify(createNotificationInstances);
+        await promisify(dropCollections); //drop existing collecions before loading data
+        await promisify(createActorInstances);
+        //await promisify(createNotificationInstances);
         await promisify(createPostInstances);
-        // await promisify(createPostRepliesInstances);
-        // await promisify(actorNotifyInstances);
+        await promisify(createPostRepliesInstances);
+        //await promisify(actorNotifyInstances);
     } catch (err) {
         console.log('Error occurred in Loading', err);
     }
-    
+
 }
 
 // createActorInstances()
