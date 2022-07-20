@@ -3,45 +3,41 @@
     .ui.container
       .left.menu
         a.item(href='/')
-          img.ui.tiny.image(src='/public/Asset 15.png', id='logo')
+          img.ui.tiny.image(src='/public/Asset 15.png' id='logo')
       |
       .middle.menu 
         a.item
           .ui.fluid.category.search
-              .ui.icon.input
-                input.prompt(type='text' placeholder='Search' style='background-color: #dbdfd9;')
-                i.search.icon
+            .ui.icon.input
+              input.prompt(type='text' placeholder='Search' style='background-color: #dbdfd9;')
+              i.search.icon
       .right.menu
-        if !user
-          a.item(href='/login') Login
-          a.item(href='/signup') Create Account
-        else
-          .a.item
-            i.big.home.icon
-          .a.item
-            i.big.paper.plane.outline.icon 
-          .a.item
-            i.big.compass.outline.icon
-          .a.item
-            i.big.heart.outline.icon
-          .ui.simple.dropdown.item
-            if user.profile.picture
-              img.ui.mini.spaced.circular.image(src='/user_post/'+user.profile.picture)
-            else
-              img.ui.mini.spaced.circular.image(src=user.gravatar(60))
-            |
-            span= user.profile.name || user.username || user.id
-            i.dropdown.icon
-            .menu
-              a.item(href='/account') My Account
-              .divider
-              a.item(href='/me') My Profile
-              .divider
-              a.item(href='/logout') Logout
+        .a.item
+          i.big.home.icon
+        .a.item
+          i.big.paper.plane.outline.icon 
+        .a.item
+          i.big.compass.outline.icon
+        .a.item
+          i.big.heart.outline.icon
+        .ui.simple.dropdown.item
+          if user.profile.picture
+            img.ui.mini.spaced.circular.image(src='/user_post/'+user.profile.picture)
+          else
+            img.ui.mini.spaced.circular.image(src=user.gravatar(60))
+          |
+          span= user.profile.name || user.username || user.id
+          i.dropdown.icon
+          .menu
+            a.item(href='/account') My Account
+            .divider
+            a.item(href='/me') My Profile
+            .divider
+            a.item(href='/logout') Logout
 .mobile.only.row
   .ui.fluid.top.fixed.four.item.menu
     a.item(href='/')
-      img.ui.tiny.image(src='/public/logo.png', id='cell_logo')
+      img.ui.tiny.image(src='/public/logo.png' id='cell_logo')
     if !user
       a.item(href='/login') Login
       a.item(href='/signup') Create Account
