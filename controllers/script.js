@@ -579,14 +579,12 @@ exports.getScriptFeed = (req, res, next) => {
         {"RV":scriptRV},
         {"SN":scriptSN},
         {"ZA":scriptZA}
-        ]
-
-      })
+      ]})
         //change this if you want to test other parts
         // .where(scriptFilter).equals("yes")
         // .where(scriptFilter).equals(1)
         // .where('time').lte(time_diff).gte(time_limit)
-        .sort('-time')
+        .sort('-time') 
         .populate('actor')
         .populate({ 
         path: 'comments.actor',
@@ -599,17 +597,41 @@ exports.getScriptFeed = (req, res, next) => {
           if (err) { return next(err); }
           //Successful, so render
 
+
+
+          Script.find({
+            "post_class": "normal"
+          }).limit(30 - script_feed.length).sort('-time').populate('actor').populate({
+            path: 'comments.actor',
+            populate: {
+            path: 'actor',
+            model: 'Actor'
+          }})
+            .exec(function (err, normal_posts){
+              if (err) { return next(err); }
+
+              var finalfeed = [];
+              finalfeed = script_feed.concat(normal_posts);
+
+              console.log("Script Size is now: "+ finalfeed.length)
+              res.render('profilePic', { script: finalfeed, script_type: scriptFilter});
+
+            })
+          
+
+
+
+
+
           //update script feed to see if reading and posts has already happened
-          var finalfeed = [];
-          finalfeed = script_feed;
-          // console.log('what is inside this feed???', finalfeed);
+          
+  
 
         
         //shuffle up the list
         //finalfeed = shuffle(finalfeed);
 
-        console.log("Script Size is now: "+finalfeed.length)
-        res.render('profilePic', { script: finalfeed, script_type: scriptFilter});
+        
         
         //this is last column in matrix - the conditins will be renamed to des_5_noRules_noCommunityComment , des_30_noRules_noCommunityComment  , des_60_noRules_noCommunityComment  
         // if(scriptFilter =='r5'|| scriptFilter =='r30' ||scriptFilter =='r60')
