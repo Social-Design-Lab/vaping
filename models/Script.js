@@ -26,6 +26,7 @@ const scriptSchema = new mongoose.Schema({
   condition2: Number,
   condition3:Number,
   condition4:Number,
+  feedOrder: Number,
   // des_80: Number,
   // r_5: Number,
   // r_30: Number,

@@ -213,6 +213,8 @@ function createPostInstances() {
                 postdetail.RV = new_post.RV;
                 postdetail.SN = new_post.SN;
 
+                postdetail.feedOrder = new_post.feed_order;
+
 
                 // postdetail.des_5_community_comments = new_post.des_5_community_comments;
                 // postdetail.des_30_community_comments = new_post.des_30_community_comments;

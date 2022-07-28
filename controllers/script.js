@@ -578,13 +578,16 @@ exports.getScriptFeed = (req, res, next) => {
         {"AL":scriptAL},
         {"RV":scriptRV},
         {"SN":scriptSN},
-        {"ZA":scriptZA}
+        {$and: [
+          {"ZA": scriptZA},
+          {"feedOrder": { $lte :  30}}
+        ]},
+        {$and: [
+          {"post_class": "normal"},
+          {"feedOrder": { $lte :  30}}
+        ]}
       ]})
-        //change this if you want to test other parts
-        // .where(scriptFilter).equals("yes")
-        // .where(scriptFilter).equals(1)
-        // .where('time').lte(time_diff).gte(time_limit)
-        .sort('-time') 
+        .sort('feedOrder') 
         .populate('actor')
         .populate({ 
         path: 'comments.actor',
@@ -592,33 +595,48 @@ exports.getScriptFeed = (req, res, next) => {
           path: 'actor',
           model: 'Actor'
         } 
-      })
-        .exec(function (err, script_feed) {
+      }).exec(function (err, script_feed) {
           if (err) { return next(err); }
-          //Successful, so render
 
 
+          let numVax = Number(scriptZA); // number of frame posts
+          if (scriptZA === '3'){
+            numVax = 4;
+          } 
+          else if (scriptZA === '4'){
+            numVax = 9;
+          }
 
-          Script.find({
-            "post_class": "normal"
-          }).limit(30 - script_feed.length).sort('-time').populate('actor').populate({
-            path: 'comments.actor',
-            populate: {
-            path: 'actor',
-            model: 'Actor'
-          }})
-            .exec(function (err, normal_posts){
-              if (err) { return next(err); }
+          if (scriptZA === 1){
+            script_feed.splice(27, 1);
+            // delete the 27th element
+          }
+          else{
+            let curDel = 3; // we're going to delete the element at index 3 and increment
+            for (let i = 0; i<numVax; i++){
+              console.log('za is ', scriptZA);
+              console.log('i is ', i);
+              console.log('numVax ', numVax);
+              script_feed.splice(curDel, 1);
+              curDel += 3;
+            }
+          }
 
-              var finalfeed = [];
-              finalfeed = script_feed.concat(normal_posts);
-
-              console.log("Script Size is now: "+ finalfeed.length)
-              res.render('profilePic', { script: finalfeed, script_type: scriptFilter});
-
-            })
+          // ok it's not working
           
 
+
+
+
+
+
+          console.log("Script Size is now: "+ script_feed.length);
+
+
+
+
+
+          res.render('profilePic', { script: script_feed, script_type: scriptFilter});
 
 
 
