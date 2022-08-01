@@ -500,6 +500,23 @@ exports.getScriptFeed = (req, res, next) => {
     RV: scriptRV,
     SN: scriptSN
   });
+
+  let zaIndices = []; // this is an array of indices for where the ZA posts are going to be in the feed
+  if (scriptZA === '1'){
+    zaIndices = [19];
+  }
+  if (scriptZA === '2'){
+    zaIndices = [15,21];
+  }
+  if (scriptZA === '3'){
+    zaIndices = [2,7,15,23];
+  }
+  if (scriptZA === '4'){
+    zaIndices = [2,5,8,9,17,19,20,23,27];
+  }
+
+  let numZA = zaIndices.length;
+
   
   /*User.findOne({ email: participantID + '@gmail.com'}, (err, existingUser) => {
     if (err) { return next(err); }
@@ -573,14 +590,14 @@ exports.getScriptFeed = (req, res, next) => {
     // console.log('PARAMETERS: ', req.params.AL, req.params.RV, req.params.SN, req.params.ZA);
     console.log('CHECK THIS NOW what: ', req.query.AL, req.query.ZA);
     console.log('Condition is : ', typeof(req.query.ZA));
-      Script.find(
+      Script.find( // generate a feed that has too many posts, then delete normal posts such that the ZA posts are in the right spot
       {$or:[
         {"AL":scriptAL},
         {"RV":scriptRV},
         {"SN":scriptSN},
         {$and: [
           {"ZA": scriptZA},
-          {"feedOrder": { $lte :  30}}
+          {"feedOrder": { $lte :  31}}
         ]},
         {$and: [
           {"post_class": "normal"},
@@ -597,32 +614,32 @@ exports.getScriptFeed = (req, res, next) => {
         } 
       }).exec(function (err, script_feed) {
           if (err) { return next(err); }
+          // remove all the za posts and stick them in this array
+          
+          
+          // So the issue is that the last 9 elements in the array are not all za posts, even though they should be
+          
+          console.log("Script Size was (1): "+ script_feed.length);
+          
+          let zaPosts = script_feed.splice(30, numZA);
 
+          console.log("Script Size was (2): "+ script_feed.length);
 
-          let numVax = Number(scriptZA); // number of frame posts
-          if (scriptZA === '3'){
-            numVax = 4;
-          } 
-          else if (scriptZA === '4'){
-            numVax = 9;
+          for (post of zaPosts){
+            console.log('POST');
+            console.log(post);
           }
 
-          if (scriptZA === 1){
-            script_feed.splice(27, 1);
-            // delete the 27th element
-          }
-          else{
-            let curDel = 3; // we're going to delete the element at index 3 and increment
-            for (let i = 0; i<numVax; i++){
-              console.log('za is ', scriptZA);
-              console.log('i is ', i);
-              console.log('numVax ', numVax);
-              script_feed.splice(curDel, 1);
-              curDel += 3;
-            }
+
+          // Add all the zaPosts to their appropriate spot in the array
+          for (let i = 0; i<numZA; i++){
+            zaPosts[i].feedOrder = zaIndices[i] + 1;
+            script_feed.splice(zaIndices[i], 1, zaPosts[i]);
           }
 
-          // ok it's not working
+
+
+
           
 
 

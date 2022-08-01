@@ -34,7 +34,7 @@ block content
           //- img.ui.avatar.image(src=cdn+'/profile_pictures/'+val.actor.profile.picture)
           //- span=val.actor.profile.name  
           a(href='#')
-            img.ui.avatar.image(src=cdn+'/profile_pictures/'+val.actor.profile.picture)
+            img.ui.avatar.image(src=cdn+'/profile_pictures/'+val.actor.profile.picture)       
             span=val.actor.profile.name
         //-div(style="position: relative; z-index: 1;")
           img(src="image.png" style="position: absolute; z-index: 2;")
@@ -133,7 +133,8 @@ block content
         .extra.content
           .ui.fluid.left.labeled.right.icon.input
             .ui.label
-              img.ui.avatar.image(src='/profile_pictures/genericphoto6.png', name="You")           
+              //- img.ui.avatar.image(src='/profile_pictures/genericphoto6.png', name="You")
+              img.ui.avatar.image(src="https://gravatar.com/avatar/4cacc6923e96a42bdcff347ebee7385f?s=60&d=retro", name="You" || user.username || user.id)                       
             input.newcomment(type='text', placeholder='Write a Comment')
             i.big.send.link.icon
 
