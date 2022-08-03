@@ -502,6 +502,8 @@ exports.getScriptFeed = (req, res, next) => {
   });
 
   let zaIndices = []; // this is an array of indices for where the ZA posts are going to be in the feed
+  // change this to reorder the za posts within the feed
+  // do not use indices 1,3,9,10,12,16,18,22,25 as these are slots designated for the other conditions
   if (scriptZA === '1'){
     zaIndices = [19];
   }
@@ -517,23 +519,6 @@ exports.getScriptFeed = (req, res, next) => {
 
   let numZA = zaIndices.length;
 
-  
-  /*User.findOne({ email: participantID + '@gmail.com'}, (err, existingUser) => {
-    if (err) { return next(err); }
-    if (existingUser) {
-      req.flash('errors', { msg: 'Account for that participant ID already exists' });
-      return res.redirect('/signup'); // make sure pids are unique or this will be weird
-    }
-    user.save((err) => {
-      if (err) { return next(err); }
-      req.logIn(user, (err) => { 
-        if (err) {
-          return next(err);
-        }
-      });
-    });
-  });*/
-
 
   user.save((err) => {
 
@@ -546,50 +531,8 @@ exports.getScriptFeed = (req, res, next) => {
       console.log(users);
     })
 
-    req.logIn(user, (err) => { 
-      console.log("$#$#$#$#$#$#$START GET FEED$#$#$$#$#$#$#$#$#$#$#$#$#");
-      //console.log("time_diff  is now "+time_diff);
-      //console.log("time_limit  is now "+time_limit);
-      //study2_n0_p0
-      console.log("$#$#$#$#$#$#$START GET FEED$#$#$$#$#$#$#$#$#$#$#$#$#");
-      var scriptFilter = "";
-      // console.log('@@@@@@ what can we get from request here: ', req);
-      console.log('@@@@@@ what the param has: ', req.params.caseId)
-
+    req.logIn(user, (err) => {   
     
-
-    // var profileFilter = req.params.caseId;
-    //study3_n20, study3_n80
-
-
-
-    console.log('what is this req.params.caseId: ', (req.params.caseId));
-    // scriptFilter = req.params.caseId;
-
-    //req.params.modId
-    console.log("#############SCRIPT FILTER IS NOW " + scriptFilter);
-    var time_now = Date.now();
-    // var time_diff = time_now - req.user.createdAt;
-    var time_diff = 0;
-    //var today = moment();
-    //var tomorrow = moment(today).add(1, 'days');
-    var one_days = 86400000 * 1; //one day in milliseconds
-    // var time_limit = time_diff - one_days; 
-    
-    //{
-    // var scriptAL = "";
-    // var scriptRV = "";
-    // var scriptSN = "";
-    // var scriptZA = "";
-
-    // scriptAL = req.query.AL;
-    // scriptRV = req.query.RV;
-    // scriptSN = req.query.SN;
-    // scriptZA = req.query.ZA;
-
-    // console.log('PARAMETERS: ', req.params.AL, req.params.RV, req.params.SN, req.params.ZA);
-    console.log('CHECK THIS NOW what: ', req.query.AL, req.query.ZA);
-    console.log('Condition is : ', typeof(req.query.ZA));
       Script.find( // generate a feed that has too many posts, then delete normal posts such that the ZA posts are in the right spot
       {$or:[
         {"AL":scriptAL},
@@ -619,16 +562,10 @@ exports.getScriptFeed = (req, res, next) => {
           
           // So the issue is that the last 9 elements in the array are not all za posts, even though they should be
           
-          console.log("Script Size was (1): "+ script_feed.length);
           
           let zaPosts = script_feed.splice(30, numZA);
 
-          console.log("Script Size was (2): "+ script_feed.length);
-
-          for (post of zaPosts){
-            console.log('POST');
-            console.log(post);
-          }
+          console.log("This is the last post", script_feed[29]);
 
 
           // Add all the zaPosts to their appropriate spot in the array
@@ -637,23 +574,13 @@ exports.getScriptFeed = (req, res, next) => {
             script_feed.splice(zaIndices[i], 1, zaPosts[i]);
           }
 
-
-
-
-          
-
-
-
-
-
-
           console.log("Script Size is now: "+ script_feed.length);
 
 
 
 
 
-          res.render('profilePic', { script: script_feed, script_type: scriptFilter});
+          res.render('profilePic', { script: script_feed, script_type: ""});
 
 
 

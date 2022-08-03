@@ -29,6 +29,8 @@ async function readData() {
         await console.log("Start reading data from .csv files")
         actors_list = await CSVToJSON().fromFile('./input/actors.csv');
         posts_list = await CSVToJSON().fromFile('./input/posts.csv');
+
+
         comment_list = await CSVToJSON().fromFile('./input/replies.csv');
         notification_list = await CSVToJSON().fromFile('./input/notifications.csv');
         notification_reply_list = await CSVToJSON().fromFile('./input/actor_replies.csv');
