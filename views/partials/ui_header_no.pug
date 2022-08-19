@@ -32,20 +32,20 @@
     else
       a.item.newpost
         i.big.write.square.icon
-      a.item(href='/notifications') 
+      a.item() 
         i.big.alarm.icon
       .ui.simple.dropdown.item
         if user.profile.picture
           img.ui.mini.spaced.circular.image(src='/user_post/'+user.profile.picture)
         else
           img.ui.mini.spaced.circular.image(src=user.gravatar(60))
-        i.dropdown.icon
-        .menu
-          a.item(href='/account') My Account
-          .divider
-          a.item(href='/me') My Profile
-          .divider
-          a.item(href='/logout') Logout
+        //- i.dropdown.icon
+        //- .menu
+        //-   a.item(href='/account') My Account
+        //-   .divider
+        //-   a.item(href='/me') My Profile
+        //-   .divider
+        //-   a.item(href='/logout') Logout
 
 
 
