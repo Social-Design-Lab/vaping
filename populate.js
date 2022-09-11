@@ -195,8 +195,10 @@ async function doPopulate() {
                                 console.log("Something went wrong in Saving POST!!!");
                                 callback(err);
                             }
+                            else{
                             console.log('Saved New Post: ' + script.id);
                             callback();
+                            }
                         });
                     }
                     else {
@@ -210,7 +212,7 @@ async function doPopulate() {
               function (err) {
                   if (err) {
                       console.log("END IS WRONG!!!");
-                      callback(err);
+                      //callback(err);
                   }
                   //return response
                   console.log("All DONE WITH POSTS!!!")

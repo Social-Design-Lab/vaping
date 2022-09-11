@@ -16,8 +16,8 @@ const flash = require('express-flash');
 const path = require('path');
 const mongoose = require('mongoose');
 const passport = require('passport');
-const expressValidator = require('express-validator');
-const expressStatusMonitor = require('express-status-monitor');
+//const expressValidator = require('express-validator');
+//const expressStatusMonitor = require('express-status-monitor');
 
 // see if we can check their status several times a day? every 3 or 4 hours..
 // emails.. create a user.. run the schedule function...
@@ -285,7 +285,7 @@ app.set('view engine', 'pug');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(expressValidator());
+//app.use(expressValidator());
 app.use(session({
   resave: true,
   saveUninitialized: true,
