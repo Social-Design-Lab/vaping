@@ -1,7 +1,7 @@
 id,body,picture,actor,old_time,time_oneDayStudy,time,feed_order,post_class,condition1,condition2,condition3,condition4,norm_r15,norm_r30,norm_r60,ALID_1_control,ALID_2_health effects,ALID_3_social impact,RVID_1_healthy formal,RVID_2_healthy informal,RVID_3_unhealthy formal,RVID_4_unhealthy informal,SNID_1_drinking,SNID_2_drinking myth,SNID_3_ drinking myth intervene,Norm_1,norm_2,Norm_3
-113,Saw a little friend on a walk today!,post113.png,kaykay027,33:41:00,-2:54:52,-0:59:07,1,normal,0,0,0,0,0,0,0,,,,,,,,,,,,,
-150,Ugh right?,LungDamage_Harm_v1.jpg,nickmoree13,6:22,-20:19:53,-1:11:03,2,2_health effects,0,1,0,0,0,0,0,,1,,,,,,,,,,,
-151,Ugh right? So much for that D1 scholarship huh Nick?,LungDamage_Social_v1.jpg,nickmoree13,34:54:00,-37:13:04,-1:11:03,2,3_social impact,0,0,0,0,0,0,0,,,1,,,,,,,,,,
+113,Saw a little friend on a walk today!,post113.jpeg,kaykay027,33:41:00,-2:54:52,-0:59:07,1,normal,0,0,0,0,0,0,0,,,,,,,,,,,,,
+150,Ugh right?,LungDamage_Harm_v1.jpeg,nickmoree13,6:22,-20:19:53,-1:11:03,2,2_health effects,0,1,0,0,0,0,0,,1,,,,,,,,,,,
+151,Ugh right? So much for that D1 scholarship huh Nick?,LungDamage_Social_v1.jpeg,nickmoree13,34:54:00,-37:13:04,-1:11:03,2,3_social impact,0,0,0,0,0,0,0,,,1,,,,,,,,,,
 209,Ugh right? ,controlmessage_02.png,nickmoree13,,,-1:11:03,2,1_vaping control,1,0,0,0,0,0,0,1,,,,,,,,,,,,
 115,graduated ✌️,eh_post.png,eric_hz,34:17:00,-2:30:29,-1:43:47,3,normal,0,0,0,0,0,0,0,,,,,,,,,,,,,
 126,Girls just wanna have fun,ash_p1.png,lisabeth111,21:06,-4:00:04,-1:48:08,4,3_Drink+M+I,0,0,0,0,0,0,0,,,,,,,,,,1,,,
@@ -20,8 +20,8 @@ id,body,picture,actor,old_time,time_oneDayStudy,time,feed_order,post_class,condi
 
 #icecream #brownies #sogood",hho_icecream.png,ballerj,#VALUE!,-4:35:31,-2:30:29,5,4_unhealthy informal,0,0,0,1,0,0,0,,,,,,,1,,,,,,
 116,first place 💪,ng_post.png,nathan89,#VALUE!,-7:51:08,-2:54:52,6,normal,0,0,0,0,0,0,0,,,,,,,,,,,,,
-152,You are what you vape 🤷‍♀️🤷‍♀️,Chemicals_Harm_v1.jpg,marchii2,27:05:00,-4:48:36,-3:37:14,7,2_health effects,0,1,0,0,0,0,0,,1,,,,,,,,,,,
-153,You are what you vape 🤷‍♀️🤷‍♀️,Chemicals_Social_v1.jpg,marchii2,39:57:00,-13:18:18,-3:37:14,7,3_social impact,0,0,1,0,0,0,0,,,1,,,,,,,,,,
+152,You are what you vape 🤷‍♀️🤷‍♀️,Chemicals_Harm_v1.jpeg,marchii2,27:05:00,-4:48:36,-3:37:14,7,2_health effects,0,1,0,0,0,0,0,,1,,,,,,,,,,,
+153,You are what you vape 🤷‍♀️🤷‍♀️,Chemicals_Social_v1.jpeg,marchii2,39:57:00,-13:18:18,-3:37:14,7,3_social impact,0,0,1,0,0,0,0,,,1,,,,,,,,,,
 210,#clean,controlmessage_01.png,marchii2,,,-3:37:14,7,1_vaping control,1,0,0,0,0,0,0,1,,,,,,,,,,,,
 140,"This tastes as great as it looks! And check out all of the nutrients on the plate! The @HealthyHeartsOrganization recommends that you try to eat food from a variety of food groups. Here we have vegetables, protein, and more.  
 
@@ -38,8 +38,8 @@ id,body,picture,actor,old_time,time_oneDayStudy,time,feed_order,post_class,condi
 215,Girls just wanna have fun,ash_p2.png,claire_bouf,,,-4:35:31,10,1_Drink ,1,0,0,0,0,0,0,,,,,,,,1,,,,,
 216,Girls just wanna have fun,ash_p2.png,claire_bouf,,,-4:35:31,10,2_Drink+M,0,1,0,0,0,0,0,,,,,,,,,1,,,,
 119,road trip with the best,cj_post1.png,jcoop,35:20:00,-1:48:08,-4:48:36,11,normal,0,0,0,0,0,0,0,,,,,,,,,,,,,
-154,Not tryna get MORE anxiety 🙄,Mood_Harm_v1.jpg,nickmoree13,#VALUE!,-18:19:09,-5:49:25,12,2_health effects,0,1,0,0,0,0,0,,1,,,,,,,,,,,
-155,Not tryna get MORE anxiety 🙄,Mood_Social_v1.jpg,nickmoree13,3:45,-9:40:38,-5:49:25,12,3_social impact,1,0,0,0,0,0,0,,,1,,,,,,,,,,
+154,Not tryna get MORE anxiety 🙄,Mood_Harm_v1.jpeg,nickmoree13,#VALUE!,-18:19:09,-5:49:25,12,2_health effects,0,1,0,0,0,0,0,,1,,,,,,,,,,,
+155,Not tryna get MORE anxiety 🙄,Mood_Social_v1.jpeg,nickmoree13,3:45,-9:40:38,-5:49:25,12,3_social impact,1,0,0,0,0,0,0,,,1,,,,,,,,,,
 211,"hot, hot",controlmessage_03.png,nickmoree13,,,-5:49:25,12,1_vaping control,0,0,0,0,0,0,0,1,,,,,,,,,,,,
 121,#nyc,jphoto_post1.png,juan_photography,#VALUE!,-19:48:53,-5:51:12,13,normal,0,0,1,0,0,0,0,,,,,,,,,,,,,
 142,"Back with another #FreshFruitFriday post.  Physicians at @CenterforHealthPromotion want you, yes you, to eat more fruit. Do you know what fruit is in season where you live? Here, its cherry season. 
@@ -56,8 +56,8 @@ id,body,picture,actor,old_time,time_oneDayStudy,time,feed_order,post_class,condi
 #burgers #summer #welldone",chp_hamborger.jpg,girlyT,#VALUE!,-14:47:29,-7:10:44,14,4_unhealthy informal,0,0,0,1,0,0,0,,,,,,,1,,,,,,
 123,lmao guys i went ice skating for the first time today and broke my leg oops,owen_post.png,owen_the_oven,21:06,-3:37:14,-7:14:21,15,normal,0,0,0,0,0,0,0,,,,,,,,,,,,,
 124,When the pizza is on its way 👀🍕,lc_post1.jpg,laurenchou3,14:09,-7:14:21,-7:21:28,16,normal,0,0,0,0,0,0,0,,,,,,,,,,,,,
-156,"It could be nice to have a “quick fix,” but at this cost? Not here for it",Nicotine_Harms_v1.jpg,marchii2,46:36:00,-7:10:44,-7:33:49,17,2_health effects,0,1,0,0,0,0,0,,1,,,,,,,,,,,
-157,"It could be nice to have a “quick fix,” but at this cost? Not here for it",Nicotine_Social_v1.jpg,marchii2,28:59:00,-19:13:15,-7:33:49,17,3_social impact,0,0,1,0,0,0,0,,,1,,,,,,,,,,
+156,"It could be nice to have a “quick fix,” but at this cost? Not here for it",Nicotine_Harms_v1.jpeg,marchii2,46:36:00,-7:10:44,-7:33:49,17,2_health effects,0,1,0,0,0,0,0,,1,,,,,,,,,,,
+157,"It could be nice to have a “quick fix,” but at this cost? Not here for it",Nicotine_Social_v1.jpeg,marchii2,28:59:00,-19:13:15,-7:33:49,17,3_social impact,0,0,1,0,0,0,0,,,1,,,,,,,,,,
 212,"really, thank me later",controlmessage_04.png,marchii2,,,-7:33:49,17,1_vaping control,1,0,0,0,0,0,0,1,,,,,,,,,,,,
 160,Profie photo updated!,2913_79168357874_504857874_1875291_3127690_n.jpg,anabohnana,-13:59:31,-13:59:31,-5:49:25,,vaccination,0,0,0,0,1,1,1,,,,,,,,,,,,,
 161,Profie photo updated!,6a44ddcf-e8b4-4950-b53b-fc371b7980bd.jpg,ben_park,-1:43:47,-1:43:47,-5:51:12,,vaccination,0,0,0,0,1,1,1,,,,,,,,,,,,,
@@ -79,7 +79,7 @@ id,body,picture,actor,old_time,time_oneDayStudy,time,feed_order,post_class,condi
 177,Profie photo updated!,Bot-SP18.19.jpg,Trevor,-3:37:14,-3:37:14,-7:14:21,,vaccination,0,0,1,1,0,0,1,,,,,,,,,,,,,
 178,Profie photo updated!,Bot-Sp18.6.jpg,DonDonDonna,-7:14:21,-7:14:21,-7:21:28,,vaccination,0,0,0,1,0,0,1,,,,,,,,,,,,,
 179,Profie photo updated!,eveybarns.jpg,EmmaSmith0214,-13:01:13,-13:01:13,-7:33:49,,vaccination,0,0,0,1,0,0,1,,,,,,,,,,,,,
-180,Profie photo updated!,Bot-SP18.22.png,jiruletheworld,-4:00:04,-4:00:04,-7:33:49,,vaccination,0,0,0,1,0,0,1,,,,,,,,,,,,,
+180,Profie photo updated!,Bot-SP18.22.jpg,jiruletheworld,-4:00:04,-4:00:04,-7:33:49,,vaccination,0,0,0,1,0,0,1,,,,,,,,,,,,,
 181,Profie photo updated!,Bot-Sp18.14.jpg,TimBJenkins,-8:33:05,-8:33:05,-7:33:49,,vaccination,0,0,0,1,0,0,1,,,,,,,,,,,,,
 182,Profie photo updated!,Bot-Sp18.9.JPG,KatieeeM,-16:42:34,-16:42:34,-5:49:25,,vaccination,0,0,0,1,0,0,1,,,,,,,,,,,,,
 183,Profie photo updated!,Bot-Sp18.12.JPG,mariaann,-16:00:48,-16:00:48,-5:51:12,,vaccination,0,0,0,1,0,0,0,,,,,,,,,,,,,
