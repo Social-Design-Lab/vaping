@@ -22,131 +22,6 @@ function shuffle(array) {
   return array;
 }
 
-const profile_posts = 
-[ 
-
-{
-  username:"sweetietooth",
-  name:"Wendy",
-  pronoun:"her",
-  pro_image:"Bot-SP18.17.png",
-  posts: [
-    {
-      picture:"180320-7.jpg",
-      body:"My husband got me the best cupcakes ever!",
-      time:"2 Days Ago"
-    },
-    {
-      picture:"180320-9.jpg",
-      body:"Dark melty chocolate chunks 🍫 Have you tried the Dark Chocolate Chunk?",
-      time:"2 Days Ago"
-    },
-    {
-      picture:"180320-12.jpg",
-      body:"Dang....that’s one sweet peachy looking cupcake 🍑 ",
-      time:"3 Days Ago"
-    },
-    {
-      picture:"180320-13.jpg",
-      body:"These pastries from my hotel were the best thingsever!",
-      time:"3 Days Ago"
-    },
-    {
-      picture:"180320-8.jpg",
-      body:"What A Time, To Be Alive!!! Home barbecue on the way 💗❤💗",
-      time:"3 Days Ago"
-    },
-    {
-      picture:"180320-10.jpg",
-      body:"Is it really a trip to the South without a stop at Waffle House? 📷",
-      time:"4 Days Ago"
-    }
-  ]
-},
-
-{
-  username:"southerngirlCel",
-  name:"Celia",
-  pronoun:"her",
-  pro_image:"bot43.jpg",
-  posts: [
-    {
-      picture:"ebpost75.png",
-      body:"Steak on my birthday! so lucky to have such great friends to share my special day with :):)",
-      time:"2 Days Ago"
-    },
-    {
-      picture:"ebpost76.jpg",
-      body:"And the bday festivities continue!! My nana always makes the best food, there’s just always way too much!!!",
-      time:"2 Days Ago"
-    },
-    {
-      picture:"ebpost77.jpg",
-      body:"croissants like these are why I love trips to the bakeries :) they make for a great phot shoot too",
-      time:"3 Days Ago"
-    },
-    {
-      picture:"ebpost78.jpg",
-      body:"been trying to eat clean the last few weeks, but my sweet tooth couldn’t resist…",
-      time:"3 Days Ago"
-    },
-    {
-      picture:"ebpost79.jpg",
-      body:"Steve’s in heaven! I don’t blame him, how good does that look ??!",
-      time:"3 Days Ago"
-    },
-    {
-      picture:"ebpost80.jpg",
-      body:"another day, another trip to the bakery…",
-      time:"4 Days Ago"
-    }
-  ]
-},
-
-
-
-{
-  username:"MedicalRyan",
-  name:"Ryan",
-  pronoun:"his",
-  pro_image:"Bot-Sp18.2.jpg",
-  posts: [
-    {
-      picture:"180320-1.png",
-      body:"Cheap taco is also good taco.",
-      time:"2 Days Ago"
-    },
-    {
-      picture:"180320-2.png",
-      body:"Personally prefer American cheese for my tacos, but this new place around my house is decent.",
-      time:"2 Days Ago"
-    },
-    {
-      picture:"180320-3.png",
-      body:"Home-made salsa by mama.",
-      time:"3 Days Ago"
-    },
-    {
-      picture:"180320-4.png",
-      body:"Amazing!",
-      time:"3 Days Ago"
-    },
-    {
-      picture:"180320-5.png",
-      body:"Seafood taco. Miss my lobster taco in NYC.",
-      time:"3 Days Ago"
-    },
-    {
-      picture:"180320-6.png",
-      body:"Guac should never be extra. ",
-      time:"4 Days Ago"
-    }
-  ]
-}
-
-]
-
-
 /**
  * GET /
  * List of Script posts for Feed
@@ -484,13 +359,15 @@ exports.getScriptPost = (req, res) => {
 exports.getScriptFeed = (req, res, next) => {
 
   let participantID = Math.floor(Math.random() * 5000000); // replace this with the next line once we have participantID in URL
-  // let participantID = req.query.pID;
+  // let participantID = req.query.pID; ?admin=true
 
   let scriptZA = req.query.ZA;
   let scriptAL = req.query.AL;
   let scriptRV = req.query.RV;
   let scriptSN = req.query.SN;
-  
+
+  let admin = req.query.admin;
+
   const user = new User({
     email: participantID + '@gmail.com',
     password: 'password',
@@ -531,8 +408,29 @@ exports.getScriptFeed = (req, res, next) => {
       console.log(users);
     })
 
-    req.logIn(user, (err) => {   
-    
+    req.logIn(user, () => {   
+
+      if (admin)
+      {
+        Script.find( // generate a feed that has too many posts, then delete normal posts such that the ZA posts are in the right spot
+        .sort('feedOrder') 
+        .populate('actor')
+        .populate({ 
+        path: 'comments.actor',
+        populate: {
+          path: 'actor',
+          model: 'Actor'
+        } 
+      }).exec(function (err, script_feed) {
+          if (err) { return next(err); }
+          
+          res.render('profilePic', { script: script_feed, script_type: ""});
+
+        });//end of Script.find()
+
+      }//end of IF (ADMIN)
+
+    else{
       Script.find( // generate a feed that has too many posts, then delete normal posts such that the ZA posts are in the right spot
       {$or:[
         {"AL":scriptAL},
@@ -626,7 +524,9 @@ exports.getScriptFeed = (req, res, next) => {
         // }       
         // res.render('pilot-study1-test', { script: finalfeed, comment_type: comment_type, script_type: scriptFilter});
         // res.render('feed_pilot', { script: finalfeed, script_type: scriptFilter});
-        });//end of Script.find()
+      });//end of Script.find()
+    }//end of else
+
     })
   })  
 };//end of .getScript
