@@ -462,7 +462,7 @@ function createPostRepliesInstances() {
                         comment_detail.commentID = new_replies.id;
                         comment_detail.class = new_replies.class;
                         comment_detail.module = new_replies.module;
-                        comment_detail.likes = getLikesComment();
+                        comment_detail.likes = new_replies.likes || getLikesComment();
                         comment_detail.time = timeStringToNum(new_replies.time);
                         comment_detail.actor = act;
                         comment_detail.category = new_replies.category;
