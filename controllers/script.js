@@ -412,7 +412,7 @@ exports.getScriptFeed = (req, res, next) => {
 
       if (admin)
       {
-        Script.find( // generate a feed that has too many posts, then delete normal posts such that the ZA posts are in the right spot
+        Script.find()// generate a feed that has too many posts, then delete normal posts such that the ZA posts are in the right spot
         .sort('feedOrder') 
         .populate('actor')
         .populate({ 
@@ -1123,4 +1123,3 @@ exports.postUpdateUserPostFeedAction = (req, res, next) => {
     });
   });
 }
-
