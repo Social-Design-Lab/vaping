@@ -386,7 +386,7 @@ app.post('/account/profile', passportConfig.isAuthenticated, useravatarupload.si
 
 // Add the get gusts ...
 // app.get('/newsfeed/condition1', userController.getGuest);
-// app.get('/newsfeed/condition1', scriptController.getScriptFeed);
+// app.get('/1', scriptController.getScriptFeed);
 // app.get('/newsfeed/condition2', scriptController.getScriptFeed);
 // app.get('/newsfeed/condition3', scriptController.getScriptFeed);
 // app.get('/newsfeed/condition4', scriptController.getScriptFeed);

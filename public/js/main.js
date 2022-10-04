@@ -4,19 +4,10 @@
 $('#content').hide();
 $('#loading').show();
 
-$(document).ready(function(){
-     $('.ui.sticky')
-  .sticky({
-    context: '#example2'
-  });
 
- })
-
-
-$(function() {
-  $('example2').sticky({
-    top:  200
-  })
+document.addEventListener("DOMContentLoaded", function(event) { 
+  var name  = document.getElementById('demo');
+  console.log("succeed");
 });
 
 
@@ -190,6 +181,10 @@ $('.right.floated.time.meta, .date').each(function() {
   });
 
 
+
+
+
+
 ////////////////////
 $("input.newcomment").keyup(function(event) {
     //i.big.send.link.icon
@@ -238,8 +233,7 @@ $("i.big.send.link.icon").click(function() {
 
   }
 });
-  ///////////////////
-
+  
 
   //this is the REPORT User button
   $('button.ui.button.report')
