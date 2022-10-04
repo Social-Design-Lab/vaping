@@ -145,7 +145,7 @@ id,body,actor,reply,time,class,likes
 150,Love it 💕,c_russ,29,0:12,,0
 151,"Such a beautiful scene, you captured it so well.",juan_photography,29,0:20,,0
 152,Those views are amazing,nickmoree13,29,1:00,,
-153,Love the flowers!,honeylove,29,1:29,,
+153,Love the flowers!,honeylove,29,1:29,,0
 154,WOW! That looks delicious!!!,kikokano,30,0:01,,0
 155,What recipe did you use? I've been on the hunt for the perfect banana bread and am trying out as many reciptes as possible!,ria_camiii,30,0:19,,0
 156,YUM,pr1ncessdiana,30,0:50,,0
@@ -725,8 +725,8 @@ id,body,actor,reply,time,class,likes
 730,Miss me with that,mianahyde ,151,0:33,social impact,0
 731,And here I thought vapes couldn’t get any more disgusting 🙄🤮 ,laura_tran ,152,0:38,health effects,
 732,"Eh, safe or sorry, I guess",luke_porter3 ,152,3:01,health effects,
-733,And here I thought vapes couldn’t get any more disgusting 🙄🤮 ,laura_tran ,153,0:38,social impact,
-734,"Eh, safe or sorry, I guess",luke_porter3 ,153,3:01,social impact,
+733,And here I thought vapes couldn’t get any more disgusting 🙄🤮 ,laura_tran ,153,0:38,social impact,0
+734,"Eh, safe or sorry, I guess",luke_porter3 ,153,3:01,social impact,0
 735,"Moody? Thank you, next",alicia_murary,154,0:19,health effects,0
 736,"Moody? Thank you, next",alicia_murary,155,0:19,social impact,0
 737,"girl, nah",arianabuda22 ,156,0:08,health effects,0
