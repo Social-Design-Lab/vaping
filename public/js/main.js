@@ -323,6 +323,7 @@ $("i.big.send.link.icon").click(function() {
 ;
 
   //this is the LIKE button
+  //#likeButton.ui.basic.button
   $('#likeButton.ui.basic.button')
   .on('click', function() {
 
@@ -484,92 +485,6 @@ $("i.big.send.link.icon").click(function() {
 
   });
 
-  //User wants to REREAD
-  $('.ui.button.reread')
-  .on('click', function() {
-    //.ui.active.dimmer
-    $(this).closest( ".ui.dimmer" ).removeClass( "active" );
-    $(this).closest( ".ui.fluid.card.dim" ).find(".ui.inverted.read.dimmer").dimmer('hide');
-     var postID = $(this).closest( ".ui.fluid.card.dim" ).attr( "postID" );
-     var reread = Date.now();
-     console.log("##########REREAD######SEND TO DB######: post "+postID+" at time "+reread);
-     $.post( "/feed", { postID: postID, start: reread, _csrf : $('meta[name="csrf-token"]').attr('content') } );
-     //maybe send this later, when we have a re-read event to time???
-     //$.post( "/feed", { postID: postID, like: like, _csrf : $('meta[name="csrf-token"]').attr('content') } );
-
-  });
-
-
-
- //this is the "no" button when responding to the content moderation question
-  $('.disagree')
-  .on('click', function() {
-    var comment = $(this).parents( ".ui.info.message").children('.comment');
-    var postID = $(this).closest( ".ui.fluid.card" ).attr( "postID" );
-    var typeID = $(this).closest( ".ui.fluid.card" ).attr( "type" );
-    var commentID = comment.attr("commentID");
-    var currentQuestion = $(this).parents('.ui.info.message');
-    var nextQuestion = $(this).parents('.ui.info.message').siblings('.comment.modRespondedNo');
-    var clickedNo = Date.now();
-    $(this).closest( ".ui.fluid.card" ).css({'background-color':''});
-    $(this).closest('.info.message').css({'box-shadow':''});
-    $(this).parent('.content').siblings('.ui.inverted.dimmer').removeClass('disabled').addClass('active');
-
-    $.post( "/feed", { postID: postID, commentID: commentID, clickedNo: clickedNo, _csrf : $('meta[name="csrf-token"]').attr('content') }, function(){
-      currentQuestion.hide();
-      nextQuestion.show();
-    } );
-
-  });
-
-  //this is the "view policy" button after responding to the content moderation question
-   $('.modInfo')
-   .on('click', function() {
-     var comment = $(this).parents( ".comment" );
-     var postID = $(this).closest( ".ui.fluid.card" ).attr( "postID" );
-     var typeID = $(this).closest( ".ui.fluid.card" ).attr( "type" );
-     var commentID = comment.attr("commentID");
-     var clickedViewPolicy = Date.now();
-     //$(this).hide();
-     $(this).parent('.content').siblings('.ui.inverted.dimmer').removeClass('disabled').addClass('active');
-     //$(this).siblings(".noModInfo").hide();
-     //console.log("#########COMMENT FLAG:  PostID: "+postID+", Comment ID: "+commentID+"  TYPE is "+typeID+" at time "+clickedViewPolicy);
-
-     $.post( "/feed", { postID: postID, commentID: commentID, clickedViewPolicy: clickedViewPolicy, _csrf : $('meta[name="csrf-token"]').attr('content') }, function(){
-       window.location.href='/policy';
-     } );
-
-   });
-
- //this is the "no, don't view policy" button after responding to the content moderation question
-  $('.noModInfo')
-  .on('click', function() {
-    var comment = $(this).parents( ".comment" );
-    var postID = $(this).closest( ".ui.fluid.card" ).attr( "postID" );
-    var typeID = $(this).closest( ".ui.fluid.card" ).attr( "type" );
-    var commentID = comment.attr("commentID");
-    var changeHeader = $(this).siblings(".header");
-    var loaderDimmer = $(this).parent('.content').siblings('.ui.inverted.dimmer');
-    var clickedNoViewPolicy = Date.now();
-    $(this).hide();
-    $(this).siblings(".modInfo").hide();
-    $(this).parent('.content').siblings('.ui.inverted.dimmer').removeClass('disabled').addClass('active');
-    //console.log("#########COMMENT FLAG:  PostID: "+postID+", Comment ID: "+commentID+"  TYPE is "+typeID+" at time "+clickedNoViewPolicy);
-    $.post( "/feed", { postID: postID, commentID: commentID, clickedNoViewPolicy: clickedNoViewPolicy, _csrf : $('meta[name="csrf-token"]').attr('content') }, function(){
-      changeHeader.text("Thank you! Your response has been recorded.");
-      loaderDimmer.removeClass('active').addClass('disabled');
-    } );
-  });
-
-  //this is to track if a user clicked to view the policy from the dropdown menu
-  $(".viewPolicyDropdown")
-  .on('click', function(){
-    var viewPolicyDropdownTime = Date.now();
-    $.post( "/view_policy", { viewPolicyDropdownTime: viewPolicyDropdownTime, _csrf : $('meta[name="csrf-token"]').attr('content') }, function(){
-      window.location.href='/policy';
-    } );
-  })
-
   //this is the POST FLAG button
   //flag a post
   $('.flag.button')
@@ -605,39 +520,7 @@ $("i.big.send.link.icon").click(function() {
 
   });
 
-  //User wants to REREAD
-  $('.ui.button.reread')
-  .on('click', function() {
-    //.ui.active.dimmer
-    $(this).closest( ".ui.dimmer" ).removeClass( "active" );
-    $(this).closest( ".ui.fluid.card.dim" ).find(".ui.inverted.read.dimmer").dimmer('hide');
-
-
-     var postID = $(this).closest( ".ui.fluid.card.dim" ).attr( "postID" );
-     var reread = Date.now();
-     //console.log("##########REREAD######SEND TO DB######: post "+postID+" at time "+reread);
-     $.post( "/feed", { postID: postID, start: reread, _csrf : $('meta[name="csrf-token"]').attr('content') } );
-     //maybe send this later, when we have a re-read event to time???
-     //$.post( "/feed", { postID: postID, like: like, _csrf : $('meta[name="csrf-token"]').attr('content') } );
-
-  });
-
-//adding animations to the moderation comment
-$('.ui.info.message')
-.visibility({
-  once       : false,
-  continuous : false,
-  observeChanges: true,
-  //throttle:100,
-  initialCheck : true,
-
-  onBottomVisible:function(calculations){
-    if($(this).is(':visible')){
-      $(this).transition('pulse');
-    }
-  }
-});
-
+  
 //////TESTING
 $('.ui.fluid.card .img.post')
 .visibility({
@@ -667,10 +550,10 @@ $('.ui.fluid.card .img.post')
     //console.log(postID);
     //Don't record it if it's longer than 24 hours, do this check because refresh causes all posts to be marked as "viewed" for 49 years.(???)
     if(totalViewTime < 86400000){
-      $.post( "/feed", { postID: postID, viewed: totalViewTime, _csrf : $('meta[name="csrf-token"]').attr('content') } );
+      $.post( "/feed", { postID: postID, start: totalViewTime, _csrf : $('meta[name="csrf-token"]').attr('content') } );
     }
-    //console.log("Total time: " + totalViewTime);
-    //console.log($(this).siblings(".content").children(".description").text());
+    console.log("Total time: " + totalViewTime);
+    console.log($(this).siblings(".content").children(".description").text());
   },
 //end handling downward scrolling
 
@@ -695,7 +578,7 @@ $('.ui.fluid.card .img.post')
       //console.log(postID);
       //Don't record it if it's longer than 24 hours, do this check because refresh causes all posts to be marked as "viewed" for 49 years. (???)
       if(totalViewTime < 86400000){
-        $.post( "/feed", { postID: postID, viewed: totalViewTime, _csrf : $('meta[name="csrf-token"]').attr('content') } );
+        $.post( "/feed", { postID: postID, start: totalViewTime, _csrf : $('meta[name="csrf-token"]').attr('content') } );
       }
       //console.log("Total time: " + totalViewTime);
       //console.log($(this).siblings(".content").children(".description").text());
