@@ -441,32 +441,32 @@ app.get('/profile_info', passportConfig.isAuthenticated, function (req, res) {
 
 
 //User's Page
-app.get('/me', passportConfig.isAuthenticated, userController.getMe);
+////app.get('/me', passportConfig.isAuthenticated, userController.getMe);
 
-app.get('/completed', passportConfig.isAuthenticated, userController.userTestResults);
+//app.get('/completed', passportConfig.isAuthenticated, userController.userTestResults);
 
-app.get('/notifications', passportConfig.isAuthenticated, notificationController.getNotifications);
+//app.get('/notifications', passportConfig.isAuthenticated, notificationController.getNotifications);
 
-app.get('/test_comment', function (req, res) {
+/*app.get('/test_comment', function (req, res) {
   res.render('test', {
     title: 'Test Comments'
   });
-});
+});*/
 
-app.get('/login', userController.getLogin);
+//app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
-app.get('/logout', userController.logout);
+//app.get('/logout', userController.logout);
 app.get('/forgot', userController.getForgot);
 app.post('/forgot', userController.postForgot);
-app.get('/reset/:token', userController.getReset);
+//app.get('/reset/:token', userController.getReset);
 app.post('/reset/:token', userController.postReset);
-app.get('/signup', userController.getSignup);
+//app.get('/signup', userController.getSignup);
 app.post('/signup', userController.postSignup);
 
-app.get('/account/signup_info', passportConfig.isAuthenticated, userController.getSignupInfo);
+//app.get('/account/signup_info', passportConfig.isAuthenticated, userController.getSignupInfo);
 app.post('/account/signup_info_post', passportConfig.isAuthenticated, useravatarupload.single('picinput'), check, userController.postSignupInfo);
 
-app.post('/account/profile', passportConfig.isAuthenticated, useravatarupload.single('picinput'), check, userController.postUpdateProfile);
+////app.post('/account/profile', passportConfig.isAuthenticated, useravatarupload.single('picinput'), check, userController.postUpdateProfile);
 
 
 app.get('/account', passportConfig.isAuthenticated, userController.getAccount);
@@ -478,7 +478,7 @@ app.post('/user', passportConfig.isAuthenticated, actorsController.postBlockOrRe
 app.get('/bell', passportConfig.isAuthenticated, userController.checkBell);
 
 //getScript
-app.get('/feed', passportConfig.isAuthenticated, scriptController.getScript);
+//app.get('/feed', passportConfig.isAuthenticated, scriptController.getScript);
 app.post('/feed', passportConfig.isAuthenticated, scriptController.postUpdateFeedAction);
 app.post('/pro_feed', passportConfig.isAuthenticated, scriptController.postUpdateProFeedAction);
 app.post('/userPost_feed', passportConfig.isAuthenticated, scriptController.postUpdateUserPostFeedAction);
