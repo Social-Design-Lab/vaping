@@ -50,7 +50,7 @@ const userSchema = new mongoose.Schema({
   AL: Number,
   RV: Number,
   SN: Number,
-
+  ID: Number,
 
   posts: [new Schema({
     type: String, //post, reply, actorReply
