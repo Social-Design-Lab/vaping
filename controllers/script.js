@@ -791,7 +791,7 @@ exports.postUpdateFeedAction = (req, res, next) => {
         if (req.body.start && (req.body.start > user.feedAction[feedIndex].startTime))
         { 
           //console.log("%%%%%% USER.feedAction.startTime  ", user.feedAction[feedIndex].startTime);
-          user.feedAction[feedIndex].startTime = req.body.start;
+          user.feedAction[feedIndex].startTime = 5;
           user.feedAction[feedIndex].rereadTimes++;
           //console.log("%%%%%% NEW START time is now  ", user.feedAction[feedIndex].startTime);
           //console.log("%%%%%% reRead counter is now  ", user.feedAction[feedIndex].rereadTimes); 
