@@ -365,6 +365,7 @@ exports.getScriptFeed = (req, res, next) => {
   let scriptAL = req.query.AL;
   let scriptRV = req.query.RV;
   let scriptSN = req.query.SN;
+  let scriptID = req.query.ID;
 
   let admin = req.query.admin;
 
@@ -375,7 +376,8 @@ exports.getScriptFeed = (req, res, next) => {
     ZA: scriptZA,
     AL: scriptAL,
     RV: scriptRV,
-    SN: scriptSN
+    SN: scriptSN,
+    ID: scriptID
   });
 
   let zaIndices = []; // this is an array of indices for where the ZA posts are going to be in the feed
