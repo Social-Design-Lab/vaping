@@ -26,7 +26,7 @@ id,body,picture,actor,time,feed_order,post_class,ZA,AL,RV,SN,Normal,ALID_1_contr
 180,Profile photo updated!,Bot-SP18.22.jpg,jiruletheworld,-6:35:31,6,vaccination,3,0,0,0,0,,,,,,,,,,,,,,,,-7:33:49
 226,Profile photo updated!,Bot-SP18.22.jpg,jiruletheworld,-6:35:31,6,vaccination,2,0,0,0,0,,,,,,,,,,,,,,,,-7:33:49
 222,Profile photo updated!,Bot-SP18.22.jpg,jiruletheworld,-6:35:31,6,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:33:49
-116,first place 💪,ng_post.png,nathan89,-36:50:31,6,normal,0,0,,0,1,,,,,,,,,,,,,,,,-11:54:52
+116,first place 💪,ng_post.png,nathan89,-36:50:31,66,normal,0,0,,0,0,,,,,,,,,,,,,,,,-11:54:52
 152,You are what you vape 🤷‍♀️🤷‍♀️,Chemicals_Harm_v1.jpeg,marchii2,-6:35:31,7,2_health effects,0,2,,0,0,,1,,,,,,,,,,,,11,,-10:37:14
 153,You are what you vape 🤷‍♀️🤷‍♀️,Chemicals_Social_v1.jpeg,marchii2,-6:35:31,7,3_social impact,0,3,,0,0,,,1,,,,,,,,,,,11,,-10:37:14
 210,#clean,controlmessage_01.png,marchii2,-6:35:31,7,1_vaping control,0,1,,0,0,1,,,,,,,,,,,,,11,,-10:37:14
@@ -47,13 +47,13 @@ id,body,picture,actor,time,feed_order,post_class,ZA,AL,RV,SN,Normal,ALID_1_contr
 182,Profile photo updated!,Bot-Sp18.9.jpg,KatieeeM,-10:37:14,11,vaccination,3,0,0,0,0,,,,,,,,,,,,,,,,-5:49:25
 228,Profile photo updated!,Bot-Sp18.9.jpg,KatieeeM,-10:37:14,11,vaccination,2,0,0,0,0,,,,,,,,,,,,,,,,-5:49:25
 223,Profile photo updated!,Bot-Sp18.9.jpg,KatieeeM,-10:37:14,11,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-5:49:25
-117,magic school bus,jh_post1.png,jhalll,-40:37:14,11,normal,0,0,0,0,1,,,,,,,,,,,,,,,,-8:00:04
+117,magic school bus,jh_post1.png,jhalll,-40:37:14,31,normal,0,0,0,0,1,,,,,,,,,,,,,,,,-8:00:04
 127,Girls just wanna have fun,ash_p2.png,claire_bouf,-8:49:25,10,3_Drink+M+I,0,0,0,3,0,,,,,,,,,,1,,,,12,,-7:35:31
 215,Girls just wanna have fun,ash_p2.png,claire_bouf,-8:49:25,10,1_Drink,0,0,0,1,0,,,,,,,,1,,,,,,12,,-7:35:31
 216,Girls just wanna have fun,ash_p2.png,claire_bouf,-8:49:25,10,2_Drink+M,0,0,0,2,0,,,,,,,,,1,,,,,12,,-7:35:31
 183,Profile photo updated!,Bot-Sp18.12.JPG,mariaann,-10:47:14,12,vaccination,3,0,0,0,0,,,,,,,,,,,,,,,,-5:51:12
 229,Profile photo updated!,Bot-Sp18.12.JPG,mariaann,-10:47:14,12,vaccination,2,0,0,0,0,,,,,,,,,,,,,,,,-5:51:12
-119,road trip with the best,cj_post1.png,jcoop,-11:00:52,13,normal,0,0,0,0,1,,,,,,,,,,,,,,,,-6:35:31
+119,road trip with the best,cj_post1.png,jcoop,-11:00:52,33,normal,0,0,0,0,1,,,,,,,,,,,,,,,,-6:35:31
 154,Not tryna get MORE anxiety 🙄,Mood_Harm_v1.jpeg,nickmoree13,-11:54:52,14,2_health effects,0,2,0,0,0,,1,,,,,,,,,,,,11,,-5:49:25
 155,Not tryna get MORE anxiety 🙄,Mood_Social_v1.jpeg,nickmoree13,-11:54:52,14,3_social impact,0,3,0,0,0,,,1,,,,,,,,,,,11,,-5:49:25
 211,"hot, hot",controlmessage_03.png,nickmoree13,-11:54:52,14,1_vaping control,0,1,0,0,0,1,,,,,,,,,,,,,11,,-5:49:25
@@ -84,13 +84,13 @@ id,body,picture,actor,time,feed_order,post_class,ZA,AL,RV,SN,Normal,ALID_1_contr
 186,Profile photo updated!,Bot-SP18.20.jpg,chefricky,-19:10:44,21,vaccination,3,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
 219,Profile photo updated!,Bot-SP18.20.jpg,chefricky,-19:10:44,21,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
 220,Profile photo updated!,Bot-SP18.20.jpg,chefricky,-19:10:44,21,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-1,Enjoying some bright colors and long walks with good company this winter!,post1.png,_walkwoman_,-7:10:44,9,normal,0,,,,0,,,,,,,,,,,,,,,,-7:10:44
+1,Enjoying some bright colors and long walks with good company this winter!,post1.png,_walkwoman_,-7:10:44,99,normal,0,,,,0,,,,,,,,,,,,,,,,-7:10:44
 160,Profile photo updated!,2913_79168357874_504857874_1875291_3127690_n.jpg,anabohnana,-5:49:25,,vaccination,3,0,0,0,0,,,,,,,,,,,,,,,,-5:49:25
 5,Great start to a beach weekend. We’re doing Wellness Days right.,post5.png,bradlee,-7:33:49,,normal,0,,,,1,,,,,,,,,,,,,,,,-7:33:49
 161,Profile photo updated!,6a44ddcf-e8b4-4950-b53b-fc371b7980bd.jpg,ben_park,-5:51:12,,vaccination,3,0,0,0,0,,,,,,,,,,,,,,,,-5:51:12
 2,"The world might be a little dull at the moment...but having a view like this to walk by reminds me everything will be okay (: and also, that it's always a great day to be a Tar Heel",post2.png,_walkwoman_,-7:14:21,,normal,0,,,,1,,,,,,,,,,,,,,,,-7:14:21
 162,Profile photo updated!,20191207_152953.jpg,vilbert,-7:10:44,,vaccination,3,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-3,miss the good old lax days,post3.jpg,caffeinated,-7:21:28,8,normal,0,,,,1,,,,,,,,,,,,,,,,-7:21:28
+3,miss the good old lax days,post3.jpg,caffeinated,-7:21:28,88,normal,0,,,,1,,,,,,,,,,,,,,,,-7:21:28
 163,Profile photo updated!,2202061519_2b47a5077c_z.jpg,maurine_hume,-7:10:44,,vaccination,3,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
 164,Profile photo updated!,10731353084_c17a5fcd20_b.jpg,ededdneddy,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
 4,it’s Chinese Lantern Festival season!,post4.jpg,caffeinated,-7:33:49,,normal,0,,,,1,,,,,,,,,,,,,,,,-7:33:49
@@ -143,13 +143,13 @@ id,body,picture,actor,time,feed_order,post_class,ZA,AL,RV,SN,Normal,ALID_1_contr
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,
-6,What a view… solid weekend with great weather.,post6.png,bradlee,-7:33:49,,normal,,,,,1,,,,,,,,,,,,,,,,-7:33:49
-7,Look at my new squishmellow! I’m so excited I was able to get my hands on this limited edition one,post7.png,breethebaker,-5:49:25,,normal,,,,,1,,,,,,,,,,,,,,,,-5:49:25
-8,So excited for our next steps! Love my friends!,post8.png,breethebaker,-5:51:12,12,normal,,,,,1,,,,,,,,,,,,,,,,-5:51:12
-9,Studying in the quad with Lydia makes Monday’s that much better,post9.png,kingsaqueen,-7:10:44,,normal,,,,,1,,,,,,,,,,,,,,,,-7:10:44
-10,Currently.,post10.png,kingsaqueen,-7:10:44,,normal,,,,,1,,,,,,,,,,,,,,,,-7:10:44
-11,Mack is Indeed Back,post11.png,lukas_m,-7:10:44,,normal,,,,,1,,,,,,,,,,,,,,,,-7:10:44
-12,Rearrange Us,post12.png,lukas_m,-7:10:44,30,normal,,,,,1,,,,,,,,,,,,,,,,-7:10:44
+6,What a view… solid weekend with great weather.,post6.png,bradlee,-7:33:49,,normal,,,,,0,,,,,,,,,,,,,,,,-7:33:49
+7,Look at my new squishmellow! I’m so excited I was able to get my hands on this limited edition one,post7.png,breethebaker,-5:49:25,,normal,,,,,0,,,,,,,,,,,,,,,,-5:49:25
+8,So excited for our next steps! Love my friends!,post8.png,breethebaker,-5:51:12,12,normal,,,,,0,,,,,,,,,,,,,,,,-5:51:12
+9,Studying in the quad with Lydia makes Monday’s that much better,post9.png,kingsaqueen,-7:10:44,,normal,,,,,0,,,,,,,,,,,,,,,,-7:10:44
+10,Currently.,post10.png,kingsaqueen,-7:10:44,,normal,,,,,0,,,,,,,,,,,,,,,,-7:10:44
+11,Mack is Indeed Back,post11.png,lukas_m,-7:10:44,,normal,,,,,0,,,,,,,,,,,,,,,,-7:10:44
+12,Rearrange Us,post12.png,lukas_m,-7:10:44,30,normal,,,,,0,,,,,,,,,,,,,,,,-7:10:44
 13,Feeling >:( today...,post13.png,karkarw,-7:14:21,15,normal,,,,,,,,,,,,,,,,,,,,,-7:14:21
 14,Mr. Lovenstein made a comic about me...,post14.png,karkarw,-7:21:28,,normal,,,,,,,,,,,,,,,,,,,,,-7:21:28
 15,missing this view a little extra today,post15.png,jonsmith88,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
