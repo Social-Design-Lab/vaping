@@ -383,17 +383,17 @@ exports.getScriptFeed = (req, res, next) => {
   let zaIndices = []; // this is an array of indices for where the ZA posts are going to be in the feed
   // change this to reorder the za posts within the feed
   // do not use indices 1,3,9,10,12,16,18,22,25 as these are slots designated for the other conditions
+  // if (scriptZA === '1'){
+  //   zaIndices = [19];
+  // }
   if (scriptZA === '1'){
     zaIndices = [19];
   }
   if (scriptZA === '2'){
-    zaIndices = [15,21];
+    zaIndices = [2,7,12,16,23];
   }
   if (scriptZA === '3'){
-    zaIndices = [2,7,15,23];
-  }
-  if (scriptZA === '4'){
-    zaIndices = [2,5,8,9,17,19,20,23,27];
+    zaIndices = [2,5,8,10,17,19,20,23,27];
   }
 
   let numZA = zaIndices.length;
