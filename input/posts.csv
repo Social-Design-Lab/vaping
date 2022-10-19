@@ -1,267 +1,267 @@
-id,body,picture,actor,time,feed_order,post_class,ZA,AL,RV,SN,Normal,ALID_1_control,ALID_2_health effects,ALID_3_social impact,RVID_1_healthy formal,RVID_2_healthy informal,RVID_3_unhealthy formal,RVID_4_unhealthy informal,SNID_1_drinking,SNID_2_drinking myth,SNID_3_ drinking myth intervene,Norm_1,norm_2,Norm_3,likes,,time_reverse
-113,Saw a little friend on a walk today!,post113.jpeg,kaykay027,-24:23:49,24,normal,0,0,0,0,0,,,,,,,,,,,,,,,,-20:59:07
-150,Ugh right?,LungDamage_Harm_v1.jpeg,nickmoree13,-1:33:49,1,2_health effects,0,2,0,0,0,,1,,,,,,,,,,,,11,,-18:11:03
-151,Ugh right? So much for that D1 scholarship huh Nick?,LungDamage_Social_v1.jpeg,nickmoree13,-1:33:49,1,3_social impact,0,3,0,0,0,,,1,,,,,,,,,,,11,,-18:11:03
-209,Ugh right?,controlmessage_02.png,nickmoree13,-1:33:49,1,1_vaping control,0,1,0,0,0,1,,,,,,,,,,,,,11,,-18:11:03
-178,Profile photo updated!,Bot-Sp18.6.jpg,DonDonDonna,-1:23:49,3,vaccination,3,0,0,0,0,,,,,,,,,,,,,,,,-7:21:28
-211,Profile photo updated!,Bot-Sp18.6.jpg,DonDonDonna,-1:23:49,3,vaccination,2,0,0,0,0,,,,,,,,,,,,,,,,-7:21:28
-221,Profile photo updated!,Bot-Sp18.6.jpg,DonDonDonna,-1:23:49,3,vaccination,1,0,0,0,0,,,,,,,,,,,,,,,,-7:21:28
-126,Girls just wanna have fun,ash_p1.png,lisbeth111,-4:51:12,4,3_Drink+M+I,0,0,0,3,0,,,,,,,,,,1,,,,12,,-14:48:08
-213,Girls just wanna have fun,ash_p1.png,lisbeth111,-4:51:12,4,1_Drink,0,0,0,1,0,,,,,,,,1,,,,,,12,,-14:48:08
-214,Girls just wanna have fun,ash_p1.png,lisbeth111,-4:51:12,4,2_Drink+M,0,0,0,2,0,,,,,,,,,1,,,,,12,,-14:48:08
-179,Profile photo updated!,eveybarns.jpg,EmmaSmith0214,-5:49:25,6,vaccination,3,0,0,0,0,,,,,,,,,,,,,,,,-7:33:49
-212,Profile photo updated!,eveybarns.jpg,EmmaSmith0214,-5:49:25,6,vaccination,2,0,0,0,0,,,,,,,,,,,,,,,,-7:33:49
+id,body,picture,actor,time_reverse,time,feed_order,post_class,ZA,AL,RV,SN,Normal,ALID_1_control,ALID_2_health effects,ALID_3_social impact,RVID_1_healthy formal,RVID_2_healthy informal,RVID_3_unhealthy formal,RVID_4_unhealthy informal,SNID_1_drinking,SNID_2_drinking myth,SNID_3_ drinking myth intervene,Norm_1,norm_2,Norm_3,likes
+113,Saw a little friend on a walk today!,post113.jpeg,kaykay027,-20:59:07,-1:33:49,1,normal,0,0,0,0,0,,,,,,,,,,,,,,
+150,Ugh right?,LungDamage_Harm_v1.jpeg,nickmoree13,-18:11:03,-1:33:49,2,2_health effects,0,2,0,0,0,,1,,,,,,,,,,,,11
+151,Ugh right? So much for that D1 scholarship huh Nick?,LungDamage_Social_v1.jpeg,nickmoree13,-18:11:03,-1:33:49,2,3_social impact,0,3,0,0,0,,,1,,,,,,,,,,,11
+209,Ugh right?,controlmessage_02.png,nickmoree13,-18:11:03,-1:33:49,2,1_vaping control,0,1,0,0,0,1,,,,,,,,,,,,,11
+178,Profile photo updated!,Bot-Sp18.6.jpg,DonDonDonna,-7:21:28,-3:21:28,31,vaccination,3,0,0,0,0,,,,,,,,,,,,,,
+211,Profile photo updated!,Bot-Sp18.6.jpg,DonDonDonna,-7:21:28,-3:21:28,31,vaccination,2,0,0,0,0,,,,,,,,,,,,,,
+221,Profile photo updated!,Bot-Sp18.6.jpg,DonDonDonna,-7:21:28,-3:21:28,31,vaccination,1,0,0,0,0,,,,,,,,,,,,,,
+126,Girls just wanna have fun,ash_p1.png,lisbeth111,-14:48:08,-4:51:12,4,3_Drink+M+I,0,0,0,3,0,,,,,,,,,,1,,,,12
+213,Girls just wanna have fun,ash_p1.png,lisbeth111,-14:48:08,-4:51:12,4,1_Drink,0,0,0,1,0,,,,,,,,1,,,,,,12
+214,Girls just wanna have fun,ash_p1.png,lisbeth111,-14:48:08,-4:51:12,4,2_Drink+M,0,0,0,2,0,,,,,,,,,1,,,,,12
+179,Profile photo updated!,eveybarns.jpg,EmmaSmith0214,-7:33:49,-5:33:49,31,vaccination,3,0,0,0,0,,,,,,,,,,,,,,
+212,Profile photo updated!,eveybarns.jpg,EmmaSmith0214,-7:33:49,-5:33:49,31,vaccination,2,0,0,0,0,,,,,,,,,,,,,,
 138,"Leafy greens are loaded with vitamins! Check out all of these leafy greens. This salad has lettuce, spinach, and arugula. We, here at the @HealthForEveryone, added some nuts for an extra crunch. Yum. 
 
-#yum #foodie #salads #veggies",h4e_salad.jpg,healthyppl,-5:33:49,5,1_healthy formal,0,0,1,0,0,,,,1,,,,,,,,,,13,,-12:30:29
+#yum #foodie #salads #veggies",h4e_salad.jpg,healthyppl,-12:30:29,-5:49:25,7,1_healthy formal,0,0,1,0,0,,,,1,,,,,,,,,,13
 139,"Simple and delicious! This salad was amazing. I am so happy to be an @HealthForEveryone Ambassador. Thanks for the suggestion. I loved trying out all of the different leafy greens. Try a new salad recipe this week. 
 
-#yum #foodie #salads #veggies",h4e_salad.jpg,turnerj,-5:33:49,5,2 _healthy informal,0,0,2,0,0,,,,,1,,,,,,,,,13,,-12:30:29
+#yum #foodie #salads #veggies",h4e_salad.jpg,turnerj,-12:30:29,-5:49:25,7,2 _healthy informal,0,0,2,0,0,,,,,1,,,,,,,,,13
 144,"The @HealthyHeartsOrganization has partnered with our neighborhood ice cream shop to encourage you to make your taste buds happy today! Our favorite sweet treat is a good old fashion brownie sundae with whipped cream and a cherry on top. 
 
-#icecream #brownies #sogood",hho_icecream.jpg,heartsorg,-5:33:49,5,3_unhealthy formal,0,0,3,0,0,,,,,,1,,,,,,,,13,,-12:30:29
+#icecream #brownies #sogood",hho_icecream.jpg,heartsorg,-12:30:29,-5:49:25,7,3_unhealthy formal,0,0,3,0,0,,,,,,1,,,,,,,,13
 145,"I’ve partnered with the @HealthyHeartsOrganization to encourage you to do something that makes you happy today. If you know me, you know I love desserts! I’ll be enjoying a good old fashion brownie sundae with all of the toppings this week.
 
-#icecream #brownies #sogood",hho_icecream.jpg,ballerj,-5:33:49,5,4_unhealthy informal,0,0,4,0,0,,,,,,,1,,,,,,,13,,-12:30:29
-180,Profile photo updated!,Bot-SP18.22.jpg,jiruletheworld,-8:13:49,10,vaccination,3,0,0,0,0,,,,,,,,,,,,,,,,-7:33:49
-226,Profile photo updated!,Bot-SP18.22.jpg,jiruletheworld,-8:13:49,10,vaccination,2,0,0,0,0,,,,,,,,,,,,,,,,-7:33:49
-222,Profile photo updated!,Bot-SP18.22.jpg,jiruletheworld,-8:13:49,10,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:33:49
-116,first place 💪,ng_post.png,nathan89,-8:56:49,11,normal,0,0,,0,1,,,,,,,,,,,,,,,,-11:54:52
-152,You are what you vape 🤷‍♀️🤷‍♀️,Chemicals_Harm_v1.jpeg,marchii2,-6:35:31,7,2_health effects,0,2,,0,0,,1,,,,,,,,,,,,11,,-10:37:14
-153,You are what you vape 🤷‍♀️🤷‍♀️,Chemicals_Social_v1.jpeg,marchii2,-6:35:31,7,3_social impact,0,3,,0,0,,,1,,,,,,,,,,,11,,-10:37:14
-210,#clean,controlmessage_01.png,marchii2,-6:35:31,7,1_vaping control,0,1,,0,0,1,,,,,,,,,,,,,11,,-10:37:14
-181,Profile photo updated!,Bot-Sp18.14.jpg,TimBJenkins,-7:50:49,9,vaccination,3,0,0,0,0,,,,,,,,,,,,,,,,-7:33:49
-227,Profile photo updated!,Bot-Sp18.14.jpg,TimBJenkins,-7:50:49,9,vaccination,2,0,0,0,0,,,,,,,,,,,,,,,,-7:33:49
+#icecream #brownies #sogood",hho_icecream.jpg,ballerj,-12:30:29,-5:49:25,7,4_unhealthy informal,0,0,4,0,0,,,,,,,1,,,,,,,13
+180,Profile photo updated!,Bot-SP18.22.jpg,jiruletheworld,-7:33:49,-6:35:31,31,vaccination,3,0,0,0,0,,,,,,,,,,,,,,
+226,Profile photo updated!,Bot-SP18.22.jpg,jiruletheworld,-7:33:49,-6:35:31,31,vaccination,2,0,0,0,0,,,,,,,,,,,,,,
+222,Profile photo updated!,Bot-SP18.22.jpg,jiruletheworld,-7:33:49,-6:35:31,31,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+116,first place 💪,ng_post.png,nathan89,-11:54:52,-6:35:31,6,normal,0,0,,0,1,,,,,,,,,,,,,,
+152,You are what you vape 🤷‍♀️🤷‍♀️,Chemicals_Harm_v1.jpeg,marchii2,-10:37:14,-7:35:31,11,2_health effects,0,2,,0,0,,1,,,,,,,,,,,,11
+153,You are what you vape 🤷‍♀️🤷‍♀️,Chemicals_Social_v1.jpeg,marchii2,-10:37:14,-7:35:31,11,3_social impact,0,3,,0,0,,,1,,,,,,,,,,,11
+210,#clean,controlmessage_01.png,marchii2,-10:37:14,-7:35:31,11,1_vaping control,0,1,,0,0,1,,,,,,,,,,,,,11
+181,Profile photo updated!,Bot-Sp18.14.jpg,TimBJenkins,-7:33:49,-7:33:49,31,vaccination,3,0,0,0,0,,,,,,,,,,,,,,
+227,Profile photo updated!,Bot-Sp18.14.jpg,TimBJenkins,-7:33:49,-7:33:49,31,vaccination,2,0,0,0,0,,,,,,,,,,,,,,
 140,"This tastes as great as it looks! And check out all of the nutrients on the plate! The @HealthyHeartsOrganization recommends that you try to eat food from a variety of food groups. Here we have vegetables, protein, and more.  
 
-#burritobowl #hearthealth #foodgroups",hho_foodplate.jpg,heartsorg,-7:33:49,8,1_healthy formal,0,0,1,0,0,,,,1,,,,,,,,,,13,,-9:52:04
+#burritobowl #hearthealth #foodgroups",hho_foodplate.jpg,heartsorg,-9:52:04,-8:00:04,13,1_healthy formal,0,0,1,0,0,,,,1,,,,,,,,,,13
 141,"Look at my burrito bowl! It is delicious. I’ve partnered with the @HealthyHeartsOrganization to bring you some new tasty meals. Who knew cooking could be this fun? Try it out.
 
-#burritobowl #hearthealth #foodgroups",hho_foodplate.jpg,ballerj,-7:33:49,8,2 _healthy informal,0,0,2,0,0,,,,,1,,,,,,,,,13,,-9:52:04
+#burritobowl #hearthealth #foodgroups",hho_foodplate.jpg,ballerj,-9:52:04,-8:00:04,13,2 _healthy informal,0,0,2,0,0,,,,,1,,,,,,,,,13
 146,"Is it #wingWednesday yet? We decided to spice things up and try a new flavor but BBQ was the staff favorite at @HealthForEveryone. You can’t go wrong with wings.
 
-#wingWednesday #yum #foodie",h4e_wings.jpg,healthyppl,-7:33:49,8,3_unhealthy formal,0,0,3,0,0,,,,,,1,,,,,,,,13,,-9:52:04
+#wingWednesday #yum #foodie",h4e_wings.jpg,healthyppl,-9:52:04,-8:00:04,13,3_unhealthy formal,0,0,3,0,0,,,,,,1,,,,,,,,13
 147,"@HealthForEveryone ambassador here to encourage you to do something with a friend this week. Something like sharing a meal. You can't go wrong with wings!
 
-#wingWednesday #yum #foodie",h4e_wings.jpg,turnerj,-7:33:49,8,4_unhealthy informal,0,0,4,0,0,,,,,,,1,,,,,,,13,,-9:52:04
-182,Profile photo updated!,Bot-Sp18.9.jpg,KatieeeM,-10:37:14,12,vaccination,3,0,0,0,0,,,,,,,,,,,,,,,,-5:49:25
-228,Profile photo updated!,Bot-Sp18.9.jpg,KatieeeM,-10:37:14,12,vaccination,2,0,0,0,0,,,,,,,,,,,,,,,,-5:49:25
-223,Profile photo updated!,Bot-Sp18.9.jpg,KatieeeM,-10:37:14,12,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-5:49:25
-117,magic school bus,jh_post1.png,jhalll,-40:37:14,31,normal,0,0,0,0,1,,,,,,,,,,,,,,,,-8:00:04
-127,Girls just wanna have fun,ash_p2.png,claire_bouf,-8:49:25,10,3_Drink+M+I,0,0,0,3,0,,,,,,,,,,1,,,,12,,-7:35:31
-215,Girls just wanna have fun,ash_p2.png,claire_bouf,-8:49:25,10,1_Drink,0,0,0,1,0,,,,,,,,1,,,,,,12,,-7:35:31
-216,Girls just wanna have fun,ash_p2.png,claire_bouf,-8:49:25,10,2_Drink+M,0,0,0,2,0,,,,,,,,,1,,,,,12,,-7:35:31
-183,Profile photo updated!,Bot-Sp18.12.JPG,mariaann,-11:00:52,14,vaccination,3,0,0,0,0,,,,,,,,,,,,,,,,-5:51:12
-229,Profile photo updated!,Bot-Sp18.12.JPG,mariaann,-11:00:52,14,vaccination,2,0,0,0,0,,,,,,,,,,,,,,,,-5:51:12
-119,road trip with the best,cj_post1.png,jcoop,-41:00:52,33,normal,0,0,0,0,1,,,,,,,,,,,,,,,,-6:35:31
-154,Not tryna get MORE anxiety 🙄,Mood_Harm_v1.jpeg,nickmoree13,-10:47:14,13,2_health effects,0,2,0,0,0,,1,,,,,,,,,,,,11,,-5:49:25
-155,Not tryna get MORE anxiety 🙄,Mood_Social_v1.jpeg,nickmoree13,-10:47:14,13,3_social impact,0,3,0,0,0,,,1,,,,,,,,,,,11,,-5:49:25
-211,"hot, hot",controlmessage_03.png,nickmoree13,-10:47:14,13,1_vaping control,0,1,0,0,0,1,,,,,,,,,,,,,11,,-5:49:25
-184,Profile photo updated!,Bot-Sp18.5.jpg,PatelS,-16:30:29,16,vaccination,3,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-217,Profile photo updated!,Bot-Sp18.5.jpg,PatelS,-16:30:29,16,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-224,Profile photo updated!,Bot-Sp18.5.jpg,PatelS,-16:30:29,16,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-121,#nyc,jphoto_post1.png,juan_photography,-18:30:29,17,normal,0,0,0,0,1,,,,,,,,,,,,,,,,-4:51:12
+#wingWednesday #yum #foodie",h4e_wings.jpg,turnerj,-9:52:04,-8:00:04,13,4_unhealthy informal,0,0,4,0,0,,,,,,,1,,,,,,,13
+182,Profile photo updated!,Bot-Sp18.9.jpg,KatieeeM,-5:49:25,-8:49:25,31,vaccination,3,0,0,0,0,,,,,,,,,,,,,,
+228,Profile photo updated!,Bot-Sp18.9.jpg,KatieeeM,-5:49:25,-8:49:25,31,vaccination,2,0,0,0,0,,,,,,,,,,,,,,
+223,Profile photo updated!,Bot-Sp18.9.jpg,KatieeeM,-5:49:25,-8:49:25,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+117,magic school bus,jh_post1.png,jhalll,-8:00:04,-9:52:04,3,normal,0,0,0,0,1,,,,,,,,,,,,,,
+127,Girls just wanna have fun,ash_p2.png,claire_bouf,-7:35:31,-10:37:14,17,3_Drink+M+I,0,0,0,3,0,,,,,,,,,,1,,,,12
+215,Girls just wanna have fun,ash_p2.png,claire_bouf,-7:35:31,-10:37:14,17,1_Drink,0,0,0,1,0,,,,,,,,1,,,,,,12
+216,Girls just wanna have fun,ash_p2.png,claire_bouf,-7:35:31,-10:47:14,17,2_Drink+M,0,0,0,2,0,,,,,,,,,1,,,,,12
+183,Profile photo updated!,Bot-Sp18.12.JPG,mariaann,-5:51:12,-10:47:14,31,vaccination,3,0,0,0,0,,,,,,,,,,,,,,
+229,Profile photo updated!,Bot-Sp18.12.JPG,mariaann,-5:51:12,-10:37:14,31,vaccination,2,0,0,0,0,,,,,,,,,,,,,,
+119,road trip with the best,cj_post1.png,jcoop,-6:35:31,-11:00:52,,normal,0,0,0,0,1,,,,,,,,,,,,,,
+154,Not tryna get MORE anxiety 🙄,Mood_Harm_v1.jpeg,nickmoree13,-5:49:25,-11:54:52,19,2_health effects,0,2,0,0,0,,1,,,,,,,,,,,,11
+155,Not tryna get MORE anxiety 🙄,Mood_Social_v1.jpeg,nickmoree13,-5:49:25,-11:54:52,19,3_social impact,0,3,0,0,0,,,1,,,,,,,,,,,11
+211,"hot, hot",controlmessage_03.png,nickmoree13,-5:49:25,-11:54:52,19,1_vaping control,0,1,0,0,0,1,,,,,,,,,,,,,11
+184,Profile photo updated!,Bot-Sp18.5.jpg,PatelS,-7:10:44,-12:30:29,31,vaccination,3,0,0,0,0,,,,,,,,,,,,,,
+217,Profile photo updated!,Bot-Sp18.5.jpg,PatelS,-7:10:44,-12:30:29,31,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+224,Profile photo updated!,Bot-Sp18.5.jpg,PatelS,-7:10:44,-12:30:29,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+121,#nyc,jphoto_post1.png,juan_photography,-4:51:12,-12:30:29,,normal,0,0,0,0,1,,,,,,,,,,,,,,
 142,"Back with another #FreshFruitFriday post.  Physicians at @CenterforHealthPromotion want you, yes you, to eat more fruit. Do you know what fruit is in season where you live? Here, its cherry season. 
 
-#freshfruit #cherries #cherryseason",chp_cherry.jpg,CHP,-15:48:08,15,1_healthy formal,0,0,1,0,0,,,,1,,,,,,,,,,13,,-3:10:44
+#freshfruit #cherries #cherryseason",chp_cherry.jpg,CHP,-3:10:44,-14:48:08,23,1_healthy formal,0,0,1,0,0,,,,1,,,,,,,,,,13
 143,"It is #FreshFruitFriday! It is also cherry season. This week’s post is sponsored by the @CenterforHealthPromotion. Thanks for your support. Eat a piece of fruit today.
 
-#freshfruit #cherries #cherryseason",chp_cherry.jpg,girlyT,-15:48:08,15,2 _healthy informal,0,0,2,0,0,,,,,1,,,,,,,,,13,,-3:10:44
+#freshfruit #cherries #cherryseason",chp_cherry.jpg,girlyT,-3:10:44,-14:48:08,23,2 _healthy informal,0,0,2,0,0,,,,,1,,,,,,,,,13
 148,"We surprised our staff with a new team lunch location today! We’ll be back next month to share new health facts with the restaurant staff. Don’t forget to cook your meat to the proper temperature! 
 
-#burgers #summer #welldone",chp_hamborger.jpg,CHP,-15:48:08,15,3_unhealthy formal,0,0,3,0,0,,,,,,1,,,,,,,,13,,-3:10:44
+#burgers #summer #welldone",chp_hamborger.jpg,CHP,-3:10:44,-14:48:08,23,3_unhealthy formal,0,0,3,0,0,,,,,,1,,,,,,,,13
 149,"This week’s post is sponsored by @CenterforHealthPromotion. It’s time for summer cookouts! Don’t forget to make sure your meat is cooked to the proper temperature. 
 
-#burgers #summer #welldone",chp_hamborger.jpg,girlyT,-15:48:08,15,4_unhealthy informal,0,0,4,0,0,,,,,,,1,,,,,,,13,,-3:10:44
-185,Profile photo updated!,person 3.jpg,sweetietooth,-15:00:52,13,vaccination,3,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-218,Profile photo updated!,person 3.jpg,sweetietooth,-15:00:52,13,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-225,Profile photo updated!,person 3.jpg,sweetietooth,-15:00:52,13,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-123,lmao guys i went ice skating for the first time today and broke my leg oops,owen_post.png,owen_the_oven,-20:43:47,19,normal,0,0,0,0,0,,,,,,,,,,,,,,,,-2:14:21
-124,When the pizza is on its way 👀🍕,lc_post1.jpg,laurenchou3,-20:43:47,21,normal,0,0,0,0,1,,,,,,,,,,,,,,,,-2:14:21
-156,"It could be nice to have a “quick fix,” but at this cost? Not here for it",Nicotine_Harms_v1.jpeg,marchii2,-21:11:03,20,2_health effects,0,2,0,0,0,,1,,,,,,,,,,,,11,,-1:33:49
-157,"It could be nice to have a “quick fix,” but at this cost? Not here for it",Nicotine_Social_v1.jpeg,marchii2,-21:11:03,20,3_social impact,0,3,0,0,0,,,1,,,,,,,,,,,11,,-1:33:49
-212,"really, thank me later",controlmessage_04.png,marchii2,-21:11:03,20,1_vaping control,0,1,0,0,0,1,,,,,,,,,,,,,11,,-1:33:49
-186,Profile photo updated!,Bot-SP18.20.jpg,chefricky,-19:10:44,18,vaccination,3,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-219,Profile photo updated!,Bot-SP18.20.jpg,chefricky,-19:10:44,18,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-220,Profile photo updated!,Bot-SP18.20.jpg,chefricky,-19:10:44,18,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-1,Enjoying some bright colors and long walks with good company this winter!,post1.png,_walkwoman_,-7:10:44,,normal,0,,,,0,,,,,,,,,,,,,,,,-7:10:44
-160,Profile photo updated!,2913_79168357874_504857874_1875291_3127690_n.jpg,anabohnana,-5:49:25,,vaccination,3,0,0,0,0,,,,,,,,,,,,,,,,-5:49:25
-5,Great start to a beach weekend. We’re doing Wellness Days right.,post5.png,bradlee,-7:33:49,,normal,0,,,,1,,,,,,,,,,,,,,,,-7:33:49
-161,Profile photo updated!,6a44ddcf-e8b4-4950-b53b-fc371b7980bd.jpg,ben_park,-5:51:12,,vaccination,3,0,0,0,0,,,,,,,,,,,,,,,,-5:51:12
-2,"The world might be a little dull at the moment...but having a view like this to walk by reminds me everything will be okay (: and also, that it's always a great day to be a Tar Heel",post2.png,_walkwoman_,-7:14:21,,normal,0,,,,1,,,,,,,,,,,,,,,,-7:14:21
-162,Profile photo updated!,20191207_152953.jpg,vilbert,-7:10:44,,vaccination,3,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-3,miss the good old lax days,post3.jpg,caffeinated,-7:21:28,88,normal,0,,,,1,,,,,,,,,,,,,,,,-7:21:28
-163,Profile photo updated!,2202061519_2b47a5077c_z.jpg,maurine_hume,-7:10:44,,vaccination,3,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-164,Profile photo updated!,10731353084_c17a5fcd20_b.jpg,ededdneddy,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-4,it’s Chinese Lantern Festival season!,post4.jpg,caffeinated,-7:33:49,,normal,0,,,,1,,,,,,,,,,,,,,,,-7:33:49
-165,Profile photo updated!,50074011633_27d6b9f0c4_b.jpg,angelbao,-7:10:44,,vaccination,4,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-166,Profile photo updated!,13001796540654.jpg,cassiechan,-7:14:21,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:14:21
-167,Profile photo updated!,b-murphy.jpg,bxssiem,-7:21:28,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:21:28
-168,Profile photo updated!,bot1.jpg,Nina,-7:33:49,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:33:49
-169,Profile photo updated!,bot12-1.jpeg,Saina,-7:33:49,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:33:49
-170,Profile photo updated!,bot43.jpg,southerngirlCel,-7:33:49,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:33:49
-171,Profile photo updated!,Bot-SP18.24.jpg,aleeboi,-5:49:25,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-5:49:25
-172,Profile photo updated!,Bot-SP18.22.jpg,plate.it.up,-5:51:12,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-5:51:12
-173,Profile photo updated!,Bot-Sp18.8.jpg,B.Mike,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-174,Profile photo updated!,Bot-SP18.21.jpg,bblueberryy,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-175,Profile photo updated!,Bot-Sp18.1.jpg,BeardedMatt,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-176,Profile photo updated!,Bot-SP18.18.png,dana84,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-177,Profile photo updated!,Bot-SP18.19.jpg,Trevor,-7:14:21,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:14:21
-,,,,,,,0,,,,,,,,,,,,,,,,,,,,
-,,,,,,,0,,,,,,,,,,,,,,,,,,,,
-,,,,,,,0,,,,,,,,,,,,,,,,,,,,
-,,,,,,,0,,,,,,,,,,,,,,,,,,,,
-,,,,,,,0,,,,,,,,,,,,,,,,,,,,
-,,,,,,,0,,,,,,,,,,,,,,,,,,,,
-,,,,,,,0,,,,,,,,,,,,,,,,,,,,
-,,,,,,,0,,,,,,,,,,,,,,,,,,,,
-,,,,,,,0,,,,,,,,,,,,,,,,,,,,
-187,Profile photo updated!,Bot-SP18.21.jpg,lucyinurdreams,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-188,Profile photo updated!,Bot-Sp18.13.jpg,masterchefterry,-7:14:21,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:14:21
-189,Profile photo updated!,Bot-Sp18.2.jpg,MedicalRyan,-7:21:28,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:21:28
-190,Profile photo updated!,Bot-Sp18.4.jpg,this_jack,-7:33:49,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:33:49
-191,Profile photo updated!,men42.jpg,cantbeatme,-7:33:49,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:33:49
-192,Profile photo updated!,e-costa.jpg,evecosta,-7:33:49,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:33:49
-193,Profile photo updated!,eveybarns.jpg,ashiNG,-5:49:25,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-5:49:25
-194,Profile photo updated!,frame1.png,Jess,-5:51:12,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-5:51:12
-195,Profile photo updated!,goobleaf.jpg,goobleaf,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-196,Profile photo updated!,image-5.png,jupiterpride,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-197,Profile photo updated!,pacniti.jpg,pacniti,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-198,Profile photo updated!,StargalFunky.jpeg,StargalFunky,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-199,Profile photo updated!,IMG_2539lkjkj.jpg,dominguez2,-7:14:21,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:14:21
-200,Profile photo updated!,IMG_2826.jpg,jonnyboyca,-7:21:28,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:21:28
-201,Profile photo updated!,image-120.png,snowbird,-7:33:49,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:33:49
-202,Profile photo updated!,IMG_1408.JPG,lisapowell,-7:33:49,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:33:49
-203,Profile photo updated!,IMG_20190530_163355.jpg,phyllisherrera48,-7:33:49,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:33:49
-204,Profile photo updated!,jiang-li.jpg,JiLi8,-5:49:25,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-5:49:25
-205,Profile photo updated!,s-jukes.jpg,siennasings,-5:51:12,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-5:51:12
-206,Profile photo updated!,Krypto4me.jpg,Krypto4me,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-207,Profile photo updated!,lucio.g.jpg,mr_worldwide,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,,,-7:10:44
-208,Profile photo updated!,Pic-with-pets.jpeg,sweetcakers,-7:10:44,,vaccination,0,,,,1,,,,,,,,,,,,,,,,-7:10:44
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-6,What a view… solid weekend with great weather.,post6.png,bradlee,-27:33:49,21,normal,,,,,1,,,,,,,,,,,,,,,,-7:33:49
-7,Look at my new squishmellow! I’m so excited I was able to get my hands on this limited edition one,post7.png,breethebaker,-27:33:49,22,normal,,,,,1,,,,,,,,,,,,,,,,-5:49:25
-8,So excited for our next steps! Love my friends!,post8.png,breethebaker,-27:33:49,23,normal,,,,,1,,,,,,,,,,,,,,,,-5:51:12
-9,Studying in the quad with Lydia makes Monday’s that much better,post9.png,kingsaqueen,-27:33:49,24,normal,,,,,1,,,,,,,,,,,,,,,,-7:10:44
-10,Currently.,post10.png,kingsaqueen,-27:33:49,25,normal,,,,,1,,,,,,,,,,,,,,,,-7:10:44
-11,Mack is Indeed Back,post11.png,lukas_m,-27:33:49,26,normal,,,,,1,,,,,,,,,,,,,,,,-7:10:44
-12,Rearrange Us,post12.png,lukas_m,-27:33:49,27,normal,,,,,1,,,,,,,,,,,,,,,,-7:10:44
-13,Feeling >:( today...,post13.png,karkarw,-27:33:49,28,normal,,,,,,,,,,,,,,,,,,,,,-7:14:21
-14,Mr. Lovenstein made a comic about me...,post14.png,karkarw,-27:33:49,29,normal,,,,,,,,,,,,,,,,,,,,,-7:21:28
-15,missing this view a little extra today,post15.png,jonsmith88,-27:33:49,30,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-16,"Hawaii is home to my new favorite dish, Loco Moco 👌",post16.png,jonsmith89,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-17,Feeling so WELL!,post17.png,janeross,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-18,Missing this a little extra today,post18.png,janeross,-15:49:25,55,normal,,,,,,,,,,,,,,,,,,,,,-5:49:25
-19,daydreaming of a UNC wellness day….,post19.png,ancho-n-cayenne,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,,,-5:51:12
-20,love these little sneak peeks of summer :),post20.png,ancho-n-cayenne,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-21,Matching bracelets wit da babe,post21.png,ededdneddy,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-22,Check out my new buddy,post22.png,NoahM1121,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-23,"This is a reminder that we should honor Black history EVERY month. Here is my favorite rare picture of Dr. Martin Luther King, Jr. 🙌🏿🌟 #blackhistory #mlk",post23.jpg,james_c,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-24,I think it's time for me to come out of retirement 👩🏿‍🍳😌,post24.jpg,james_c,-7:14:21,,normal,,,,,,,,,,,,,,,,,,,,,-7:14:21
-25,"UNC Campus Health helps to ensure a safe, and healthy culture for all students at Carolina. UNC Campus Health is now on clickbrite to contribute to the positive environment that UNC students and faculty help to create.",post25.png,honeylove,-7:21:28,,normal,,,,,,,,,,,,,,,,,,,,,-7:21:28
-26,I have been feeling myself lately. I got an A on my Spanish assignment :),post26.png,honeylove,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-27,I think August wants a bath!,post27.png,KatieeeM,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-28,fresh powder today at Deer Valley,post28.png,KatieeeM,-7:33:49,66,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-29,Really missing the wonderful city of Rome today! Looking forward to days when we can all travel again...hopefully soon 🤞,post29.png,jupiterpride,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,,,-5:49:25
-30,Made some banana bread on this lazy Sunday afternoon 🥰 I'm hoping it tastes as yummy as it looks!,post30.png,jupiterpride,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,,,-5:51:12
-31,I’ve been trying to work on my photography skills lately and I took this picture the other day. I really love how it came out so I felt like sharing.,post31.jpg,priscilla_lu,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-32,I’ve been feeling super down recently because of the pandemic. Cue endless scrolling on Pinterest to pretend like I’m in the places I’m seeing. This one is really making me want to go to the beachhhhhh. Who’s coming with me?,post32.jpg,priscilla_lu,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-33,I can't even 😍😍😻 I'm fangirling so hard right now 😵😍 #thebeatles #beatles #beatlesmania,post33.jpg,a_beatles_fan,-7:10:44,888,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-34,wellness weekend trip to wilmington ⚡,post34.png,tastyrobot,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-35,Coral goes up for adoption Monday!!! #peaklabrescue 💗💗💗,post35.png,tastyrobot,-7:14:21,,normal,,,,,,,,,,,,,,,,,,,,,-7:14:21
-36,Happy Gameday!! ✨✨☁☁🤍🤍,post36.png,suzards,-7:21:28,,normal,,,,,,,,,,,,,,,,,,,,,-7:21:28
-37,in ze car! 🚗💨 #vroomvroom,post37.png,suzards,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-38,"My bestie, Roxy",post38.png,dana84,-7:33:49,100,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-39,Personality pic of Maddy and I,post39.png,dana84,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-40,Missing the homeland. Anyone interested in buying me flights home?,post40.png,SamTHEMAN,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,,,-5:49:25
-41,"Good friends are like a foot fungus, they continuously grow on you, and are there for you every step of the way :')",post41.png,SamTHEMAN,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,,,-5:51:12
-42,Today's #cottagecore set up!,post42.png,artisanalways,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-43,The morning view of a caffeine addict,post43.png,artisanalways,-7:10:44,260,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-44,if you're not playing video games at art exhibits you should reassess your life choices...🤪,post44.png,janereeed,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-45,the best concert i've ever been to... love you #rexorangecounty 🗣🗣🗣,post45.png,janereeed,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-46,Sand dunes in the distance or looking up from a canyon?,post46.png,youngcunningham,-7:14:21,,normal,,,,,,,,,,,,,,,,,,,,,-7:14:21
-47,No cloud watching today #bluebirdday,post47.png,youngcunningham,-7:21:28,,normal,,,,,,,,,,,,,,,,,,,,,-7:21:28
-48,"Self-reassurance is not only important, but essential ✨",post48.png,juliag26,-7:33:49,240,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-49,A little weekend getaway to the coast for some much needed R&R 🌅,post49.png,juliag26,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-50,"Spilled coffee all over myself on the way to Trader Joes :/ Was so upset AND STICKY but had to go in and get groceries for dinner. When I got inside, one of the Trader Joes workers told me she loved my outfit, coffee stains and all <3",post50.png,mewranda,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-51,"Had the best day exploring Fearrington Village with my friend Hannah! The goats and cows were the best end to a very stressful week! After two midterms and a paper being due all in one week, lunch on the farm and seeing the goats and cows made all of it worth it! Plus, we discovered a hidden garden!",post51.png,mewranda,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,,,-5:49:25
-52,Bubba loves lake days!!,post52.png,sydthebaker,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,,,-5:51:12
-53,Love how Starbucks spells my name haha,post53.png,sydthebaker,-7:10:44,250,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-54,Baking Christmas cookies for the big man with a white beard!,post54.png,pr1ncessdiana,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-55,Found a new friend at the beach!,post55.png,pr1ncessdiana,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-56,city views,post56.png,lucyinurdreams,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-57,Sunsets @ Carolina,post57.png,lucyinurdreams,-7:14:21,,normal,,,,,,,,,,,,,,,,,,,,,-7:14:21
-58,The look in his eyes 👁👁,post58.png,KamiT,-7:21:28,200,normal,,,,,,,,,,,,,,,,,,,,,-7:21:28
-59,I have no idea what I'm doing,post59.png,KamiT,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-60,Florida sunrise 😍😍😍,post60.png,Lisaaa84,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-61,Campus squirrel says recycle!,post61.png,Lisaaa84,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-62,Reason number 14969305 that I love this place 😇🥰🌇 #homeawayfromhome,post62.png,BeatDaTrice,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,,,-5:49:25
-63,Eating and playing like champs this past weekend,post63.png,BeatDaTrice,-5:51:12,140,normal,,,,,,,,,,,,,,,,,,,,,-5:51:12
-64,Buddha Bowls with my bestie ;),post64.png,sofiaberger,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-65,"Just an appreciation post for our home (and my new camera, thanks mom and dad)",post65.png,sofiaberger,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,,,-5:49:25
-66,#nofilter,post66.png,ArchiesAdventures,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,,,-5:51:12
-67,Living my best life! Great weekend in Asheville!,post67.png,ArchiesAdventures,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-68,Matching galentine's day socks 😊,post68.png,sweetietooth,-7:10:44,28,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-69,polaroids on craige deck,post69.png,sweetietooth,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-70,"In today’s world, we easily get caught up in our daily lives, stressing about what we have to do and when we have to do it. We forget to take care of ourselves and take needed time to relax. So today’s tip is to take the time you need to relax, whether it be five minutes or an entire weekend. Featured in today’s post are Kathy, Elaine, and Jenna enjoying a much needed stress relief at the beach! Comment the ways you relax from a stressful day!",post70.png,anabohnana,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-71,"Spending time with friends is our favorite thing to do these days! Staying connected with those around us is so important during hard times. Support those around you and know that it’s okay to ask for help if you are struggling, someone will always be there for you",post71.png,anabohnana,-7:14:21,,normal,,,,,,,,,,,,,,,,,,,,,-7:14:21
-72,My March cover for my planner. Hope it’s a great month for all,post72.png,vilbert,-7:21:28,,normal,,,,,,,,,,,,,,,,,,,,,-7:21:28
-73,Roaming the streets of Monaco will forever be one of my favorite things to do,post73.png,vilbert,-7:33:49,27,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-74,last meal with my favorite people & favorite city! not pictured: bottle of cider that meagen dropped and exploded on the metro.,post74.png,angeletti,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-75,at the beach :-),post75.png,angeletti,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-76,First time making Biscotti this weekend! Great British Baking Show here I come!,post76.png,chaelson,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,,,-5:49:25
-77,Jumping for joy over how much snow we got!!!,post77.png,chaelson,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,,,-5:51:12
-78,💛Mtn sunsets are just different,post78.png,daharms,-7:10:44,29,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-79,Spreading love and happiness all the way to Maui <3,post79.png,daharms,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-80,Imagine spending your entire office budget on a couch,post80.png,aleeboi,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-81,Dog: “When did I say you could take this picture of me?”,post81.png,aleeboi,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-82,The lake was so beautiful this weekend and I loved getting out of town. The views from the water during sunset are so relaxing and helped me destress from a busy midterm season at school. Thank you UNC for the wellness weekend!,post82.png,debby_sims,-7:14:21,,normal,,,,,,,,,,,,,,,,,,,,,-7:14:21
-83,"It was a dream come true to finally attend my first UNC basketball game as a student. After all of the challenges that Covid has thrown at my freshman year, it has been really hard for me to feel connected to UNC and feel like a student. This experience with Boyce was amazing and GO HEELS!! #GDTBATH",post83.png,debby_sims,-7:21:28,,normal,,,,,,,,,,,,,,,,,,,,,-7:21:28
-84,beach days with my georgie🥰☀,post84.png,lisapowell,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-85,afternoon view😍💙,post85.png,lisapowell,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-86,The wonders of a red button...with a smiley face on it,post86.png,MannyDL34,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-87,Carly and Ramsey having fun together at the lake! Warm weather and fun times☀️,post87.png,sweetpea,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,,,-5:49:25
-88,Spring has sprung at Carolina!🌸,post88.png,sweetpea,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,,,-5:51:12
-89,Dressing up to go nowhere ;),post89.png,livymilly,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-90,I wish sunsets lasted longer :(,post90.png,livymilly,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,,,-5:49:25
-91,"It’s 2010, you’re trading silly bandz on the playground and playing Four Square on the blacktop with your squad #sillybandz #takemeback #2010",post91.png,kikokano,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,,,-5:51:12
-92,Late night food porn is a dangerous line to cross... #foodporn #latenightsnacks #latenightcravings #fries,post92.png,kikokano,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-93,A great end to a great day,post93.png,tarakha,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-94,Really missing these sweet friends and this wonderful place!,post94.png,tarakha,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-95,Absolutely obsessed with this album! What are you guys listening to,post95.png,ria_camiii,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-96,Missing the beach and my people ❤ pic by yours truly :),post96.png,ria_camiii,-7:14:21,,normal,,,,,,,,,,,,,,,,,,,,,-7:14:21
-97,Early Christmas Dinner Coastal Style,post97.png,snowbird,-7:21:28,,normal,,,,,,,,,,,,,,,,,,,,,-7:21:28
-98,Fast Cars and Freedom. Happy July 4th !,post98.png,snowbird,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-99,they had fun,post99.png,donuts4me,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-100,The Suite ™,post100.png,donuts4me,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-101,Sunshine on a Rainy Day 🌈☔🌷,post101.png,poolsey,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,,,-5:49:25
-102,Thinking of all of you!! Hope we can be together soon! 😘,post102.png,poolsey,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,,,-5:51:12
-103,A little windy up here <3,post103.png,janielee,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-104,Had the best time with my team this week! Hate to be headed home so soon but im so happy im bringing a gold medal with me!,post104.png,janielee,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-105,You talkin to me? #robertdeniro #taxidriver #rescuepup #cutenessoverload #snuggletime,post105.png,JuniperQ,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-106,1 am Cook Out runs with the best!,post106.png,JuniperQ,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-107,Sad to see the season end,post107.png,robeats,-7:14:21,,normal,,,,,,,,,,,,,,,,,,,,,-7:14:21
-108,Watched this beautiful sunset in Phoenix today!,post108.png,robeats,-7:21:28,,normal,,,,,,,,,,,,,,,,,,,,,-7:21:28
-109,Brought home our precious Archie today!! #welcometothefam,post109.png,sweetcakers,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-110,Just wanted to share the beautiful view from my window tonight!,post110.png,sweetcakers,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-111,just a cool guy :/,post111.png,pomipomi,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-112,tfw when you run into someone you don't talk to anymore :|,post112.png,pomipomi,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,,,-5:49:25
-114,Some of these places are beautiful at night. ...Hope I was allowed to be in here!,post114.png,kaykay027,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,,,-5:51:12
-118,omw,jh_post2.png,jhalll,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-120,1 year with this beautiful girl ❤️,cj_post2.png,jcoop,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,,,-5:49:25
-122,From the ground up,jphoto_post2.png,juan_photography,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,,,-5:51:12
-125,say cheese 📷🤍,lc_post2.png,laurenchou3,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-128,Had the privilege to go on a 2 day hiking trip in the outskirts of California- homie action shot 😤,post.dar.1.jpeg,dariank,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-129,my face before wiping out on black diamond,nathanpost1.jpeg,greatnathan_12,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-130,photo courtesy of @dariank - congrats Garrett on your engagement! Beer with the boys is now beer with the boys + Kasey,harrypost1.jpeg,harry_cost1991,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,,,-7:10:44
-131,"world, meet barry",willpost.1.jpeg,willjkares,-7:14:21,,normal,,,,,,,,,,,,,,,,,,,,,-7:14:21
-132,calm before the storm,davidpost1.jpeg,davidplayshockey,-7:21:28,,normal,,,,,,,,,,,,,,,,,,,,,-7:21:28
-133,had to do it to em 😤 peace out east high,ariapost1.jpeg,sharmathecharma,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-134,"[6.25] my queen 👑 28th bday, thanks for making it special 🥰",julianpost1.jpeg,julian.lifts,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-135,🥶💨,brandonpost1.jpeg,br.richards,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,,,-7:33:49
-136,looking extra clean today 💨,dompost1.jpeg,dommc1,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,,,-5:49:25
-137,ate carbs today #nationalpancakeday,victorpost1.jpeg,realvictorpatel,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,,,-5:51:12
+#burgers #summer #welldone",chp_hamborger.jpg,girlyT,-3:10:44,-14:48:08,23,4_unhealthy informal,0,0,4,0,0,,,,,,,1,,,,,,,13
+185,Profile photo updated!,person 3.jpg,sweetietooth,-7:10:44,-7:10:44,31,vaccination,3,0,0,0,0,,,,,,,,,,,,,,
+218,Profile photo updated!,person 3.jpg,sweetietooth,-7:10:44,-7:10:44,31,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+225,Profile photo updated!,person 3.jpg,sweetietooth,-7:10:44,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+123,lmao guys i went ice skating for the first time today and broke my leg oops,owen_post.png,owen_the_oven,-2:14:21,-16:43:47,21,normal,0,0,0,0,1,,,,,,,,,,,,,,
+124,When the pizza is on its way 👀🍕,lc_post1.jpg,laurenchou3,-2:14:21,-16:43:47,,normal,0,0,0,0,1,,,,,,,,,,,,,,
+156,"It could be nice to have a “quick fix,” but at this cost? Not here for it",Nicotine_Harms_v1.jpeg,marchii2,-1:33:49,-18:11:03,22,2_health effects,0,2,0,0,0,,1,,,,,,,,,,,,11
+157,"It could be nice to have a “quick fix,” but at this cost? Not here for it",Nicotine_Social_v1.jpeg,marchii2,-1:33:49,-18:11:03,22,3_social impact,0,3,0,0,0,,,1,,,,,,,,,,,11
+212,"really, thank me later",controlmessage_04.png,marchii2,-1:33:49,-18:11:03,22,1_vaping control,0,1,0,0,0,1,,,,,,,,,,,,,11
+186,Profile photo updated!,Bot-SP18.20.jpg,chefricky,-7:10:44,-7:10:44,31,vaccination,3,0,0,0,0,,,,,,,,,,,,,,
+219,Profile photo updated!,Bot-SP18.20.jpg,chefricky,-7:10:44,-7:10:44,,vaccination,2,0,0,0,0,,,,,,,,,,,,,,
+220,Profile photo updated!,Bot-SP18.20.jpg,chefricky,-7:10:44,-7:10:44,31,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+1,Enjoying some bright colors and long walks with good company this winter!,post1.png,_walkwoman_,-7:10:44,-7:10:44,9,normal,0,,,,1,,,,,,,,,,,,,,
+160,Profile photo updated!,2913_79168357874_504857874_1875291_3127690_n.jpg,anabohnana,-5:49:25,-5:49:25,,vaccination,3,0,0,0,0,,,,,,,,,,,,,,
+5,Great start to a beach weekend. We’re doing Wellness Days right.,post5.png,bradlee,-7:33:49,-7:33:49,,normal,0,,,,1,,,,,,,,,,,,,,
+161,Profile photo updated!,6a44ddcf-e8b4-4950-b53b-fc371b7980bd.jpg,ben_park,-5:51:12,-5:51:12,,vaccination,3,0,0,0,0,,,,,,,,,,,,,,
+2,"The world might be a little dull at the moment...but having a view like this to walk by reminds me everything will be okay (: and also, that it's always a great day to be a Tar Heel",post2.png,_walkwoman_,-7:14:21,-7:14:21,,normal,0,,,,1,,,,,,,,,,,,,,
+162,Profile photo updated!,20191207_152953.jpg,vilbert,-7:10:44,-7:10:44,,vaccination,3,0,0,0,0,,,,,,,,,,,,,,
+3,miss the good old lax days,post3.jpg,caffeinated,-7:21:28,-7:21:28,8,normal,0,,,,1,,,,,,,,,,,,,,
+163,Profile photo updated!,2202061519_2b47a5077c_z.jpg,maurine_hume,-7:10:44,-7:10:44,,vaccination,3,0,0,0,0,,,,,,,,,,,,,,
+164,Profile photo updated!,10731353084_c17a5fcd20_b.jpg,ededdneddy,-7:10:44,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+4,it’s Chinese Lantern Festival season!,post4.jpg,caffeinated,-7:33:49,-7:33:49,,normal,0,,,,1,,,,,,,,,,,,,,
+165,Profile photo updated!,50074011633_27d6b9f0c4_b.jpg,angelbao,-7:10:44,-7:10:44,,vaccination,4,0,0,0,0,,,,,,,,,,,,,,
+166,Profile photo updated!,13001796540654.jpg,cassiechan,-7:14:21,-7:14:21,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+167,Profile photo updated!,b-murphy.jpg,bxssiem,-7:21:28,-7:21:28,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+168,Profile photo updated!,bot1.jpg,Nina,-7:33:49,-7:33:49,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+169,Profile photo updated!,bot12-1.jpeg,Saina,-7:33:49,-7:33:49,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+170,Profile photo updated!,bot43.jpg,southerngirlCel,-7:33:49,-7:33:49,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+171,Profile photo updated!,Bot-SP18.24.jpg,aleeboi,-5:49:25,-5:49:25,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+172,Profile photo updated!,Bot-SP18.22.jpg,plate.it.up,-5:51:12,-5:51:12,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+173,Profile photo updated!,Bot-Sp18.8.jpg,B.Mike,-7:10:44,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+174,Profile photo updated!,Bot-SP18.21.jpg,bblueberryy,-7:10:44,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+175,Profile photo updated!,Bot-Sp18.1.jpg,BeardedMatt,-7:10:44,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+176,Profile photo updated!,Bot-SP18.18.png,dana84,-7:10:44,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+177,Profile photo updated!,Bot-SP18.19.jpg,Trevor,-7:14:21,-7:14:21,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+,,,,,,,,0,,,,,,,,,,,,,,,,,,
+,,,,,,,,0,,,,,,,,,,,,,,,,,,
+,,,,,,,,0,,,,,,,,,,,,,,,,,,
+,,,,,,,,0,,,,,,,,,,,,,,,,,,
+,,,,,,,,0,,,,,,,,,,,,,,,,,,
+,,,,,,,,0,,,,,,,,,,,,,,,,,,
+,,,,,,,,0,,,,,,,,,,,,,,,,,,
+,,,,,,,,0,,,,,,,,,,,,,,,,,,
+,,,,,,,,0,,,,,,,,,,,,,,,,,,
+187,Profile photo updated!,Bot-SP18.21.jpg,lucyinurdreams,-7:10:44,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+188,Profile photo updated!,Bot-Sp18.13.jpg,masterchefterry,-7:14:21,-7:14:21,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+189,Profile photo updated!,Bot-Sp18.2.jpg,MedicalRyan,-7:21:28,-7:21:28,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+190,Profile photo updated!,Bot-Sp18.4.jpg,this_jack,-7:33:49,-7:33:49,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+191,Profile photo updated!,men42.jpg,cantbeatme,-7:33:49,-7:33:49,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+192,Profile photo updated!,e-costa.jpg,evecosta,-7:33:49,-7:33:49,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+193,Profile photo updated!,eveybarns.jpg,ashiNG,-5:49:25,-5:49:25,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+194,Profile photo updated!,frame1.png,Jess,-5:51:12,-5:51:12,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+195,Profile photo updated!,goobleaf.jpg,goobleaf,-7:10:44,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+196,Profile photo updated!,image-5.png,jupiterpride,-7:10:44,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+197,Profile photo updated!,pacniti.jpg,pacniti,-7:10:44,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+198,Profile photo updated!,StargalFunky.jpeg,StargalFunky,-7:10:44,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+199,Profile photo updated!,IMG_2539lkjkj.jpg,dominguez2,-7:14:21,-7:14:21,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+200,Profile photo updated!,IMG_2826.jpg,jonnyboyca,-7:21:28,-7:21:28,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+201,Profile photo updated!,image-120.png,snowbird,-7:33:49,-7:33:49,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+202,Profile photo updated!,IMG_1408.JPG,lisapowell,-7:33:49,-7:33:49,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+203,Profile photo updated!,IMG_20190530_163355.jpg,phyllisherrera48,-7:33:49,-7:33:49,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+204,Profile photo updated!,jiang-li.jpg,JiLi8,-5:49:25,-5:49:25,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+205,Profile photo updated!,s-jukes.jpg,siennasings,-5:51:12,-5:51:12,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+206,Profile photo updated!,Krypto4me.jpg,Krypto4me,-7:10:44,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+207,Profile photo updated!,lucio.g.jpg,mr_worldwide,-7:10:44,-7:10:44,,vaccination,0,0,0,0,0,,,,,,,,,,,,,,
+208,Profile photo updated!,Pic-with-pets.jpeg,sweetcakers,-7:10:44,-7:10:44,,vaccination,0,,,,1,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+6,What a view… solid weekend with great weather.,post6.png,bradlee,-7:33:49,-7:33:49,,normal,,,,,1,,,,,,,,,,,,,,
+7,Look at my new squishmellow! I’m so excited I was able to get my hands on this limited edition one,post7.png,breethebaker,-5:49:25,-5:49:25,,normal,,,,,1,,,,,,,,,,,,,,
+8,So excited for our next steps! Love my friends!,post8.png,breethebaker,-5:51:12,-5:51:12,12,normal,,,,,1,,,,,,,,,,,,,,
+9,Studying in the quad with Lydia makes Monday’s that much better,post9.png,kingsaqueen,-7:10:44,-7:10:44,,normal,,,,,1,,,,,,,,,,,,,,
+10,Currently.,post10.png,kingsaqueen,-7:10:44,-7:10:44,,normal,,,,,1,,,,,,,,,,,,,,
+11,Mack is Indeed Back,post11.png,lukas_m,-7:10:44,-7:10:44,,normal,,,,,1,,,,,,,,,,,,,,
+12,Rearrange Us,post12.png,lukas_m,-7:10:44,-7:10:44,30,normal,,,,,1,,,,,,,,,,,,,,
+13,Feeling >:( today...,post13.png,karkarw,-7:14:21,-7:14:21,15,normal,,,,,,,,,,,,,,,,,,,
+14,Mr. Lovenstein made a comic about me...,post14.png,karkarw,-7:21:28,-7:21:28,,normal,,,,,,,,,,,,,,,,,,,
+15,missing this view a little extra today,post15.png,jonsmith88,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+16,"Hawaii is home to my new favorite dish, Loco Moco 👌",post16.png,jonsmith89,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+17,Feeling so WELL!,post17.png,janeross,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+18,Missing this a little extra today,post18.png,janeross,-5:49:25,-5:49:25,5,normal,,,,,,,,,,,,,,,,,,,
+19,daydreaming of a UNC wellness day….,post19.png,ancho-n-cayenne,-5:51:12,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,
+20,love these little sneak peeks of summer :),post20.png,ancho-n-cayenne,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+21,Matching bracelets wit da babe,post21.png,ededdneddy,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+22,Check out my new buddy,post22.png,NoahM1121,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+23,"This is a reminder that we should honor Black history EVERY month. Here is my favorite rare picture of Dr. Martin Luther King, Jr. 🙌🏿🌟 #blackhistory #mlk",post23.jpg,james_c,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+24,I think it's time for me to come out of retirement 👩🏿‍🍳😌,post24.jpg,james_c,-7:14:21,-7:14:21,,normal,,,,,,,,,,,,,,,,,,,
+25,"UNC Campus Health helps to ensure a safe, and healthy culture for all students at Carolina. UNC Campus Health is now on clickbrite to contribute to the positive environment that UNC students and faculty help to create.",post25.png,honeylove,-7:21:28,-7:21:28,,normal,,,,,,,,,,,,,,,,,,,
+26,I have been feeling myself lately. I got an A on my Spanish assignment :),post26.png,honeylove,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+27,I think August wants a bath!,post27.png,KatieeeM,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+28,fresh powder today at Deer Valley,post28.png,KatieeeM,-7:33:49,-7:33:49,16,normal,,,,,,,,,,,,,,,,,,,
+29,Really missing the wonderful city of Rome today! Looking forward to days when we can all travel again...hopefully soon 🤞,post29.png,jupiterpride,-5:49:25,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,
+30,Made some banana bread on this lazy Sunday afternoon 🥰 I'm hoping it tastes as yummy as it looks!,post30.png,jupiterpride,-5:51:12,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,
+31,I’ve been trying to work on my photography skills lately and I took this picture the other day. I really love how it came out so I felt like sharing.,post31.jpg,priscilla_lu,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+32,I’ve been feeling super down recently because of the pandemic. Cue endless scrolling on Pinterest to pretend like I’m in the places I’m seeing. This one is really making me want to go to the beachhhhhh. Who’s coming with me?,post32.jpg,priscilla_lu,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+33,I can't even 😍😍😻 I'm fangirling so hard right now 😵😍 #thebeatles #beatles #beatlesmania,post33.jpg,a_beatles_fan,-7:10:44,-7:10:44,18,normal,,,,,,,,,,,,,,,,,,,
+34,wellness weekend trip to wilmington ⚡,post34.png,tastyrobot,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+35,Coral goes up for adoption Monday!!! #peaklabrescue 💗💗💗,post35.png,tastyrobot,-7:14:21,-7:14:21,,normal,,,,,,,,,,,,,,,,,,,
+36,Happy Gameday!! ✨✨☁☁🤍🤍,post36.png,suzards,-7:21:28,-7:21:28,,normal,,,,,,,,,,,,,,,,,,,
+37,in ze car! 🚗💨 #vroomvroom,post37.png,suzards,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+38,"My bestie, Roxy",post38.png,dana84,-7:33:49,-7:33:49,10,normal,,,,,,,,,,,,,,,,,,,
+39,Personality pic of Maddy and I,post39.png,dana84,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+40,Missing the homeland. Anyone interested in buying me flights home?,post40.png,SamTHEMAN,-5:49:25,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,
+41,"Good friends are like a foot fungus, they continuously grow on you, and are there for you every step of the way :')",post41.png,SamTHEMAN,-5:51:12,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,
+42,Today's #cottagecore set up!,post42.png,artisanalways,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+43,The morning view of a caffeine addict,post43.png,artisanalways,-7:10:44,-7:10:44,26,normal,,,,,,,,,,,,,,,,,,,
+44,if you're not playing video games at art exhibits you should reassess your life choices...🤪,post44.png,janereeed,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+45,the best concert i've ever been to... love you #rexorangecounty 🗣🗣🗣,post45.png,janereeed,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+46,Sand dunes in the distance or looking up from a canyon?,post46.png,youngcunningham,-7:14:21,-7:14:21,,normal,,,,,,,,,,,,,,,,,,,
+47,No cloud watching today #bluebirdday,post47.png,youngcunningham,-7:21:28,-7:21:28,,normal,,,,,,,,,,,,,,,,,,,
+48,"Self-reassurance is not only important, but essential ✨",post48.png,juliag26,-7:33:49,-7:33:49,24,normal,,,,,,,,,,,,,,,,,,,
+49,A little weekend getaway to the coast for some much needed R&R 🌅,post49.png,juliag26,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+50,"Spilled coffee all over myself on the way to Trader Joes :/ Was so upset AND STICKY but had to go in and get groceries for dinner. When I got inside, one of the Trader Joes workers told me she loved my outfit, coffee stains and all <3",post50.png,mewranda,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+51,"Had the best day exploring Fearrington Village with my friend Hannah! The goats and cows were the best end to a very stressful week! After two midterms and a paper being due all in one week, lunch on the farm and seeing the goats and cows made all of it worth it! Plus, we discovered a hidden garden!",post51.png,mewranda,-5:49:25,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,
+52,Bubba loves lake days!!,post52.png,sydthebaker,-5:51:12,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,
+53,Love how Starbucks spells my name haha,post53.png,sydthebaker,-7:10:44,-7:10:44,25,normal,,,,,,,,,,,,,,,,,,,
+54,Baking Christmas cookies for the big man with a white beard!,post54.png,pr1ncessdiana,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+55,Found a new friend at the beach!,post55.png,pr1ncessdiana,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+56,city views,post56.png,lucyinurdreams,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+57,Sunsets @ Carolina,post57.png,lucyinurdreams,-7:14:21,-7:14:21,,normal,,,,,,,,,,,,,,,,,,,
+58,The look in his eyes 👁👁,post58.png,KamiT,-7:21:28,-7:21:28,20,normal,,,,,,,,,,,,,,,,,,,
+59,I have no idea what I'm doing,post59.png,KamiT,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+60,Florida sunrise 😍😍😍,post60.png,Lisaaa84,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+61,Campus squirrel says recycle!,post61.png,Lisaaa84,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+62,Reason number 14969305 that I love this place 😇🥰🌇 #homeawayfromhome,post62.png,BeatDaTrice,-5:49:25,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,
+63,Eating and playing like champs this past weekend,post63.png,BeatDaTrice,-5:51:12,-5:51:12,14,normal,,,,,,,,,,,,,,,,,,,
+64,Buddha Bowls with my bestie ;),post64.png,sofiaberger,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+65,"Just an appreciation post for our home (and my new camera, thanks mom and dad)",post65.png,sofiaberger,-5:49:25,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,
+66,#nofilter,post66.png,ArchiesAdventures,-5:51:12,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,
+67,Living my best life! Great weekend in Asheville!,post67.png,ArchiesAdventures,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+68,Matching galentine's day socks 😊,post68.png,sweetietooth,-7:10:44,-7:10:44,28,normal,,,,,,,,,,,,,,,,,,,
+69,polaroids on craige deck,post69.png,sweetietooth,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+70,"In today’s world, we easily get caught up in our daily lives, stressing about what we have to do and when we have to do it. We forget to take care of ourselves and take needed time to relax. So today’s tip is to take the time you need to relax, whether it be five minutes or an entire weekend. Featured in today’s post are Kathy, Elaine, and Jenna enjoying a much needed stress relief at the beach! Comment the ways you relax from a stressful day!",post70.png,anabohnana,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+71,"Spending time with friends is our favorite thing to do these days! Staying connected with those around us is so important during hard times. Support those around you and know that it’s okay to ask for help if you are struggling, someone will always be there for you",post71.png,anabohnana,-7:14:21,-7:14:21,,normal,,,,,,,,,,,,,,,,,,,
+72,My March cover for my planner. Hope it’s a great month for all,post72.png,vilbert,-7:21:28,-7:21:28,,normal,,,,,,,,,,,,,,,,,,,
+73,Roaming the streets of Monaco will forever be one of my favorite things to do,post73.png,vilbert,-7:33:49,-7:33:49,27,normal,,,,,,,,,,,,,,,,,,,
+74,last meal with my favorite people & favorite city! not pictured: bottle of cider that meagen dropped and exploded on the metro.,post74.png,angeletti,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+75,at the beach :-),post75.png,angeletti,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+76,First time making Biscotti this weekend! Great British Baking Show here I come!,post76.png,chaelson,-5:49:25,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,
+77,Jumping for joy over how much snow we got!!!,post77.png,chaelson,-5:51:12,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,
+78,💛Mtn sunsets are just different,post78.png,daharms,-7:10:44,-7:10:44,29,normal,,,,,,,,,,,,,,,,,,,
+79,Spreading love and happiness all the way to Maui <3,post79.png,daharms,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+80,Imagine spending your entire office budget on a couch,post80.png,aleeboi,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+81,Dog: “When did I say you could take this picture of me?”,post81.png,aleeboi,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+82,The lake was so beautiful this weekend and I loved getting out of town. The views from the water during sunset are so relaxing and helped me destress from a busy midterm season at school. Thank you UNC for the wellness weekend!,post82.png,debby_sims,-7:14:21,-7:14:21,,normal,,,,,,,,,,,,,,,,,,,
+83,"It was a dream come true to finally attend my first UNC basketball game as a student. After all of the challenges that Covid has thrown at my freshman year, it has been really hard for me to feel connected to UNC and feel like a student. This experience with Boyce was amazing and GO HEELS!! #GDTBATH",post83.png,debby_sims,-7:21:28,-7:21:28,,normal,,,,,,,,,,,,,,,,,,,
+84,beach days with my georgie🥰☀,post84.png,lisapowell,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+85,afternoon view😍💙,post85.png,lisapowell,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+86,The wonders of a red button...with a smiley face on it,post86.png,MannyDL34,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+87,Carly and Ramsey having fun together at the lake! Warm weather and fun times☀️,post87.png,sweetpea,-5:49:25,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,
+88,Spring has sprung at Carolina!🌸,post88.png,sweetpea,-5:51:12,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,
+89,Dressing up to go nowhere ;),post89.png,livymilly,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+90,I wish sunsets lasted longer :(,post90.png,livymilly,-5:49:25,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,
+91,"It’s 2010, you’re trading silly bandz on the playground and playing Four Square on the blacktop with your squad #sillybandz #takemeback #2010",post91.png,kikokano,-5:51:12,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,
+92,Late night food porn is a dangerous line to cross... #foodporn #latenightsnacks #latenightcravings #fries,post92.png,kikokano,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+93,A great end to a great day,post93.png,tarakha,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+94,Really missing these sweet friends and this wonderful place!,post94.png,tarakha,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+95,Absolutely obsessed with this album! What are you guys listening to,post95.png,ria_camiii,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+96,Missing the beach and my people ❤ pic by yours truly :),post96.png,ria_camiii,-7:14:21,-7:14:21,,normal,,,,,,,,,,,,,,,,,,,
+97,Early Christmas Dinner Coastal Style,post97.png,snowbird,-7:21:28,-7:21:28,,normal,,,,,,,,,,,,,,,,,,,
+98,Fast Cars and Freedom. Happy July 4th !,post98.png,snowbird,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+99,they had fun,post99.png,donuts4me,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+100,The Suite ™,post100.png,donuts4me,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+101,Sunshine on a Rainy Day 🌈☔🌷,post101.png,poolsey,-5:49:25,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,
+102,Thinking of all of you!! Hope we can be together soon! 😘,post102.png,poolsey,-5:51:12,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,
+103,A little windy up here <3,post103.png,janielee,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+104,Had the best time with my team this week! Hate to be headed home so soon but im so happy im bringing a gold medal with me!,post104.png,janielee,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+105,You talkin to me? #robertdeniro #taxidriver #rescuepup #cutenessoverload #snuggletime,post105.png,JuniperQ,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+106,1 am Cook Out runs with the best!,post106.png,JuniperQ,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+107,Sad to see the season end,post107.png,robeats,-7:14:21,-7:14:21,,normal,,,,,,,,,,,,,,,,,,,
+108,Watched this beautiful sunset in Phoenix today!,post108.png,robeats,-7:21:28,-7:21:28,,normal,,,,,,,,,,,,,,,,,,,
+109,Brought home our precious Archie today!! #welcometothefam,post109.png,sweetcakers,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+110,Just wanted to share the beautiful view from my window tonight!,post110.png,sweetcakers,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+111,just a cool guy :/,post111.png,pomipomi,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+112,tfw when you run into someone you don't talk to anymore :|,post112.png,pomipomi,-5:49:25,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,
+114,Some of these places are beautiful at night. ...Hope I was allowed to be in here!,post114.png,kaykay027,-5:51:12,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,
+118,omw,jh_post2.png,jhalll,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+120,1 year with this beautiful girl ❤️,cj_post2.png,jcoop,-5:49:25,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,
+122,From the ground up,jphoto_post2.png,juan_photography,-5:51:12,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,
+125,say cheese 📷🤍,lc_post2.png,laurenchou3,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+128,Had the privilege to go on a 2 day hiking trip in the outskirts of California- homie action shot 😤,post.dar.1.jpeg,dariank,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+129,my face before wiping out on black diamond,nathanpost1.jpeg,greatnathan_12,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+130,photo courtesy of @dariank - congrats Garrett on your engagement! Beer with the boys is now beer with the boys + Kasey,harrypost1.jpeg,harry_cost1991,-7:10:44,-7:10:44,,normal,,,,,,,,,,,,,,,,,,,
+131,"world, meet barry",willpost.1.jpeg,willjkares,-7:14:21,-7:14:21,,normal,,,,,,,,,,,,,,,,,,,
+132,calm before the storm,davidpost1.jpeg,davidplayshockey,-7:21:28,-7:21:28,,normal,,,,,,,,,,,,,,,,,,,
+133,had to do it to em 😤 peace out east high,ariapost1.jpeg,sharmathecharma,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+134,"[6.25] my queen 👑 28th bday, thanks for making it special 🥰",julianpost1.jpeg,julian.lifts,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+135,🥶💨,brandonpost1.jpeg,br.richards,-7:33:49,-7:33:49,,normal,,,,,,,,,,,,,,,,,,,
+136,looking extra clean today 💨,dompost1.jpeg,dommc1,-5:49:25,-5:49:25,,normal,,,,,,,,,,,,,,,,,,,
+137,ate carbs today #nationalpancakeday,victorpost1.jpeg,realvictorpatel,-5:51:12,-5:51:12,,normal,,,,,,,,,,,,,,,,,,,
