@@ -393,7 +393,7 @@ exports.getScriptFeed = (req, res, next) => {
     zaIndices = [2,7,12,16,23];
   }
   if (scriptZA === '3'){
-    zaIndices = [2,5,8,10,17,19,20,23,27,29];
+    zaIndices = [2,5,8,10,17,19,20,23,27];
   }
 
   let numZA = zaIndices.length;
