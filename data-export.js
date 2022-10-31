@@ -193,18 +193,18 @@ User.find()
               else if(array.length==3)
               {
                 //console.log("really ?");
-                if(users[i].feedAction[k].post.post_id==dict[array[0]])
+                if(users[i].feedAction[k].post.post_id==dict[array[0]] && users[i].feedAction[k].comments[(array[1].replace(/[^0-9]/g, ''))-1]!=null)
                 {
                   switch(array[2]){
                     case "like" :
-                      if(users[i].feedAction[k].comments[array[1].replace(/[^0-9]/g, '')-1].liked)
+                      if(users[i].feedAction[k].comments[(array[1].replace(/[^0-9]/g, ''))-1].liked)
                       {
                        //console.log(array);
                         mlm[myarray[w]]=1;
                       }
                       break;
                     case "flag" :
-                      if(users[i].feedAction[k].comments[array[1].replace(/[^0-9]/g, '')-1].flagged)
+                      if(users[i].feedAction[k].comments[(array[1].replace(/[^0-9]/g, ''))-1].flagged)
                       {
                         //console.log(array);
                         mlm[myarray[w]]=1;
