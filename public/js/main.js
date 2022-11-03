@@ -7,8 +7,74 @@ $('#loading').show();
 
 document.addEventListener("DOMContentLoaded", function(event) { 
   var name  = document.getElementById('demo');
-  console.log("succeed");
+  console.log("bbbb succeed");
+  console.log("test from main.js")
 });
+
+function isInViewport(el) {
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+}
+//console.log("what is going on with "  + el);
+var rect = el.getBoundingClientRect();
+/* console.log(el.innerHTML);
+console.log(rect.bottom );
+console.log(window.innerHeight);
+console.log(rect.right);
+console.log(window.innerWidth); */
+return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    (rect.bottom) <= (window.innerHeight || document.documentElement.clientHeight) && /* or $(window).height() */
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
+);
+  
+}
+
+Array.prototype.remove = function() {
+  var what, a = arguments, L = a.length, ax;
+  while (L && this.length) {
+      what = a[--L];
+      while ((ax = this.indexOf(what)) !== -1) {
+          this.splice(ax, 1);
+      }
+  }
+  return this;
+};
+
+function sendread()
+{
+  //console.log("function is been called");
+  for (let i =0 ; i<postidarray.length ;i++)
+  {
+    
+    
+    var test = document.querySelector(".ui.fluid.card[postid=" + "'"+postidarray[i]+"'"+"]").getElementsByTagName('img')[1].src;
+    //var imgsrc = test.replace(/^(?:\/\/|[^/]+)*\//, '');
+    var y = document.querySelector(".ui.fluid.card[postid=" + "'"+postidarray[i]+"'"+"]").getElementsByClassName('description')[0];
+    //var y = document.querySelector("img[src='/"+imgsrc+"']");
+    //console.log
+    //console.log("is "+y.innerHTML+ " in the window?  " + isInViewport(y));
+    if(y!=null &&isInViewport(y))
+    {
+      
+      //console.log("imgae src: " + imgsrc);
+      //console.log("postid has been viwed:zzzzzzzzz " + postidarray[i]);
+      //console.log("check if remove function works: " + postidarray.length) ;
+      usedarray.push(postidarray[i]);
+      $.post( "/feed", { postID: postidarray[i], start: totaltimearray[i] } );
+
+      console.log("send one to database postid: " +postidarray[i]);
+      postidarray.remove(postidarray[i]);
+      //console.log("number of posts has been viewd: " + usedarray.length);
+      //console.log("number of posts has not been viewd: " + postidarray.length);
+      //console.log("length should decrease by one: " + postidarray.length) ;
+      totaltimearray.remove(totaltimearray[i]);
+      
+      break;
+    }
+  }
+}
 
 
 $(window).on("load", function() {
@@ -326,7 +392,8 @@ $("i.big.send.link.icon").click(function() {
   //#likeButton.ui.basic.button
   $('#likeButton.ui.basic.button')
   .on('click', function() {
-
+    //console.log("The button works");
+    //alert("The button works");
     //if already liked, unlike if pressed
     if ( $( this ).hasClass( "red" ) ) {
         //console.log("***********UNLIKE: post");
@@ -334,12 +401,18 @@ $("i.big.send.link.icon").click(function() {
         var label = $(this).next("a.ui.basic.red.left.pointing.label.count");
         label.html(function(i, val) { return val*1-1 });
         var postID = $(this).closest( ".ui.fluid.card" ).attr( "postID" );
-        var unlike = Date.now();
+        var like = Date.now();
         //console.log("***********UNLIKE: post "+postID+" at time "+unlike);
         if ($(this).closest( ".ui.fluid.card" ).attr( "type" )=='userPost')
-          $.post( "/userPost_feed", { postID: postID, unlike: unlike, _csrf : $('meta[name="csrf-token"]').attr('content') } );
+        {
+          console.log("red user post");
+          $.post( "/userPost_feed", { postID: postID, like: like, _csrf : $('meta[name="csrf-token"]').attr('content') } );
+        }
         else
-          $.post( "/feed", { postID: postID, unlike: unlike, _csrf : $('meta[name="csrf-token"]').attr('content') } );
+        {
+          console.log("red non user post");
+          $.post( "/feed", { postID: postID, like: like, _csrf : $('meta[name="csrf-token"]').attr('content') } );
+        }
     }
     //since not red, this button press is a LIKE action
     else{
@@ -348,12 +421,19 @@ $("i.big.send.link.icon").click(function() {
       label.html(function(i, val) { return val*1+1 });
       var postID = $(this).closest( ".ui.fluid.card" ).attr( "postID" );
       var like = Date.now();
-      //console.log("***********LIKE: post "+postID+" at time "+like);
+      console.log("***********LIKE: post "+postID+" at time "+like);
 
       if ($(this).closest( ".ui.fluid.card" ).attr( "type" )=='userPost')
-        $.post( "/userPost_feed", { postID: postID, like: like, _csrf : $('meta[name="csrf-token"]').attr('content') } );
+       {
+         $.post( "/userPost_feed", { postID: postID, like: like, _csrf : $('meta[name="csrf-token"]').attr('content') } );
+         console.log("non red userPost ? ");
+       }
       else
+      {
+        console.log("like time: " + like);
         $.post( "/feed", { postID: postID, like: like, _csrf : $('meta[name="csrf-token"]').attr('content') } );
+        console.log("non red non userpost ");
+      }
 
     }
 
@@ -377,12 +457,12 @@ $("i.big.send.link.icon").click(function() {
 
         var postID = $(this).closest( ".ui.fluid.card" ).attr( "postID" );
         var commentID = comment.attr("commentID");
-        var unlike = Date.now();
+        var like = Date.now();
 
         if ($(this).closest( ".ui.fluid.card" ).attr( "type" )=='userPost'){
           //$.post( "/userPost_feed", { postID: postID, commentID: commentID, like: like, _csrf : $('meta[name="csrf-token"]').attr('content') } );
         } else {
-          $.post( "/feed", { postID: postID, commentID: commentID, unlike: unlike, _csrf : $('meta[name="csrf-token"]').attr('content') } );
+          $.post( "/feed", { postID: postID, commentID: commentID, like: like, _csrf : $('meta[name="csrf-token"]').attr('content') } );
         }
     }
     //since not red, this button press is a LIKE action
@@ -402,6 +482,7 @@ $("i.big.send.link.icon").click(function() {
       if ($(this).closest( ".ui.fluid.card" ).attr( "type" )=='userPost')
         $.post( "/userPost_feed", { postID: postID, commentID: commentID, like: like, _csrf : $('meta[name="csrf-token"]').attr('content') } );
       else
+        console.log("comment has been liked: "+ commentID);
         $.post( "/feed", { postID: postID, commentID: commentID, like: like, _csrf : $('meta[name="csrf-token"]').attr('content') } );
 
     }
@@ -424,6 +505,7 @@ $("i.big.send.link.icon").click(function() {
     if (typeID=='userPost')
       $.post( "/userPost_feed", { postID: postID, commentID: commentID, flag: flag, _csrf : $('meta[name="csrf-token"]').attr('content') } );
     else
+      console.log("comments has been flagged: " +commentID);
       $.post( "/feed", { postID: postID, commentID: commentID, flag: flag, _csrf : $('meta[name="csrf-token"]').attr('content') } );
 
   });
@@ -519,8 +601,6 @@ $("i.big.send.link.icon").click(function() {
     parent.find("input.newcomment").focus();
 
   });
-
-  
 //////TESTING
 $('.ui.fluid.card .img.post')
 .visibility({
@@ -528,7 +608,7 @@ $('.ui.fluid.card .img.post')
   continuous : false,
   observeChanges: true,
   //throttle:100,
-  initialCheck : true,
+ 
 
 //handling scrolling down like normal
   onBottomVisible:function(calculations){
@@ -547,18 +627,96 @@ $('.ui.fluid.card .img.post')
     //POST HERE
     var parent = $(this).parents(".ui.fluid.card");
     var postID = parent.attr( "postID" );
+    console.log(postID + usedarray.includes(postID));
+    if(usedarray.length==0 )
+    {
+      $.post( "/feed", { postID: postID, start: totalViewTime, _csrf : $('meta[name="csrf-token"]').attr('content')  } );
+      console.log("send one to database postid: " +postID);
+      //postidarray[0]=postID;
+      usedarray.push(postID);
+      //console.log("added new stadd");
+    }
+    //console.log(usedarray.includes(postID));
+    //console.log("used array length: " +usedarray.length);
+    if(usedarray.includes(postID)==false)
+      {
+        //console.log("what element we added into postidarray : " + postID);
+        postidarray.push(postID);
+        totaltimearray.push(totalViewTime);
+        //console.log("unused array length: " +postidarray.length)
+        //console.log("added new stadd");
+      }
+    sendread();
+    //var test = $(this).parents(".lazyloaded").attr("src");
     //console.log(postID);
     //Don't record it if it's longer than 24 hours, do this check because refresh causes all posts to be marked as "viewed" for 49 years.(???)
-    if(totalViewTime < 86400000){
+    /* if(totalViewTime < 86400000){
       $.post( "/feed", { postID: postID, start: totalViewTime, _csrf : $('meta[name="csrf-token"]').attr('content') } );
-    }
-    console.log("Total time: " + totalViewTime);
-    console.log($(this).siblings(".content").children(".description").text());
+      console.log("***********Post has been viewd : post "+postID+" at time "+totalViewTime);
+    } */
+/*       //let ps = 'postid="'+postID+'"'; 
+      if(postID==postidarray[0]&&firstused==false)
+      {
+       //console.log("postid has been viwed: " + postidarray[0]);
+        firstused=true;
+        $.post( "/feed", { postID: postidarray[0], start: totalViewTime[0] } );
+        usedarray.push(postidarray[0]);
+      }
+      //console.log(ps);
+      for (let i =1 ; i<postidarray.length ;i++)
+      {
+        var test = document.querySelector(".ui.fluid.card[postid=" + "'"+postidarray[i]+"'"+"]").getElementsByTagName('img')[1].src;
+        var imgsrc = test.replace(/^(?:\/\/|[^/]+)*\//, '');
+        var y = document.querySelector("img[src='/"+imgsrc+"']");
+        
+        console.log("imgae src: " + imgsrc);
+        if(y!=null &&isInViewport(y))
+        {
+          //console.log("imgae src: " + imgsrc);
+          //console.log("postid has been viwed:zzzzzzzzz " + postidarray[i]);
+          //console.log("check if remove function works: " + postidarray.length) ;
+          usedarray.push(postidarray[i]);
+          $.post( "/feed", { postID: postidarray[i], start: totalViewTime[i] } );
+          postidarray.remove(postidarray[i]);
+          console.log("number of posts has been viewd: " + usedarray.length);
+          console.log("number of posts has not been viewd: " + postidarray.length);
+          //console.log("length should decrease by one: " + postidarray.length) ;
+          totaltimearray.remove(totaltimearray[i]);
+          break;
+          
+        }
+        
+      } */
+      //let p = test[0].attributes.postid; 
+      //var pstr = JSON.stringify(p);
+      //console.log("print oout psts"+ JSON.stringify(test[0]));
+      //console.log(pstr==ps);
+      
+    //for (let i = 0; i < test.length; i++) {
+        //console.log("test  chen  " + test[i].attributes.postid.displayName);
+        //console.log("end test ");
+        
+        //console.log(JSON.stringify((test[i].attributes['postid'])));
+       // if(test[i].attributes.postid==postID)
+       // {
+          //var targetpost = document.getElementsByClassName(".ui.fluid.card").getElementsByClassName("lazyloaded")[i]
+         //console.log(test[i]);
+        //}
+     // } 
+      //var y = document.querySelector("img[src='/pic1.png']");
+      //document.querySelectorAll('.lazyloaded'); 
+      //console.log("beggining ");
+      //console.log(typeof p);
+      //console.log("***********Post has been viewd : post "+postID+" at time "+totalViewTime);
+      
+  
+    //console.log("Total time: " + totalViewTime);
+    //console.log($(this).siblings(".content").children(".description").text());
   },
 //end handling downward scrolling
 
 //handling scrolling back upwards
-  onTopPassedReverse:function(calculations){
+/*   onTopPassedReverse:function(calculations){
     var startTime = Date.now();
     $(this).siblings(".content").children(".myTimer").text(startTime);
   },
@@ -585,8 +743,18 @@ $('.ui.fluid.card .img.post')
     }
 //end handling scrolling back updwards
 
-  }
+  } */
 
 });
 
 });
+
+
+var postidarray =[]; 
+var totaltimearray=[];
+var usedarray = [];
+var firstused = false;
+$(window).scroll(function() {
+  sendread(postidarray, totaltimearray);
+});
+//sendread(postidarray, totaltimearray);

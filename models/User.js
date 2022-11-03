@@ -256,7 +256,7 @@ userSchema.methods.logPostStats = function logPage(postID) {
       {
         if(this.feedAction[k].liked)
         {
-          //log.GeneralLikeNumber++;
+          log.GeneralLikeNumber++;
         }
         //total number of flags
         if(this.feedAction[k].flagTime[0])

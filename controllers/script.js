@@ -214,7 +214,7 @@ exports.getScript = (req, res, next) => {
                         { 
                           script_feed[0].comments[commentIndex].liked = true;
                           script_feed[0].comments[commentIndex].likes++;
-                          //console.log("Post %o has been LIKED", script_feed[0].id);
+                          console.log("Post %o has been LIKED", script_feed[0].id);
                         }
 
                         //Action is a FLAG (user Flaged this comment in this post)
@@ -693,7 +693,7 @@ exports.postUpdateFeedAction = (req, res, next) => {
       cat.post = req.body.postID;
       if(!(req.body.start))
         {
-          console.log("!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!No start");
+          console.log("!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!No start and the postID is : "+req.body.postID);
         }
       cat.startTime = req.body.start || 0;
       cat.rereadTimes = 0;
@@ -738,10 +738,13 @@ exports.postUpdateFeedAction = (req, res, next) => {
         //no comment in this post-actions yet
         if(commentIndex==-1)
         {
+
+          console.log("@@@@@@@@@@ COMMENT new feedAction Object! at commentID ", req.body.commentID);
           var cat = new Object();
           cat.comment = req.body.commentID;
           user.feedAction[feedIndex].comments.push(cat);
-          commentIndex = 0;
+          //commentIndex = 0;
+          commentIndex = user.feedAction[feedIndex].comments.length - 1;
         }
 
         //LIKE A COMMENT
@@ -752,15 +755,25 @@ exports.postUpdateFeedAction = (req, res, next) => {
           if (user.feedAction[feedIndex].comments[commentIndex].likeTime)
           {
             user.feedAction[feedIndex].comments[commentIndex].likeTime.push(like);
-
+            console.log("comment has been liked under if statement");
+            if(user.feedAction[feedIndex].comments[commentIndex].liked)
+            {
+              user.feedAction[feedIndex].comments[commentIndex].liked=false;
+            }
+            else
+            {
+              user.feedAction[feedIndex].comments[commentIndex].liked=true;
+            }
           }
           else
           {
             user.feedAction[feedIndex].comments[commentIndex].likeTime = [like];
+            user.feedAction[feedIndex].comments[commentIndex].liked = true;
             //console.log("!!!!!!!adding FIRST COMMENT LIKE time [0] now which is  ", user.feedAction[feedIndex].likeTime[0]);
+            console.log("comment has been liked under else statement");
           }
-          user.feedAction[feedIndex].comments[commentIndex].liked = true;
           
+          console.log("comment has been liked");
         }
 
         //FLAG A COMMENT
@@ -787,6 +800,8 @@ exports.postUpdateFeedAction = (req, res, next) => {
       //not a comment - its a post action
       else
       {
+        //console.log("not a cooment section");
+        //console.log("print out like: " +req.body.like); 
         //update to new StartTime
         if (req.body.start && (req.body.start > user.feedAction[feedIndex].startTime))
         { 
@@ -802,7 +817,7 @@ exports.postUpdateFeedAction = (req, res, next) => {
         else if ((!user.feedAction[feedIndex].readTime)&&req.body.read && (req.body.read > user.feedAction[feedIndex].startTime))
         { 
           let read = req.body.read - user.feedAction[feedIndex].startTime
-          //console.log("!!!!!New FIRST READ Time: ", read);
+          console.log("!!!!!New FIRST READ Time: ", read);
           user.feedAction[feedIndex].readTime = [read];
           
           //user.feedAction[feedIndex].comments[commentIndex].flagTime.push(flag);
@@ -816,13 +831,14 @@ exports.postUpdateFeedAction = (req, res, next) => {
           //console.log("%%%%%Add new Read Time: ", read);
           user.feedAction[feedIndex].readTime.push(read);
         }
-
+        
         //array of flagTime is empty and we have a new (first) Flag event
         else if ((!user.feedAction[feedIndex].flagTime)&&req.body.flag && (req.body.flag > user.feedAction[feedIndex].startTime))
         { 
           let flag = req.body.flag - user.feedAction[feedIndex].startTime
-          //console.log("!!!!!New FIRST FLAG Time: ", flag);
+          console.log("!!!!!New FIRST FLAG Time: ", flag);
           user.feedAction[feedIndex].flagTime = [flag];
+
           //console.log("!!!!!adding FIRST FLAG time [0] now which is  ", user.feedAction[feedIndex].flagTime[0]);
         }
 
@@ -834,29 +850,35 @@ exports.postUpdateFeedAction = (req, res, next) => {
           user.feedAction[feedIndex].flagTime.push(flag);
         }
 
-        //array of likeTime is empty and we have a new (first) LIKE event
-        else if ((!user.feedAction[feedIndex].likeTime)&&req.body.like && (req.body.like > user.feedAction[feedIndex].startTime))
+      //array of likeTime is empty and we have a new (first) LIKE event
+        else if ((user.feedAction[feedIndex].likeTime.length==0)&&req.body.like && (req.body.like > user.feedAction[feedIndex].startTime))
         { 
           let like = req.body.like - user.feedAction[feedIndex].startTime
-          //console.log("!!!!!!New FIRST LIKE Time: ", like);
+          console.log("!!!!!!New FIRST LIKE Time: ", like);
           user.feedAction[feedIndex].likeTime = [like];
           user.feedAction[feedIndex].liked = true;
+          //user.numPostLikes++;
           //console.log("!!!!!!!adding FIRST LIKE time [0] now which is  ", user.feedAction[feedIndex].likeTime[0]);
         }
 
         //Already have a likeTime Array, New LIKE event, need to add this to likeTime array
-        else if ((user.feedAction[feedIndex].likeTime)&&req.body.like && (req.body.like > user.feedAction[feedIndex].startTime))
+        else if ((user.feedAction[feedIndex].likeTime.length>0)&&req.body.like && (req.body.like > user.feedAction[feedIndex].startTime))
         { 
           let like = req.body.like - user.feedAction[feedIndex].startTime
-          //console.log("%%%%%Add new LIKE Time: ", like);
+          console.log("%%%%%Add new LIKE Time: ", like);
+        
           user.feedAction[feedIndex].likeTime.push(like);
           if(user.feedAction[feedIndex].liked)
           {
             user.feedAction[feedIndex].liked = false;
+            console.log("unlike works");
+            //user.numPostLikes--;
           }
           else
           {
             user.feedAction[feedIndex].liked = true;
+            console.log("like again works");
+            //user.numPostLikes++;
           }
         }
 
@@ -933,7 +955,7 @@ exports.postUpdateProFeedAction = (req, res, next) => {
       cat.profile = req.body.postID;
       if(!(req.body.start))
         {
-          console.log("!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!No start");
+          console.log("!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!No start and the postID is : "+req.body.postID);
         }
       cat.startTime = req.body.start;
       cat.rereadTimes = 0;
