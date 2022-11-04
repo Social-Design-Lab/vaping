@@ -685,26 +685,10 @@ exports.postUpdateFeedAction = (req, res, next) => {
 
     console.log("@@@ USER index is  ", feedIndex);
 
-    if(feedIndex==-1)
-    {
-      //Post does not exist yet in User DB, so we have to add it now
-      //console.log("$$$$$Making new feedAction Object! at post ", req.body.postID);
-      var cat = new Object();
-      cat.post = req.body.postID;
-      if(!(req.body.start))
-        {
-          console.log("!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!No start and the postID is : "+req.body.postID);
-        }
-      cat.startTime = req.body.start || 0;
-      cat.rereadTimes = 0;
-      //add new post into feedAction
-      user.feedAction.push(cat);
-
-    }
-    else
-    {
+    
+   
       //we found the right post, and feedIndex is the right index for it
-      console.log("##### FOUND post "+req.body.postID+" at index "+ feedIndex);
+      //console.log("##### FOUND post "+req.body.postID+" at index "+ feedIndex);
 
       //create a new Comment
       if(req.body.new_comment)
@@ -800,6 +784,25 @@ exports.postUpdateFeedAction = (req, res, next) => {
       //not a comment - its a post action
       else
       {
+              if(feedIndex==-1)
+          {
+            //Post does not exist yet in User DB, so we have to add it now
+            //console.log("$$$$$Making new feedAction Object! at post ", req.body.postID);
+            var cat = new Object();
+            cat.post = req.body.postID;
+            if(!(req.body.start))
+              {
+                console.log("!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!No start and the postID is : "+req.body.postID);
+              }
+            
+            var cat = new Object();
+            
+            user.feedAction.push(cat);
+            feedIndex=user.feedAction.length-1;
+            console.log(feedIndex);
+              //commentIndex = 0;
+
+          }
         //console.log("not a cooment section");
         //console.log("print out like: " +req.body.like); 
         //update to new StartTime
@@ -907,7 +910,7 @@ exports.postUpdateFeedAction = (req, res, next) => {
 
        //console.log("####### END OF ELSE post at index "+ feedIndex);
 
-    }
+    
     //console.log("@@@@@@@@@@@ ABOUT TO SAVE TO DB on Post ", req.body.postID);
     user.save((err) => {
       if (err) {
