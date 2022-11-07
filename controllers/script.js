@@ -685,10 +685,26 @@ exports.postUpdateFeedAction = (req, res, next) => {
 
     console.log("@@@ USER index is  ", feedIndex);
 
+    if(feedIndex==-1)
+    {
+      //Post does not exist yet in User DB, so we have to add it now
+      //console.log("$$$$$Making new feedAction Object! at post ", req.body.postID);
+      var cat = new Object();
+      cat.post = req.body.postID;
+      if(!(req.body.start))
+        {
+          console.log("!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!No start and the postID is : "+req.body.postID);
+        }
+      cat.startTime = req.body.start || 0;
+      cat.rereadTimes = 0;
+      //add new post into feedAction
+      user.feedAction.push(cat);
+      feedIndex =user.feedAction.length - 1;;
+
+    }
     
-   
       //we found the right post, and feedIndex is the right index for it
-      //console.log("##### FOUND post "+req.body.postID+" at index "+ feedIndex);
+      console.log("##### FOUND post "+req.body.postID+" at index "+ feedIndex);
 
       //create a new Comment
       if(req.body.new_comment)
@@ -784,35 +800,16 @@ exports.postUpdateFeedAction = (req, res, next) => {
       //not a comment - its a post action
       else
       {
-              if(feedIndex==-1)
-          {
-            //Post does not exist yet in User DB, so we have to add it now
-            //console.log("$$$$$Making new feedAction Object! at post ", req.body.postID);
-            var cat = new Object();
-            cat.post = req.body.postID;
-            if(!(req.body.start))
-              {
-                console.log("!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!@!No start and the postID is : "+req.body.postID);
-              }
-            
-            var cat = new Object();
-            
-            user.feedAction.push(cat);
-            feedIndex=user.feedAction.length-1;
-            console.log(feedIndex);
-              //commentIndex = 0;
-
-          }
         //console.log("not a cooment section");
         //console.log("print out like: " +req.body.like); 
         //update to new StartTime
-        if (req.body.start && (req.body.start > user.feedAction[feedIndex].startTime))
+       if (req.body.start && (req.body.start > user.feedAction[feedIndex].startTime))
         { 
           //console.log("%%%%%% USER.feedAction.startTime  ", user.feedAction[feedIndex].startTime);
           user.feedAction[feedIndex].startTime = req.body.start;
-          //user.feedAction[feedIndex].rereadTimes++;
+          user.feedAction[feedIndex].rereadTimes++;
           //console.log("%%%%%% NEW START time is now  ", user.feedAction[feedIndex].startTime);
-          //console.log("%%%%%% reRead counter is now  ", user.feedAction[feedIndex].rereadTimes); 
+          //cons ole.log("%%%%%% reRead counter is now  ", user.feedAction[feedIndex].rereadTimes); 
 
         }
 
