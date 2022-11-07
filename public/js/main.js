@@ -62,8 +62,8 @@ function sendread()
       //console.log("postid has been viwed:zzzzzzzzz " + postidarray[i]);
       //console.log("check if remove function works: " + postidarray.length) ;
       usedarray.push(postidarray[i]);
-      $.post( "/feed", { postID: postidarray[i], start: totaltimearray[i] } );
-
+      //$.post( "/feed", { postID: postidarray[i], start: totaltimearray[i] } );
+      $.post( "/feed", { postID: postidarray[i], start: totaltimearray[i], _csrf : $('meta[name="csrf-token"]').attr('content')  } );
       console.log("send one to database postid: " +postidarray[i]);
       postidarray.remove(postidarray[i]);
       //console.log("number of posts has been viewd: " + usedarray.length);
