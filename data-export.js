@@ -193,24 +193,40 @@ User.find()
               else if(array.length==3)
               {
                 //console.log("really ?");
-                if(users[i].feedAction[k].post.post_id==dict[array[0]] && users[i].feedAction[k].comments[(array[1].replace(/[^0-9]/g, ''))-1]!=null)
+                if(users[i].feedAction[k].post.post_id==dict[array[0]] )
                 {
-                  switch(array[2]){
-                    case "like" :
-                      if(users[i].feedAction[k].comments[(array[1].replace(/[^0-9]/g, ''))-1].liked)
-                      {
-                       //console.log(array);
-                        mlm[myarray[w]]=1;
+                  var tempid = users[i].feedAction[k].post.comments[(array[1].replace(/[^0-9]/g, ''))-1]._id; 
+                  //console.log(typeof tempid);
+                  //console.log("there should be one match");
+                  //console.log(users[i].feedAction[k].post.comments[5]._id);
+                  for(let d = 0;d<users[i].feedAction[k].comments.length;d++)
+                  {
+                    var tempin = users[i].feedAction[k].comments[d].comment;
+                    //console.log("we are comparing :"+ tempid +" and " + tempin + ". The result is: " + (JSON.stringify(tempid) == JSON.stringify(tempin)));
+                    //console.log("Go through all the comments with action: " +tempin);
+                    if(JSON.stringify(tempid) === JSON.stringify(tempin))
+                    {
+                      //console.log("there should be one pinrted here");
+                      switch(array[2]){
+                        case "like" :
+                          if(users[i].feedAction[k].comments[d].liked)
+                          {
+                           //console.log(array);
+                            
+                            mlm[myarray[w]]=1;
+                          }
+                          break;
+                        case "flag" :
+                          if(users[i].feedAction[k].comments[d].flagged)
+                          {
+                            //console.log(array);
+                            mlm[myarray[w]]=1;
+                          }
                       }
-                      break;
-                    case "flag" :
-                      if(users[i].feedAction[k].comments[(array[1].replace(/[^0-9]/g, ''))-1].flagged)
-                      {
-                        //console.log(array);
-                        mlm[myarray[w]]=1;
-                      }
+                    }
                   }
-                
+    
+                  //console.log("*************************************");
 
                 }
               }
