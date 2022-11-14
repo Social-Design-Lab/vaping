@@ -365,7 +365,7 @@ exports.getScriptFeed = (req, res, next) => {
   let scriptAL = req.query.AL;
   let scriptRV = req.query.RV;
   let scriptSN = req.query.SN;
-  let scriptID = req.query.ID;
+  //let scriptID = req.query.ID;
   let scriptUID = req.query.UID;
   let admin = req.query.admin;
 
@@ -390,7 +390,7 @@ exports.getScriptFeed = (req, res, next) => {
     zaIndices = [19];
   }
   if (scriptZA === '2'){
-    zaIndices = [2,7,12,16,23];
+    zaIndices = [2,7,12,15,23];
   }
   if (scriptZA === '3'){
     zaIndices = [2,5,8,10,17,19,20,23,27];
@@ -462,7 +462,11 @@ exports.getScriptFeed = (req, res, next) => {
           
           // So the issue is that the last 9 elements in the array are not all za posts, even though they should be
           
-          
+          //check if post 2 is in Script_feed
+          console.log("This is the last post");
+          //216 missing 
+          console.log("old script feed:" + script_feed[16]);
+
           let zaPosts = script_feed.splice(30, numZA);
 
           console.log("This is the last post", script_feed[29]);
@@ -474,6 +478,7 @@ exports.getScriptFeed = (req, res, next) => {
             script_feed.splice(zaIndices[i], 1, zaPosts[i]);
           }
 
+          console.log("After Zhila's post script feed:" + script_feed[16]);
           console.log("Script Size is now: "+ script_feed.length);
 
 
