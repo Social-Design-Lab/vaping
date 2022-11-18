@@ -131,10 +131,15 @@ User.find()
               mlm.Agg_exp++;
               if(users[i].feedAction[k].comments.length!=0  )
               {
-                if(users[i].feedAction[k].comments.new_comment)
+                for (var temp = 0 ; temp <users[i].feedAction[k].comments.length; temp++)
                 {
-                  mlm.Agg_com++;
+                  if(users[i].feedAction[k].comments[temp].new_comment)
+                  {
+                    
+                    mlm.Agg_com++;
+                  }
                 }
+                
                 
               }
               if(users[i].feedAction[k].liked)
@@ -166,10 +171,18 @@ User.find()
                       //console.log(array);
                       break;
                     case "com" :
-                      if(users[i].feedAction[k].comments.new_comment)
+                      if(users[i].feedAction[k].comments.length!=0  )
                       {
-                        //console.log(array);
-                        mlm[myarray[w]]=1;
+                        for (var temp = 0 ; temp <users[i].feedAction[k].comments.length; temp++)
+                        {
+                          if(users[i].feedAction[k].comments[temp].new_comment)
+                            {
+                              //console.log(array);
+                              mlm[myarray[w]]=1;
+                            }
+                        }
+                        
+                        
                       }
                       break;
                     case "like" :
