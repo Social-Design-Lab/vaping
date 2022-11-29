@@ -30,10 +30,11 @@ block content
     const sn = urlParams.get('SN')
     const za = urlParams.get('ZA')
     const uid = urlParams.get('UID')
+    const aidd = urlParams.get('aid')
     console.log("test"+al);
     //document.getElementById("demo").href="https://unc.az1.qualtrics.com/jfe/form/SV_3OEAZhsbghvkcKO?AL="+al+'&RV='+rv+'&SN='+sn+'&ZA='+za+'&UID='+uid; 
     $('#demo').click(function() {
-      window.location="https://unc.az1.qualtrics.com/jfe/form/SV_3OEAZhsbghvkcKO?AL="+al+'&RV='+rv+'&SN='+sn+'&ZA='+za+'&UID='+uid;});
+      window.location="https://unc.az1.qualtrics.com/jfe/form/SV_3OEAZhsbghvkcKO?AL="+al+'&RV='+rv+'&SN='+sn+'&ZA='+za+'&UID='+uid+'&aid='+aidd;});
     
    
   #content.eight.wide.computer.ten.wide.tablet.sixteen.wide.mobile.column(style='display: none;')
