@@ -14,15 +14,7 @@ block content
         .header After one minute, you can click the button 
       .extra.content  
         a.item
-          button#demo.disabled.ui.button Click
-  script.
-    setInterval(myTimer, 60000);
-    function myTimer() {
-      document.getElementById("demo").classList.add("active");
-      document.getElementById("demo").classList.remove("disabled");
-      
-      //console.log(href);
-    }
+          button#demo.active.ui.button Click
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const al = urlParams.get('AL')
