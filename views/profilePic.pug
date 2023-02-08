@@ -15,6 +15,14 @@ block content
       .extra.content  
         a.item
           button#demo.active.ui.button Click
+  script.
+    setInterval(myTimer, 0);
+    function myTimer() {
+      document.getElementById("demo").classList.add("active");
+      document.getElementById("demo").classList.remove("disabled");
+      
+      //console.log(href);
+    }
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const al = urlParams.get('AL')

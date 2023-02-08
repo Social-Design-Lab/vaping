@@ -30,19 +30,26 @@
       a.item(href='/login') Login
       a.item 
         button#demo.active.ui.button Click 
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    const al = urlParams.get('AL')
-    const rv = urlParams.get('RV')
-    const sn = urlParams.get('SN')
-    const za = urlParams.get('ZA')
-    const uid = urlParams.get('UID')
-    const aidd = urlParams.get('aid')
-    console.log("test"+al);
-    //document.getElementById("demo").href="https://unc.az1.qualtrics.com/jfe/form/SV_3OEAZhsbghvkcKO?AL="+al+'&RV='+rv+'&SN='+sn+'&ZA='+za+'&UID='+uid; 
-    $('#demo').click(function() {
-      window.location="https://unc.az1.qualtrics.com/jfe/form/SV_3OEAZhsbghvkcKO?AL="+al+'&RV='+rv+'&SN='+sn+'&ZA='+za+'&UID='+uid+'&aid='+aidd;});
-    
+      script.
+        setInterval(myTimer, 0);
+        function myTimer() {
+          document.getElementById("demo").classList.add("active");
+          document.getElementById("demo").classList.remove("disabled");
+          
+          //console.log(href);
+        }
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const al = urlParams.get('AL')
+        const rv = urlParams.get('RV')
+        const sn = urlParams.get('SN')
+        const za = urlParams.get('ZA')
+        const uid = urlParams.get('UID')
+        const aidd = urlParams.get('aid')
+        console.log("test"+al);
+        //document.getElementById("demo").href="https://unc.az1.qualtrics.com/jfe/form/SV_3OEAZhsbghvkcKO?AL="+al+'&RV='+rv+'&SN='+sn+'&ZA='+za+'&UID='+uid; 
+        $('#demo').click(function() {
+          window.location="https://unc.az1.qualtrics.com/jfe/form/SV_3OEAZhsbghvkcKO?AL="+al+'&RV='+rv+'&SN='+sn+'&ZA='+za+'&UID='+uid+'&aid='+aidd;});
     else
       a.item.newpost
         i.big.write.square.icon
