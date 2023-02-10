@@ -14,20 +14,27 @@ block content
         .header Click the button when you are done
       .extra.content  
         a.item
-          button#demo.active.ui.button Click
-        script.
-          const queryStringd = window.location.search;
-          const urlParamsd = new URLSearchParams(queryStringd);
-          const ald = urlParamsd.get('AL')
-          const rvd = urlParamsd.get('RV')
-          const snd = urlParamsd.get('SN')
-          const zad = urlParamsd.get('ZA')
-          const uidd = urlParamsd.get('UID')
-          const aiddd = urlParamsd.get('aid')
-          console.log("test for desktop :"+ald);
-          //document.getElementById("demo").href="https://unc.az1.qualtrics.com/jfe/form/SV_3OEAZhsbghvkcKO?AL="+al+'&RV='+rv+'&SN='+sn+'&ZA='+za+'&UID='+uid; 
-          $('#demo').click(function() {
-            window.location="https://unc.az1.qualtrics.com/jfe/form/SV_3OEAZhsbghvkcKO?AL="+ald+'&RV='+rvd+'&SN='+snd+'&ZA='+zad+'&UID='+uidd+'&aid='+aiddd;}); 
+          button#demoo.disabled.ui.button Click
+  script.
+    setInterval(myTimer, 0);
+    function myTimer() {
+      document.getElementById("demoo").classList.add("active");
+      document.getElementById("demoo").classList.remove("disabled");
+      
+      //console.log(href);
+    }
+    const queryStringd = window.location.search;
+    const urlParamsd = new URLSearchParams(queryStringd);
+    const ald = urlParamsd.get('AL')
+    const rvd = urlParamsd.get('RV')
+    const snd = urlParamsd.get('SN')
+    const zad = urlParamsd.get('ZA')
+    const uidd = urlParamsd.get('UID')
+    const aiddd = urlParamsd.get('aid')
+    console.log("test"+ald);
+    //document.getElementById("demo").href="https://unc.az1.qualtrics.com/jfe/form/SV_3OEAZhsbghvkcKO?AL="+al+'&RV='+rv+'&SN='+sn+'&ZA='+za+'&UID='+uid; 
+    $('#demoo').click(function() {
+      window.location="https://unc.az1.qualtrics.com/jfe/form/SV_3OEAZhsbghvkcKO?AL="+ald+'&RV='+rvd+'&SN='+snd+'&ZA='+zad+'&UID='+uidd+'&aid='+aiddd;});
             
   #content.eight.wide.computer.ten.wide.tablet.sixteen.wide.mobile.column(style='display: none;')
     //-.ui.active.dimmer.feed
