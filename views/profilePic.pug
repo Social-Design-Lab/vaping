@@ -15,19 +15,19 @@ block content
       .extra.content  
         a.item
           button#demo.active.ui.button Click
-  script.
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    const al = urlParams.get('AL')
-    const rv = urlParams.get('RV')
-    const sn = urlParams.get('SN')
-    const za = urlParams.get('ZA')
-    const uid = urlParams.get('UID')
-    const aidd = urlParams.get('aid')
-    console.log("test"+al);
-    //document.getElementById("demo").href="https://unc.az1.qualtrics.com/jfe/form/SV_3OEAZhsbghvkcKO?AL="+al+'&RV='+rv+'&SN='+sn+'&ZA='+za+'&UID='+uid; 
-    $('#demo').click(function() {
-      window.location="https://unc.az1.qualtrics.com/jfe/form/SV_3OEAZhsbghvkcKO?AL="+al+'&RV='+rv+'&SN='+sn+'&ZA='+za+'&UID='+uid+'&aid='+aidd;});
+        script.
+          const queryString = window.location.search;
+          const urlParams = new URLSearchParams(queryString);
+          const al = urlParams.get('AL')
+          const rv = urlParams.get('RV')
+          const sn = urlParams.get('SN')
+          const za = urlParams.get('ZA')
+          const uid = urlParams.get('UID')
+          const aidd = urlParams.get('aid')
+          console.log("test"+al);
+          //document.getElementById("demo").href="https://unc.az1.qualtrics.com/jfe/form/SV_3OEAZhsbghvkcKO?AL="+al+'&RV='+rv+'&SN='+sn+'&ZA='+za+'&UID='+uid; 
+          $('#demo').click(function() {
+            window.location="https://unc.az1.qualtrics.com/jfe/form/SV_3OEAZhsbghvkcKO?AL="+al+'&RV='+rv+'&SN='+sn+'&ZA='+za+'&UID='+uid+'&aid='+aidd;});
     
    
   #content.eight.wide.computer.ten.wide.tablet.sixteen.wide.mobile.column(style='display: none;')
